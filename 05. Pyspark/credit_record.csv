@@ -1,0 +1,5001 @@
+ID,GENDER,INCOME,FAMILY_STATUS,HOUSING_TYPE,FAM_MEMBERS,STATUS
+5008804,M,427500,Civil marriage,Rent,2,X
+5008805,M,427500,Civil marriage,Rent,2,0
+5008806,M,112500,Married,House,2,0
+5008808,F,270000,Single,House,1,0
+5008809,F,270000,Single,House,1,C
+5008810,F,270000,Single,House,1,C
+5008811,F,270000,Single,House,1,C
+5008812,F,283500,Separated,House,1,C
+5008813,F,283500,Separated,House,1,C
+5008814,F,283500,Separated,House,1,C
+5008815,M,270000,Married,House,2,C
+5112956,M,270000,Married,House,2,C
+6153651,M,270000,Married,House,2,C
+5008819,M,135000,Married,House,2,0
+5008820,M,135000,Married,House,2,0
+5008821,M,135000,Married,House,2,0
+5008822,M,135000,Married,House,2,0
+5008823,M,135000,Married,House,2,0
+5008824,M,135000,Married,House,2,0
+5008825,F,130500,Married,House,2,0
+5008826,F,130500,Married,House,2,0
+5008830,F,157500,Married,House,2,0
+5008831,F,157500,Married,House,2,0
+5008832,F,157500,Married,House,2,X
+5008834,F,112500,Single,House,2,X
+5008835,F,112500,Single,House,2,X
+6153712,F,112500,Single,House,2,X
+5008836,M,270000,Married,House,5,X
+5008837,M,270000,Married,House,5,X
+5008838,M,405000,Married,House,3,X
+5008839,M,405000,Married,House,3,X
+5008840,M,405000,Married,House,3,X
+5008841,M,405000,Married,House,3,X
+5008842,M,405000,Married,House,3,X
+5008843,M,405000,Married,House,3,X
+5008844,M,112500,Married,House,2,X
+5008846,M,112500,Married,House,2,X
+5008847,M,112500,Married,House,2,X
+5008849,M,112500,Married,House,2,X
+5008850,M,112500,Married,House,2,X
+5008851,M,112500,Married,House,2,X
+5008852,M,112500,Married,House,2,X
+5008853,M,112500,Married,House,2,X
+6153733,M,112500,Married,House,2,X
+6153734,M,112500,Married,House,2,X
+6153735,M,112500,Married,House,2,X
+5008854,F,135000,Married,House,4,X
+5008855,F,135000,Married,House,4,X
+5008856,F,135000,Married,House,4,X
+5008857,F,135000,Married,House,4,X
+5008858,F,135000,Married,House,4,X
+5008859,F,135000,Married,House,4,X
+5008860,F,135000,Married,House,4,X
+5008861,F,135000,Married,House,4,X
+5008862,F,135000,Married,House,4,X
+5008863,F,135000,Married,House,4,X
+5008864,F,135000,Married,House,4,X
+5008865,F,135000,Married,House,4,X
+5008866,F,135000,Married,House,4,X
+5008867,F,135000,Married,House,4,X
+5112846,F,135000,Married,House,4,X
+6153736,F,135000,Married,House,4,X
+5008868,F,211500,Civil marriage,House,3,X
+5008870,F,211500,Civil marriage,House,3,X
+5008872,M,360000,Married,House,2,X
+6153737,M,360000,Married,House,2,X
+5008873,F,126000,Married,House,4,X
+5008874,F,126000,Married,House,4,X
+5008875,F,126000,Married,House,4,X
+5008876,F,126000,Married,House,4,X
+5008877,F,126000,Married,House,4,X
+5008878,F,126000,Married,House,4,X
+5008879,F,126000,Married,House,4,X
+5008880,F,126000,Married,House,4,X
+5008881,F,126000,Married,House,4,X
+5008882,F,126000,Married,House,4,X
+5008884,F,315000,Widow,House,1,X
+5008888,F,247500,Separated,Rent,1,X
+5008889,F,247500,Separated,Rent,1,X
+5008890,F,247500,Separated,Rent,1,X
+5112847,F,247500,Separated,Rent,1,X
+5008891,F,297000,Single,Rent,1,X
+5008892,F,297000,Single,Rent,1,X
+5008893,F,297000,Single,Rent,1,X
+5008894,F,297000,Single,Rent,1,X
+5008895,F,297000,Single,Rent,1,X
+5008896,F,297000,Single,Rent,1,X
+5008897,F,297000,Single,Rent,1,X
+5008898,F,297000,Single,Rent,1,X
+5008899,F,297000,Single,Rent,1,X
+5008900,F,297000,Single,Rent,1,X
+5008901,F,297000,Single,Rent,1,X
+5008902,F,297000,Single,Rent,1,X
+5008903,F,297000,Single,Rent,1,X
+5008904,F,297000,Single,Rent,1,X
+5008905,F,297000,Single,Rent,1,X
+5008906,F,297000,Single,Rent,1,X
+5008907,F,297000,Single,Rent,1,X
+5008908,F,297000,Single,Rent,1,X
+5008909,F,297000,Single,Rent,1,X
+5008910,F,297000,Single,Rent,1,X
+5008911,F,297000,Single,Rent,1,X
+5008912,F,297000,Single,Rent,1,X
+5008913,F,297000,Single,Rent,1,X
+5008914,F,297000,Single,Rent,1,X
+5008915,F,297000,Single,Rent,1,X
+5008916,F,297000,Single,Rent,1,X
+5008917,F,297000,Single,Rent,1,X
+5008918,F,297000,Single,Rent,1,X
+5008919,F,297000,Single,Rent,1,X
+5008920,F,297000,Single,Rent,1,X
+5008921,F,297000,Single,Rent,1,X
+5008922,F,297000,Single,Rent,1,X
+5008923,F,297000,Single,Rent,1,X
+5008924,F,297000,Single,Rent,1,X
+5008925,F,297000,Single,Rent,1,X
+5008926,F,297000,Single,Rent,1,X
+5008927,F,297000,Single,Rent,1,X
+5008928,F,297000,Single,Rent,1,X
+5008929,F,297000,Single,Rent,1,X
+5008930,F,297000,Single,Rent,1,C
+5008931,F,297000,Single,Rent,1,C
+5008932,F,297000,Single,Rent,1,C
+5008933,F,297000,Single,Rent,1,C
+5008934,F,297000,Single,Rent,1,C
+5008935,F,297000,Single,Rent,1,0
+5008936,F,297000,Single,Rent,1,0
+5008937,F,297000,Single,Rent,1,0
+5008938,F,297000,Single,Rent,1,0
+5008939,F,297000,Single,Rent,1,0
+5008940,F,297000,Single,Rent,1,0
+5008941,F,297000,Single,Rent,1,0
+6153773,F,297000,Single,Rent,1,0
+6153774,F,297000,Single,Rent,1,0
+6153775,F,297000,Single,Rent,1,0
+5008942,F,157500,Married,House,2,0
+5008943,F,157500,Married,House,2,0
+5008944,F,157500,Married,House,2,0
+5008945,F,157500,Married,House,2,0
+5008946,F,157500,Married,House,2,0
+5008947,M,135000,Married,House,2,0
+5008948,M,135000,Married,House,2,0
+5008949,M,135000,Married,House,2,C
+5008950,M,135000,Married,House,2,C
+5008951,M,225000,Married,House,3,C
+5008952,M,225000,Married,House,3,0
+5008953,M,225000,Married,House,3,0
+5008954,M,225000,Married,House,3,0
+5008955,F,135000,Married,House,2,0
+5008956,F,135000,Married,House,2,0
+5008957,F,135000,Married,House,2,1
+5008958,F,135000,Married,House,2,X
+5008959,F,135000,Married,House,2,0
+5008960,F,135000,Married,House,2,X
+5008962,F,135000,Married,House,2,1
+5008963,F,135000,Married,House,2,X
+5008966,M,157500,Married,House,2,0
+5008967,M,157500,Married,House,2,X
+5008971,M,157500,Married,House,2,X
+5008973,M,157500,Married,House,2,X
+5008974,F,112500,Married,House,2,0
+5008975,F,112500,Married,House,2,0
+5008976,F,112500,Married,House,2,0
+5008977,F,112500,Married,House,2,X
+5008978,F,112500,Married,House,2,0
+5008979,F,112500,Married,House,2,0
+5008980,F,112500,Married,House,2,0
+5008981,M,112500,Married,House,2,0
+5008983,M,112500,Married,House,2,0
+5008984,M,112500,Married,House,2,0
+5008986,M,112500,Married,House,2,X
+5008987,M,112500,Married,House,2,0
+5008988,M,112500,Married,House,2,X
+6153800,M,112500,Married,House,2,0
+5008991,F,270000,Separated,House,1,0
+5008992,F,270000,Separated,House,1,0
+5008993,F,270000,Separated,House,1,0
+5008994,F,270000,Separated,House,1,0
+5008995,F,270000,Separated,House,1,0
+5112861,F,270000,Separated,House,1,0
+6153801,F,270000,Separated,House,1,X
+5008998,F,270000,Married,House,2,C
+5008999,F,270000,Married,House,2,C
+5009000,M,157500,Married,House,2,C
+6153549,M,157500,Married,House,2,C
+5009001,M,166500,Married,House,2,C
+5009002,M,166500,Married,House,2,C
+5009005,M,166500,Married,House,2,C
+5009006,M,166500,Married,House,2,C
+5009007,M,166500,Married,House,2,C
+5009008,M,166500,Married,House,2,C
+5009009,M,166500,Married,House,2,C
+5009010,M,166500,Married,House,2,C
+5009012,M,166500,Married,House,2,C
+5009014,M,166500,Married,House,2,C
+6153574,M,166500,Married,House,2,C
+6153575,M,166500,Married,House,2,C
+6153576,M,166500,Married,House,2,C
+6153578,M,166500,Married,House,2,C
+5009016,F,216000,Married,House,4,C
+5009018,F,216000,Married,House,4,C
+5009019,F,216000,Married,House,4,C
+5009020,F,216000,Married,House,4,C
+5009022,F,216000,Married,House,4,C
+5009023,F,216000,Married,House,4,C
+5009024,F,216000,Married,House,4,C
+5009025,F,216000,Married,House,4,C
+6153579,F,216000,Married,House,4,C
+6153580,F,216000,Married,House,4,C
+5009027,F,270000,Married,House,2,C
+5112862,F,270000,Married,House,2,C
+5009028,F,225000,Married,House,2,C
+5009029,F,225000,Married,House,2,C
+5009031,F,315000,Single,House,1,C
+5009032,F,315000,Single,House,1,C
+6153669,F,315000,Single,House,1,C
+5009033,F,255150,Civil marriage,Rent,2,C
+5009034,F,255150,Civil marriage,Rent,2,C
+5009035,F,255150,Civil marriage,Rent,2,C
+5009036,F,255150,Civil marriage,Rent,2,C
+5009037,F,255150,Civil marriage,Rent,2,C
+5009038,F,255150,Civil marriage,Rent,2,C
+5009039,F,157500,Single,House,3,0
+5009040,F,157500,Single,House,3,0
+5009042,F,148500,Married,House,2,1
+5009043,F,148500,Married,House,2,0
+5009044,F,148500,Married,House,2,0
+5009045,F,148500,Married,House,2,1
+5009046,F,148500,Married,House,2,1
+5009047,F,148500,Married,House,2,0
+6153693,F,148500,Married,House,2,1
+5009050,F,202500,Married,House,4,1
+5009051,F,202500,Married,House,4,0
+5009052,F,202500,Married,House,4,0
+5009053,F,202500,Married,House,4,0
+5009055,F,202500,Married,House,4,0
+5009056,M,202500,Single,House,1,0
+5009057,M,202500,Single,House,1,1
+5009058,F,112500,Single,House,1,0
+5009060,F,94500,Married,House,2,1
+5009062,M,315000,Civil marriage,House,2,0
+5009063,M,315000,Civil marriage,House,2,0
+5009064,M,315000,Civil marriage,House,2,0
+5009065,M,315000,Civil marriage,House,2,0
+5009066,M,315000,Civil marriage,House,2,0
+5009067,M,315000,Civil marriage,House,2,0
+5009068,M,315000,Civil marriage,House,2,0
+5009069,M,315000,Civil marriage,House,2,0
+5009070,M,315000,Civil marriage,House,2,0
+5009071,F,270000,Civil marriage,Municipal apartment,2,0
+5009072,F,270000,Civil marriage,Municipal apartment,2,0
+6153722,F,270000,Civil marriage,Municipal apartment,2,0
+5009074,F,450000,Married,House,3,0
+5009075,F,450000,Married,House,3,0
+5009078,M,180000,Married,With parents,3,0
+5009079,F,112500,Civil marriage,House,2,0
+5009080,F,112500,Civil marriage,House,2,0
+5009081,F,112500,Civil marriage,House,2,0
+5009083,M,90000,Married,House,2,0
+5009084,M,90000,Married,House,2,0
+6153724,M,90000,Married,House,2,X
+6153738,M,90000,Married,House,2,X
+5009088,M,202500,Married,House,4,X
+5009089,M,202500,Married,House,4,X
+6153739,M,202500,Married,House,4,X
+6153740,M,202500,Married,House,4,X
+5009090,M,247500,Married,House,2,X
+5009092,M,765000,Married,House,3,X
+5009094,M,765000,Married,House,3,X
+5009095,M,765000,Married,House,3,X
+6153741,M,765000,Married,House,3,X
+5009096,F,270000,Married,House,3,X
+5009097,F,270000,Married,House,3,X
+5009098,F,270000,Married,House,3,X
+5009099,F,315000,Separated,House,1,X
+5009100,F,315000,Separated,House,1,X
+5009103,M,157500,Married,With parents,4,X
+5009104,M,157500,Married,With parents,4,X
+5009105,M,157500,Married,With parents,4,X
+5009106,M,157500,Married,With parents,4,X
+5112876,M,157500,Married,With parents,4,X
+5009108,M,360000,Married,House,2,X
+5009109,M,360000,Married,House,2,0
+5009110,F,112500,Married,House,2,0
+5009116,F,157500,Separated,With parents,1,0
+5009117,F,157500,Separated,With parents,1,0
+5009118,F,157500,Separated,With parents,1,0
+5009120,F,157500,Separated,With parents,1,0
+5009122,F,157500,Separated,With parents,1,0
+5009123,F,157500,Separated,With parents,1,0
+5009124,F,157500,Separated,With parents,1,X
+5009125,F,157500,Separated,With parents,1,C
+5009126,F,157500,Separated,With parents,1,C
+5009127,F,157500,Separated,With parents,1,C
+5009128,F,157500,Separated,With parents,1,C
+5009129,F,157500,Separated,With parents,1,C
+5009130,F,157500,Separated,With parents,1,C
+5009131,F,157500,Separated,With parents,1,C
+6153757,F,157500,Separated,With parents,1,C
+5009133,M,382500,Widow,House,1,C
+5009134,M,382500,Widow,House,1,C
+5009135,M,382500,Widow,House,1,C
+5009136,M,382500,Widow,House,1,C
+5009137,M,382500,Widow,House,1,C
+5009138,M,382500,Widow,House,1,C
+5009139,M,382500,Widow,House,1,C
+5009140,M,382500,Widow,House,1,C
+5009141,F,135000,Civil marriage,House,2,C
+5009142,F,135000,Civil marriage,House,2,C
+5009143,M,225000,Civil marriage,House,2,C
+5009144,M,225000,Civil marriage,House,2,C
+5009145,M,315000,Married,House,2,C
+5009146,M,315000,Married,House,2,C
+5009147,M,315000,Married,House,2,X
+5009149,M,315000,Married,House,2,X
+5009150,M,315000,Married,House,2,X
+6153802,M,315000,Married,House,2,X
+6153803,M,315000,Married,House,2,X
+5009151,F,180000,Married,House,2,X
+5009152,F,180000,Married,House,2,X
+5009153,F,180000,Married,House,2,X
+5009154,F,180000,Married,House,2,X
+5009155,F,180000,Married,House,2,0
+5009156,F,180000,Married,House,2,0
+5009157,F,180000,Married,House,2,0
+5009158,F,180000,Married,House,2,0
+5009159,F,180000,Married,House,2,0
+5009160,F,180000,Married,House,2,0
+5009161,F,180000,Married,House,2,0
+5009162,F,180000,Married,House,2,X
+5009163,F,157500,Married,House,2,C
+5009164,F,157500,Married,House,2,C
+5009165,F,157500,Married,House,2,C
+5009166,F,157500,Married,House,2,C
+5009168,F,157500,Married,House,2,C
+6153804,F,157500,Married,House,2,C
+5009170,F,144000,Married,House,2,C
+5009177,M,229500,Married,Co-op apartment,2,C
+5009178,M,229500,Married,Co-op apartment,2,C
+5009179,M,229500,Married,Co-op apartment,2,C
+5009180,M,229500,Married,Co-op apartment,2,C
+5009181,M,229500,Married,Co-op apartment,2,C
+5009182,M,229500,Married,Co-op apartment,2,C
+5009183,M,229500,Married,Co-op apartment,2,C
+6153806,M,229500,Married,Co-op apartment,2,C
+5009186,F,270000,Married,House,2,C
+5009187,F,270000,Married,House,2,C
+5009188,F,270000,Married,House,2,C
+5009189,F,270000,Married,House,2,C
+5009190,F,270000,Married,House,2,C
+5009191,F,270000,Married,House,2,C
+5009192,F,270000,Married,House,2,C
+5009193,F,270000,Married,House,2,C
+5009195,F,292500,Married,House,2,C
+5009196,F,292500,Married,House,2,C
+5009198,F,292500,Married,House,2,C
+5009201,F,292500,Married,House,2,C
+5009202,F,292500,Married,House,2,C
+5009203,F,292500,Married,House,2,C
+5009204,F,292500,Married,House,2,C
+5009205,F,292500,Married,House,2,C
+5009206,F,292500,Married,House,2,C
+5009207,F,292500,Married,House,2,C
+5009208,F,292500,Married,House,2,0
+5009209,F,292500,Married,House,2,0
+5009210,F,292500,Married,House,2,0
+6153808,F,292500,Married,House,2,0
+6153809,F,292500,Married,House,2,0
+5009213,F,270000,Married,House,2,0
+5009215,F,270000,Married,House,2,0
+5009216,F,270000,Married,House,2,C
+5009217,F,270000,Married,House,2,0
+6153550,F,270000,Married,House,2,0
+6153551,F,270000,Married,House,2,0
+5009220,F,225000,Married,House,2,0
+5009222,F,225000,Married,House,2,0
+5009223,F,225000,Married,House,2,0
+5009224,F,225000,Married,House,2,C
+5009225,F,225000,Married,House,2,C
+5009226,F,225000,Married,House,2,C
+5009227,F,225000,Married,House,2,C
+5009232,F,225000,Married,House,2,C
+5009233,F,225000,Married,House,2,C
+5009234,F,225000,Married,House,2,C
+5009236,F,225000,Married,House,2,C
+6153552,F,225000,Married,House,2,C
+6153554,F,225000,Married,House,2,C
+6153555,F,225000,Married,House,2,C
+5009238,M,157500,Married,With parents,2,C
+5009239,M,157500,Married,With parents,2,C
+5009240,M,157500,Married,With parents,2,C
+5009241,M,157500,Married,With parents,2,C
+6153556,M,157500,Married,With parents,2,C
+5009242,F,74250,Separated,Municipal apartment,1,C
+5009243,F,74250,Separated,Municipal apartment,1,C
+5009244,F,74250,Separated,Municipal apartment,1,C
+5009246,F,135000,Married,House,2,C
+5009247,F,135000,Married,House,2,C
+5009248,F,135000,Married,House,2,C
+5009249,M,135000,Married,House,3,C
+5009250,M,135000,Married,House,3,C
+5009251,M,135000,Married,House,3,C
+5009252,M,135000,Married,House,3,C
+5009253,M,135000,Married,House,3,C
+6153557,M,135000,Married,House,3,C
+5009255,F,144000,Single,House,1,C
+5009257,F,144000,Single,House,1,C
+5009258,F,144000,Single,House,1,C
+5009260,F,202500,Married,With parents,2,C
+5009261,F,202500,Married,With parents,2,C
+5009262,F,202500,Married,With parents,2,C
+5009263,F,202500,Married,With parents,2,C
+6153558,F,202500,Married,With parents,2,C
+5009264,F,40500,Single,House,1,C
+5009265,M,337500,Married,With parents,2,C
+5009266,M,337500,Married,With parents,2,C
+5009267,M,337500,Married,With parents,2,C
+5009268,M,337500,Married,With parents,2,C
+5009269,M,337500,Married,With parents,2,C
+5009270,M,180000,Married,Municipal apartment,2,C
+5009271,M,180000,Married,Municipal apartment,2,C
+5009272,M,180000,Married,Municipal apartment,2,C
+5009274,M,180000,Married,Municipal apartment,2,C
+5009275,M,180000,Married,Municipal apartment,2,C
+5009276,M,180000,Married,Municipal apartment,2,C
+5009277,M,180000,Married,Municipal apartment,2,C
+5009278,F,130500,Civil marriage,House,2,C
+5009279,F,130500,Civil marriage,House,2,C
+5009280,F,130500,Civil marriage,House,2,C
+5009281,F,130500,Civil marriage,House,2,C
+5009284,F,130500,Civil marriage,House,2,C
+5009285,F,130500,Civil marriage,House,2,C
+5009286,F,130500,Civil marriage,House,2,C
+5009287,F,130500,Civil marriage,House,2,0
+5009289,F,130500,Civil marriage,House,2,0
+5009290,F,130500,Civil marriage,House,2,0
+5009291,F,130500,Civil marriage,House,2,0
+5009292,F,130500,Civil marriage,House,2,0
+5009293,F,130500,Civil marriage,House,2,X
+5009294,F,130500,Civil marriage,House,2,X
+5009295,F,144000,Married,House,2,X
+5009296,F,144000,Married,House,2,X
+5009297,F,193500,Single,Municipal apartment,1,X
+5009299,F,193500,Single,Municipal apartment,1,X
+5009300,F,193500,Single,Municipal apartment,1,X
+5009301,F,193500,Single,Municipal apartment,1,X
+6153561,F,193500,Single,Municipal apartment,1,X
+5009302,F,112500,Widow,House,1,X
+5009303,F,112500,Widow,House,1,X
+5009304,F,112500,Widow,House,1,X
+5009305,F,112500,Widow,House,1,X
+5009306,F,135000,Married,House,2,X
+5009307,F,135000,Married,House,2,X
+5009308,F,135000,Married,House,2,X
+5009309,F,135000,Married,House,2,X
+5009310,F,135000,Married,House,2,X
+5009311,F,135000,Married,House,2,X
+5009312,F,135000,Married,House,2,X
+5009313,F,135000,Married,House,2,X
+5009314,F,135000,Married,House,2,X
+5009315,F,135000,Married,House,2,X
+5009316,F,135000,Married,House,2,X
+5009317,F,135000,Married,House,2,X
+5009318,F,135000,Married,House,2,X
+5009319,F,135000,Married,House,2,X
+5009325,M,267750,Married,House,2,X
+5009327,M,267750,Married,House,2,X
+5009328,M,267750,Married,House,2,X
+5009329,M,267750,Married,House,2,X
+5009330,M,267750,Married,House,2,X
+5009331,M,267750,Married,House,2,X
+5009332,M,267750,Married,House,2,X
+5009333,M,267750,Married,House,2,X
+5009335,F,139500,Separated,House,1,X
+5009336,F,139500,Separated,House,1,X
+5009337,F,139500,Separated,House,1,X
+6153581,F,139500,Separated,House,1,X
+5009338,M,67500,Married,House,2,X
+5009339,M,67500,Married,House,2,X
+5009340,M,252000,Married,House,2,X
+5009341,M,252000,Married,House,2,X
+5009342,M,252000,Married,House,2,X
+5009343,M,252000,Married,House,2,X
+5009344,M,252000,Married,House,2,X
+5009345,M,252000,Married,House,2,X
+5009346,M,252000,Married,House,2,X
+5009349,M,180000,Married,House,2,X
+5009354,M,180000,Married,House,2,X
+6153582,M,180000,Married,House,2,X
+6153584,M,180000,Married,House,2,X
+5009355,F,135000,Married,House,2,X
+5009358,F,135000,Married,House,2,X
+5009359,F,900000,Single,House,1,X
+5009360,F,900000,Single,House,1,X
+5009361,M,180000,Civil marriage,House,2,X
+5009362,M,180000,Civil marriage,House,2,X
+5009363,M,180000,Civil marriage,House,2,0
+5009364,M,180000,Civil marriage,House,2,0
+5009365,M,180000,Civil marriage,House,2,0
+5009366,M,180000,Civil marriage,House,2,C
+5009367,M,180000,Civil marriage,House,2,C
+5009368,M,115290,Married,House,2,C
+5009369,M,115290,Married,House,2,C
+5009370,M,115290,Married,House,2,C
+5009371,M,115290,Married,House,2,C
+5009372,M,115290,Married,House,2,C
+5009373,M,115290,Married,House,2,C
+6153586,M,115290,Married,House,2,C
+6153587,M,115290,Married,House,2,C
+5009378,F,225000,Married,House,4,C
+6153588,F,225000,Married,House,4,C
+6153589,F,225000,Married,House,4,C
+5009379,M,135000,Married,House,3,C
+5009380,M,135000,Married,House,3,C
+5009381,M,135000,Married,House,3,C
+5009382,M,135000,Married,House,3,C
+6153590,M,135000,Married,House,3,C
+5009383,F,450000,Married,House,2,C
+5009384,F,450000,Married,House,2,C
+5009386,F,450000,Married,House,2,C
+5009387,F,450000,Married,House,2,C
+5009389,M,279000,Single,House,1,C
+5009391,M,279000,Single,House,1,0
+5009392,M,279000,Single,House,1,C
+5009393,M,279000,Single,House,1,C
+5009394,M,279000,Single,House,1,C
+5009395,M,279000,Single,House,1,C
+6153591,M,279000,Single,House,1,C
+6153592,M,279000,Single,House,1,C
+5009396,F,76500,Civil marriage,House,3,C
+5009397,F,76500,Civil marriage,House,3,C
+5009398,F,76500,Civil marriage,House,3,C
+5009399,F,76500,Civil marriage,House,3,C
+5009400,F,76500,Civil marriage,House,3,C
+5009401,F,76500,Civil marriage,House,3,C
+5009402,M,202500,Married,House,2,C
+5009403,M,202500,Married,House,2,C
+5009404,F,67500,Married,House,4,C
+6153594,F,67500,Married,House,4,C
+5009405,M,234000,Married,House,2,C
+5009406,M,234000,Married,House,2,C
+5009408,M,234000,Married,House,2,C
+5009410,M,234000,Married,House,2,C
+5112901,M,234000,Married,House,2,0
+5009415,F,90000,Single,House,1,0
+5009416,F,90000,Single,House,1,0
+5009417,F,90000,Single,House,1,0
+5009418,F,90000,Single,House,1,C
+5009419,F,90000,Single,House,1,C
+5009420,F,90000,Single,House,1,C
+5009421,F,90000,Single,House,1,C
+6153606,F,90000,Single,House,1,C
+6153607,F,90000,Single,House,1,C
+5009423,F,81000,Civil marriage,House,2,C
+5009424,M,108000,Single,Co-op apartment,1,C
+5009425,M,108000,Single,Co-op apartment,1,C
+5009426,M,99000,Married,House,2,C
+5009427,M,99000,Married,House,2,0
+5009428,M,198000,Single,With parents,1,0
+5009429,M,198000,Single,With parents,1,0
+5009431,M,360000,Married,Municipal apartment,2,0
+6153608,M,360000,Married,Municipal apartment,2,0
+5009435,F,135000,Married,House,2,0
+5090746,F,135000,Married,House,2,0
+5009436,F,76500,Married,House,2,0
+5009437,F,76500,Married,House,2,0
+5009438,F,76500,Married,House,2,0
+5009439,F,76500,Married,House,2,0
+5009440,F,76500,Married,House,2,0
+5009441,F,90000,Married,House,2,C
+5009442,F,90000,Married,House,2,C
+5009443,F,90000,Married,House,2,C
+5009444,F,90000,Married,House,2,C
+6153611,F,90000,Married,House,2,C
+5009445,F,270000,Civil marriage,House,2,C
+6153612,F,270000,Civil marriage,House,2,C
+5009447,M,81000,Married,With parents,2,C
+5009448,M,81000,Married,With parents,2,C
+6153613,M,81000,Married,With parents,2,C
+5009450,F,202500,Married,House,2,C
+5009451,F,202500,Married,House,2,C
+5009452,F,202500,Married,House,2,C
+5009453,F,202500,Married,House,2,C
+5009454,F,202500,Married,House,2,C
+5009455,F,202500,Married,House,2,C
+5009456,F,202500,Married,House,2,C
+5009457,F,202500,Married,House,2,C
+5009458,F,202500,Married,House,2,C
+6153614,F,202500,Married,House,2,C
+6153615,F,202500,Married,House,2,C
+5009459,F,157500,Married,House,2,C
+5009460,F,157500,Married,House,2,C
+5009465,F,157500,Married,House,2,C
+5009466,F,157500,Married,House,2,C
+5009468,F,157500,Married,House,2,C
+5009469,F,157500,Married,House,2,C
+5009470,F,157500,Married,House,2,C
+5009471,F,157500,Married,House,2,C
+5009472,F,157500,Married,House,2,C
+6153617,F,157500,Married,House,2,C
+5009473,F,180000,Married,House,2,C
+5009481,F,180000,Married,House,2,0
+5009482,F,180000,Married,House,2,0
+6153627,F,180000,Married,House,2,0
+6153630,F,180000,Married,House,2,0
+5009484,F,135000,Married,Municipal apartment,2,0
+5009485,F,135000,Married,Municipal apartment,2,0
+6153632,F,135000,Married,Municipal apartment,2,0
+5009487,F,135000,Married,House,4,0
+5009488,F,135000,Married,House,4,0
+5009489,F,135000,Married,House,4,0
+5009490,M,135000,Married,House,2,0
+5009492,M,135000,Married,House,2,0
+6153634,M,135000,Married,House,2,C
+5009493,M,270000,Married,House,2,C
+5009494,M,270000,Married,House,2,C
+5009495,M,270000,Married,House,2,C
+5009497,M,270000,Married,House,2,C
+5009498,M,270000,Married,House,2,C
+5009499,M,270000,Married,House,2,C
+5009500,M,270000,Married,House,2,C
+5009501,M,270000,Married,House,2,C
+5009502,M,270000,Married,House,2,C
+5009503,M,270000,Married,House,2,C
+6153635,M,270000,Married,House,2,C
+5009507,F,202500,Married,House,2,C
+5009508,F,202500,Married,House,2,C
+5009509,F,202500,Married,House,2,C
+5009510,F,202500,Married,House,2,C
+6153637,F,202500,Married,House,2,C
+5009512,F,157500,Married,House,2,C
+5009513,F,157500,Married,House,2,C
+5009515,F,157500,Married,House,2,C
+5009516,F,157500,Married,House,2,C
+5009517,F,157500,Married,House,2,C
+6153638,F,157500,Married,House,2,C
+6153639,F,157500,Married,House,2,C
+5009518,M,180000,Married,House,4,C
+5009519,M,180000,Married,House,4,C
+5009521,M,180000,Married,House,4,C
+6153640,M,180000,Married,House,4,C
+5009523,M,112500,Separated,Co-op apartment,2,C
+5009525,M,112500,Separated,Co-op apartment,2,C
+5009526,F,157500,Married,House,2,C
+5009527,F,157500,Married,House,2,C
+5009529,F,157500,Married,House,2,C
+5009530,F,157500,Married,House,2,C
+5009531,F,157500,Married,House,2,C
+5009533,F,157500,Married,House,2,C
+5009534,F,157500,Married,House,2,C
+5009535,F,157500,Married,House,2,C
+6153642,F,157500,Married,House,2,C
+6153643,F,157500,Married,House,2,C
+5009536,M,216000,Married,House,2,C
+5009537,F,202500,Married,House,2,C
+5009540,F,202500,Married,House,2,C
+5009541,F,202500,Married,House,2,C
+6153652,F,202500,Married,House,2,C
+5009543,F,198000,Civil marriage,House,2,C
+5009545,F,198000,Civil marriage,House,2,0
+5009546,F,198000,Civil marriage,House,2,0
+5009548,F,198000,Civil marriage,House,2,0
+5009551,F,198000,Civil marriage,House,2,0
+5009553,F,198000,Civil marriage,House,2,0
+5009554,F,198000,Civil marriage,House,2,0
+5009555,F,198000,Civil marriage,House,2,0
+5009556,F,198000,Civil marriage,House,2,0
+5009557,F,198000,Civil marriage,House,2,0
+5009558,F,198000,Civil marriage,House,2,0
+5009559,F,198000,Civil marriage,House,2,0
+5009560,F,198000,Civil marriage,House,2,0
+5009561,F,198000,Civil marriage,House,2,C
+5009562,F,157500,Widow,House,1,C
+5009563,F,157500,Widow,House,1,C
+5009564,F,157500,Widow,House,1,C
+6153653,F,157500,Widow,House,1,C
+5009565,M,180000,Married,House,2,C
+5009566,M,180000,Married,House,2,C
+5009567,M,180000,Married,House,2,C
+5009568,M,180000,Married,House,2,C
+5009569,M,180000,Married,House,2,C
+5009570,M,180000,Married,House,2,C
+5009571,M,180000,Married,House,2,C
+5009572,M,180000,Married,House,2,C
+5009573,M,180000,Married,House,2,C
+5009574,M,180000,Married,House,2,C
+5009575,F,315000,Married,House,2,C
+5009576,F,315000,Married,House,2,C
+6153654,F,315000,Married,House,2,C
+5009577,F,112500,Married,House,2,C
+5009578,F,112500,Married,House,2,C
+5009579,F,112500,Married,House,2,C
+5009580,F,112500,Married,House,2,C
+5009581,F,112500,Married,House,2,C
+5009582,F,90000,Separated,House,1,C
+5009583,F,90000,Separated,House,1,C
+5009584,F,90000,Separated,House,1,C
+5009585,F,45000,Separated,House,1,C
+5009586,F,45000,Separated,House,1,C
+5009590,F,225000,Married,House,2,C
+5009591,F,225000,Married,House,2,C
+5009592,F,112500,Single,Rent,1,C
+5090748,F,112500,Single,Rent,1,C
+5009593,F,144000,Married,House,2,C
+5009594,F,144000,Married,House,2,C
+5009595,F,144000,Married,House,2,C
+5009597,F,144000,Married,House,2,C
+5009599,F,144000,Married,House,2,0
+5009600,F,144000,Married,House,2,0
+5009602,F,315000,Married,House,2,0
+6153655,F,315000,Married,House,2,0
+5009603,F,112500,Married,House,3,X
+5009605,F,112500,Married,House,3,0
+5009606,F,112500,Married,House,3,0
+5009607,F,144000,Married,House,4,0
+5009608,F,144000,Married,House,4,0
+5009609,F,144000,Married,House,4,0
+5009610,F,144000,Married,House,4,0
+5009611,F,144000,Married,House,4,C
+5009612,F,144000,Married,House,4,C
+5009613,F,144000,Married,House,4,C
+5009614,F,144000,Married,House,4,C
+6153656,F,144000,Married,House,4,C
+5009617,M,225000,Married,House,2,C
+5009618,M,225000,Married,House,2,C
+6153657,M,225000,Married,House,2,C
+5009620,M,135000,Married,House,2,C
+5009622,M,135000,Married,House,2,C
+5009623,M,135000,Married,House,2,C
+5009624,M,135000,Married,House,2,C
+5009625,F,238500,Married,House,2,C
+5009627,F,238500,Married,House,2,C
+5009628,F,238500,Married,House,2,C
+5009629,F,238500,Married,House,2,C
+6153658,F,238500,Married,House,2,C
+6153659,F,238500,Married,House,2,C
+5009631,F,112500,Married,House,2,C
+5009632,F,112500,Married,House,2,C
+6153660,F,112500,Married,House,2,C
+5009633,M,144000,Married,House,3,C
+5009634,M,144000,Married,House,3,C
+5009636,F,90000,Married,House,2,C
+5009637,F,90000,Married,House,2,C
+5009638,F,90000,Married,House,2,C
+5009639,F,90000,Married,House,2,X
+5009642,M,202500,Single,With parents,1,X
+5009643,M,202500,Single,With parents,1,X
+5009646,M,117000,Single,House,1,X
+5009647,M,117000,Single,House,1,X
+5009648,M,117000,Single,House,1,X
+5090751,M,117000,Single,House,1,X
+6153670,M,117000,Single,House,1,X
+5009651,F,135000,Married,House,2,X
+5009653,F,135000,Married,House,2,0
+5009654,F,135000,Married,House,2,X
+5009655,F,135000,Married,House,2,X
+5009656,F,135000,Married,House,2,X
+5009657,F,135000,Married,House,2,X
+5009658,F,135000,Married,House,2,X
+6153672,F,135000,Married,House,2,C
+5009660,M,225000,Single,House,1,C
+5009661,M,225000,Single,House,1,C
+5009662,M,225000,Single,House,1,C
+5009663,M,225000,Single,House,1,C
+5009664,F,126000,Separated,House,1,C
+5009665,F,126000,Separated,House,1,C
+5009666,F,126000,Separated,House,1,C
+5009667,F,126000,Separated,House,1,C
+5009668,F,126000,Separated,House,1,C
+6153673,F,126000,Separated,House,1,C
+5009671,F,135000,Civil marriage,House,2,C
+5009672,F,135000,Civil marriage,House,2,C
+5009673,F,90000,Widow,House,1,C
+5009674,F,90000,Widow,House,1,C
+5009675,F,90000,Widow,House,1,C
+5009676,F,90000,Widow,House,1,C
+5009677,F,90000,Widow,House,1,C
+5009678,F,90000,Widow,House,1,C
+5009680,F,90000,Widow,House,1,C
+5009681,F,90000,Widow,House,1,C
+5009682,F,90000,Widow,House,1,C
+5009683,F,90000,Widow,House,1,C
+5009684,F,90000,Widow,House,1,C
+5009685,F,90000,Widow,House,1,0
+5009686,F,90000,Widow,House,1,0
+5009687,F,90000,Widow,House,1,0
+5009688,F,90000,Widow,House,1,0
+5009689,F,153000,Separated,House,1,0
+5009690,F,153000,Separated,House,1,X
+5009691,F,153000,Separated,House,1,0
+5009693,F,153000,Separated,House,1,0
+6153677,F,153000,Separated,House,1,0
+5009694,M,1350000,Married,Municipal apartment,2,0
+5009695,M,1350000,Married,Municipal apartment,2,0
+5009698,M,1350000,Married,Municipal apartment,2,0
+5009699,M,1350000,Married,Municipal apartment,2,0
+5009700,M,1350000,Married,Municipal apartment,2,0
+5090752,M,1350000,Married,Municipal apartment,2,0
+6153678,M,1350000,Married,Municipal apartment,2,0
+5009701,F,139500,Married,House,2,X
+5009702,F,139500,Married,House,2,0
+5009703,F,139500,Married,House,2,0
+5009704,F,139500,Married,House,2,0
+5009705,F,139500,Married,House,2,0
+5009706,F,157500,Married,House,2,0
+5009707,F,157500,Married,House,2,0
+5009709,F,157500,Married,House,2,0
+6153679,F,157500,Married,House,2,0
+5009711,F,135000,Civil marriage,With parents,2,0
+5009712,F,135000,Civil marriage,With parents,2,0
+5009713,M,180000,Single,House,1,0
+5009714,M,180000,Single,House,1,C
+5009715,M,180000,Single,House,1,C
+5009716,M,180000,Single,House,1,C
+5009717,M,180000,Single,House,1,C
+5009718,M,180000,Single,House,1,C
+5009719,F,225000,Single,House,1,C
+5009722,F,225000,Single,House,1,C
+5009724,F,135000,Married,House,2,C
+5009725,F,135000,Married,House,2,C
+5009726,F,135000,Married,House,2,C
+5009727,F,135000,Married,House,2,C
+5009729,M,292500,Married,House,2,C
+5009730,M,292500,Married,House,2,0
+5009731,M,292500,Married,House,2,0
+5009732,F,270000,Married,House,2,0
+5009733,F,270000,Married,House,2,0
+5009734,F,270000,Married,House,2,0
+6153684,F,270000,Married,House,2,0
+5009736,F,99000,Married,House,2,0
+5009737,F,99000,Married,House,2,0
+5009738,F,99000,Married,House,2,0
+5009739,F,99000,Married,House,2,0
+5009740,F,99000,Married,House,2,0
+5009741,F,99000,Married,House,2,0
+5009742,F,135000,Married,House,2,0
+5009743,F,135000,Married,House,2,0
+5009745,F,315000,Married,House,2,0
+5009746,F,315000,Married,House,2,0
+5009748,F,315000,Married,House,2,C
+5009750,F,315000,Married,House,2,C
+5009751,F,315000,Married,House,2,C
+5009755,F,315000,Married,House,2,C
+5090754,F,315000,Married,House,2,C
+6153696,F,315000,Married,House,2,C
+5009757,M,270000,Single,House,1,C
+5009758,M,270000,Single,House,1,C
+5009759,M,270000,Single,House,1,C
+5009760,M,270000,Single,House,1,C
+5009761,M,270000,Single,House,1,C
+6153697,M,270000,Single,House,1,C
+5009762,M,135000,Separated,House,1,C
+5009764,M,135000,Separated,House,1,C
+5009765,M,135000,Separated,House,1,C
+5009766,M,135000,Separated,House,1,C
+5009767,M,135000,Separated,House,1,C
+5009768,M,135000,Separated,House,1,C
+5009773,M,135000,Separated,House,1,C
+5009774,M,135000,Separated,House,1,C
+5009775,M,135000,Separated,House,1,C
+5009777,M,135000,Separated,House,1,C
+5009779,M,135000,Separated,House,1,C
+6153698,M,135000,Separated,House,1,C
+5009783,M,445500,Married,Municipal apartment,4,C
+5009784,M,445500,Married,Municipal apartment,4,C
+5009785,F,198000,Widow,House,1,C
+5009788,F,198000,Widow,House,1,C
+5009789,F,198000,Widow,House,1,0
+5009790,F,198000,Widow,House,1,0
+5009791,F,198000,Widow,House,1,0
+5009792,F,198000,Widow,House,1,0
+5009794,F,198000,Widow,House,1,0
+5009796,F,198000,Widow,House,1,0
+5009797,F,198000,Widow,House,1,X
+5009798,F,198000,Widow,House,1,X
+6153701,F,198000,Widow,House,1,X
+5009799,F,382500,Married,House,2,X
+5009800,F,382500,Married,House,2,X
+5009801,F,382500,Married,House,2,X
+5009802,F,382500,Married,House,2,X
+5009803,F,382500,Married,House,2,X
+5009804,F,382500,Married,House,2,X
+5090756,F,382500,Married,House,2,X
+5009805,F,202500,Married,House,3,0
+5009806,F,202500,Married,House,3,X
+5009807,F,202500,Married,House,3,C
+5009808,F,202500,Married,House,3,C
+5009809,F,202500,Married,House,3,C
+5009810,F,202500,Married,House,3,C
+5009811,F,202500,Married,House,3,C
+5009812,F,202500,Married,House,3,C
+5009813,F,202500,Married,House,3,0
+5009814,F,202500,Married,House,3,0
+5009816,F,202500,Married,House,3,0
+5009817,F,202500,Married,House,3,0
+5090772,F,202500,Married,House,3,0
+5090773,F,202500,Married,House,3,C
+6153702,F,202500,Married,House,3,C
+5009819,F,99000,Married,House,2,C
+5009820,F,99000,Married,House,2,C
+5009821,F,99000,Married,House,2,C
+5009822,F,99000,Married,House,2,C
+5009823,F,99000,Married,House,2,C
+5009824,F,99000,Married,House,2,C
+5009825,F,99000,Married,House,2,C
+5009826,F,112500,Married,House,2,C
+5009827,F,112500,Married,House,2,C
+5009828,F,112500,Married,House,2,C
+5009829,F,112500,Married,House,2,C
+5009830,F,112500,Married,House,2,C
+5009831,M,166500,Married,With parents,2,C
+5009832,M,166500,Married,With parents,2,C
+5009833,M,166500,Married,With parents,2,X
+5009834,M,166500,Married,With parents,2,X
+5009835,M,166500,Married,With parents,2,0
+5009836,M,166500,Married,With parents,2,0
+6153704,M,166500,Married,With parents,2,0
+5009837,F,135000,Civil marriage,House,2,0
+5009838,F,135000,Civil marriage,House,2,1
+5009839,M,202500,Civil marriage,House,2,X
+5009841,M,202500,Civil marriage,House,2,0
+5009843,F,81000,Separated,House,1,0
+5009844,M,180000,Married,House,2,0
+5009845,M,180000,Married,House,2,0
+5009846,M,225000,Civil marriage,House,2,X
+5009847,F,99000,Married,House,2,0
+5009848,F,99000,Married,House,2,X
+5009849,F,99000,Married,House,2,0
+5009850,M,360000,Separated,With parents,1,X
+5009851,M,360000,Separated,With parents,1,0
+5009852,M,360000,Separated,With parents,1,0
+5009853,M,360000,Separated,With parents,1,X
+5009854,M,360000,Separated,With parents,1,X
+5009856,M,360000,Separated,With parents,1,0
+5009857,M,360000,Separated,With parents,1,0
+5009858,M,360000,Separated,With parents,1,X
+5009859,M,360000,Separated,With parents,1,X
+5009860,M,360000,Separated,With parents,1,X
+5009864,M,225000,Civil marriage,Rent,2,X
+5009865,M,225000,Civil marriage,Rent,2,X
+5009866,M,225000,Civil marriage,Rent,2,X
+5009867,M,225000,Civil marriage,Rent,2,X
+5009868,M,225000,Civil marriage,Rent,2,X
+5009872,M,427500,Married,House,4,X
+5009873,M,427500,Married,House,4,X
+5009874,M,427500,Married,House,4,X
+5009875,M,427500,Married,House,4,X
+6153768,M,427500,Married,House,4,X
+5009877,F,157500,Married,House,4,X
+5009878,F,157500,Married,House,4,X
+5009879,F,144000,Married,Municipal apartment,4,X
+5009880,F,157500,Civil marriage,House,2,X
+5009881,F,157500,Civil marriage,House,2,X
+5009882,F,157500,Civil marriage,House,2,X
+5009883,F,157500,Civil marriage,House,2,X
+5009884,F,157500,Civil marriage,House,2,X
+5009885,F,157500,Civil marriage,House,2,X
+5009886,F,157500,Civil marriage,House,2,X
+5009887,F,157500,Civil marriage,House,2,X
+5009888,F,157500,Civil marriage,House,2,0
+6153776,F,157500,Civil marriage,House,2,0
+6153777,F,157500,Civil marriage,House,2,0
+5009889,M,270000,Single,House,1,0
+5009890,M,270000,Single,House,1,0
+5009893,F,157500,Married,House,3,0
+6153791,F,157500,Married,House,3,0
+5009897,F,90000,Married,House,4,0
+5009898,F,90000,Married,House,4,0
+5009899,F,90000,Married,House,4,0
+5009900,M,202500,Married,House,2,0
+5009903,M,202500,Married,House,2,0
+5009906,M,202500,Married,House,2,0
+5009907,M,202500,Married,House,2,0
+5009908,M,202500,Married,House,2,0
+5009909,M,202500,Married,House,2,0
+5009910,M,202500,Married,House,2,0
+5009911,M,202500,Married,House,2,0
+5009914,F,99000,Married,House,4,0
+5009915,F,99000,Married,House,4,0
+5009916,F,99000,Married,House,4,0
+5009917,F,99000,Married,House,4,0
+5009918,F,99000,Married,House,4,0
+5009919,F,99000,Married,House,4,0
+5009922,M,360000,Married,House,2,C
+5009923,M,360000,Married,House,2,C
+5009924,M,360000,Married,House,2,C
+5009925,M,360000,Married,House,2,C
+5009927,M,360000,Married,House,2,0
+5009928,M,360000,Married,House,2,0
+5009929,M,360000,Married,House,2,0
+5009930,M,360000,Married,House,2,0
+5009931,M,360000,Married,House,2,0
+5009932,M,360000,Married,House,2,0
+6153619,M,360000,Married,House,2,0
+6153644,M,360000,Married,House,2,0
+6153645,M,360000,Married,House,2,0
+6153646,M,360000,Married,House,2,0
+5009934,F,157500,Married,House,4,0
+5009935,F,157500,Married,House,4,0
+5009938,F,157500,Married,House,4,0
+5009939,F,157500,Married,House,4,0
+5009940,F,157500,Married,House,4,0
+5009941,F,157500,Married,House,4,X
+5009942,F,157500,Married,House,4,C
+5009943,F,157500,Married,House,4,C
+6153647,F,157500,Married,House,4,C
+6153648,F,157500,Married,House,4,C
+5009944,F,135000,Single,House,1,C
+5009945,F,99000,Married,House,4,C
+5009946,F,90000,Married,House,4,C
+5009947,F,90000,Married,House,4,C
+5009949,F,90000,Married,House,4,C
+5009950,F,90000,Married,House,4,C
+5009951,M,90000,Civil marriage,House,2,C
+5009952,M,112500,Married,House,2,C
+5009954,M,112500,Married,House,2,C
+5009955,M,112500,Married,House,2,C
+5009957,F,135000,Married,House,3,C
+5009958,F,135000,Married,House,3,C
+5009960,F,135000,Married,House,3,C
+5009961,F,135000,Married,House,3,C
+6153725,F,135000,Married,House,3,C
+5009965,F,180000,Married,House,2,C
+5009966,F,180000,Married,House,2,C
+5009967,F,180000,Married,House,2,C
+5009968,F,180000,Married,House,2,C
+5009969,F,180000,Married,House,2,C
+5009970,F,180000,Married,House,2,0
+5009971,F,180000,Married,House,2,0
+5009978,F,180000,Married,House,2,0
+5009979,F,180000,Married,House,2,0
+5009980,F,180000,Married,House,2,0
+5009981,F,180000,Married,House,2,0
+5009983,F,180000,Married,House,2,C
+5009984,F,180000,Married,House,2,C
+5009985,F,180000,Married,House,2,C
+5009986,F,180000,Married,House,2,C
+6153743,F,180000,Married,House,2,C
+5009988,M,495000,Single,House,1,C
+5009989,M,495000,Single,House,1,C
+5009990,M,495000,Single,House,1,C
+5009991,M,157500,Married,Office apartment,4,C
+5009992,M,157500,Married,Office apartment,4,C
+5009993,F,135000,Married,House,2,C
+5009994,M,360000,Married,House,3,C
+5009995,M,360000,Married,House,3,C
+5009996,M,360000,Married,House,3,C
+5009997,M,360000,Married,House,3,C
+5009998,M,360000,Married,House,3,C
+5009999,F,157500,Married,House,3,C
+5010000,F,157500,Married,House,3,C
+5010001,F,157500,Married,House,4,C
+5010002,F,157500,Married,House,4,C
+5010003,F,157500,Married,House,4,C
+5010004,F,157500,Married,House,4,C
+5010005,M,157500,Married,House,2,C
+5010006,M,157500,Married,House,2,C
+6153778,M,157500,Married,House,2,C
+5010007,F,112500,Civil marriage,House,3,C
+5010009,F,112500,Civil marriage,House,3,0
+5010010,F,112500,Civil marriage,House,3,0
+5010011,F,112500,Civil marriage,House,3,0
+5010012,F,112500,Civil marriage,House,3,0
+6153779,F,112500,Civil marriage,House,3,0
+6153780,F,112500,Civil marriage,House,3,0
+5010015,F,112500,Separated,House,2,C
+5010016,F,112500,Separated,House,2,C
+5010017,F,112500,Separated,House,2,C
+5010018,F,112500,Separated,House,2,C
+5010019,F,112500,Separated,House,2,C
+6153781,F,112500,Separated,House,2,C
+5010020,F,99000,Single,With parents,1,C
+5010021,F,99000,Single,With parents,1,C
+5010023,F,135000,Married,House,2,C
+5010025,F,135000,Married,House,2,C
+5010026,F,135000,Married,House,2,C
+5010027,F,135000,Married,House,2,C
+5010028,F,135000,Married,House,2,C
+5010031,M,85500,Married,House,2,C
+5010032,M,85500,Married,House,2,C
+5010036,F,292500,Civil marriage,House,2,C
+5010037,F,292500,Civil marriage,House,2,C
+5010038,F,292500,Civil marriage,House,2,C
+5010039,F,292500,Civil marriage,House,2,C
+5010040,F,292500,Civil marriage,House,2,C
+6153814,F,292500,Civil marriage,House,2,C
+6153815,F,292500,Civil marriage,House,2,C
+5010041,F,67500,Married,House,2,C
+5010042,F,67500,Married,House,2,C
+5010043,F,67500,Married,House,2,C
+5010044,F,67500,Married,House,2,0
+5010045,F,67500,Married,House,2,X
+5010046,F,67500,Married,House,2,X
+5010047,F,67500,Married,House,2,X
+5010048,F,67500,Married,House,2,X
+5010049,F,67500,Married,House,2,X
+5010052,F,90000,Married,House,2,X
+5010053,F,90000,Married,House,2,X
+5010055,F,90000,Married,House,2,X
+5010056,F,90000,Married,House,2,X
+6153595,F,90000,Married,House,2,X
+6153596,F,90000,Married,House,2,X
+5010057,M,112500,Single,House,1,X
+5010058,M,112500,Single,House,1,X
+5010059,F,112500,Married,House,2,0
+5010060,F,112500,Married,House,2,0
+5010061,F,112500,Married,House,2,X
+5010062,F,112500,Married,House,2,0
+5010063,F,112500,Married,House,2,0
+5010064,F,112500,Married,House,2,0
+5010066,F,112500,Married,House,2,0
+6153597,F,112500,Married,House,2,0
+6153620,F,112500,Married,House,2,0
+6153621,F,112500,Married,House,2,0
+5010067,F,360000,Widow,House,1,X
+5010068,F,360000,Widow,House,1,X
+5010070,F,279000,Single,House,1,X
+5010072,F,157500,Married,House,2,X
+5010073,F,157500,Married,House,2,X
+5010075,F,157500,Married,House,2,X
+5010076,F,157500,Married,House,2,0
+6153622,F,157500,Married,House,2,0
+5010077,M,157500,Married,Municipal apartment,4,0
+5010078,M,157500,Married,Municipal apartment,4,0
+5010079,M,157500,Married,Municipal apartment,4,0
+5010081,M,135000,Married,House,2,0
+5010083,M,135000,Married,House,2,0
+5010084,M,135000,Married,House,2,0
+5010085,M,135000,Married,House,2,0
+5010086,M,135000,Married,House,2,0
+5010087,M,135000,Married,House,2,0
+5090855,M,135000,Married,House,2,X
+5010088,F,112500,Single,With parents,1,X
+5010089,F,225000,Married,House,2,X
+5010090,F,225000,Married,House,2,X
+5010091,F,225000,Married,House,2,X
+5010092,F,225000,Married,House,2,X
+5010093,F,225000,Married,House,2,0
+5010094,F,225000,Married,House,2,0
+5010099,F,306000,Married,House,4,0
+5010101,F,306000,Married,House,4,0
+5010102,F,306000,Married,House,4,0
+5010104,F,166500,Married,House,2,0
+5010105,F,166500,Married,House,2,0
+5010106,F,166500,Married,House,2,0
+5010108,F,135000,Married,House,2,0
+5010109,F,135000,Married,House,2,0
+5010110,F,135000,Married,House,2,0
+5010111,F,135000,Married,House,2,X
+5010112,F,135000,Married,House,2,0
+5010113,F,202500,Widow,House,1,0
+5010114,F,202500,Widow,House,1,0
+5010115,F,202500,Widow,House,1,0
+5010116,F,202500,Widow,House,1,0
+6153663,F,202500,Widow,House,1,0
+5010117,F,67500,Married,Municipal apartment,3,0
+5010118,M,180000,Single,House,1,0
+5010119,M,315000,Married,House,2,0
+5010120,M,315000,Married,House,2,0
+5010121,M,315000,Married,House,2,0
+5010122,M,315000,Married,House,2,0
+5010123,M,315000,Married,House,2,0
+5010124,F,202500,Married,House,3,0
+5010126,F,270000,Married,House,4,0
+5010127,F,270000,Married,House,4,0
+5010128,F,270000,Married,House,4,0
+5010129,F,270000,Married,House,4,0
+5010133,F,270000,Married,House,4,0
+5010135,F,270000,Married,House,4,0
+5010136,F,270000,Married,House,4,0
+5010137,F,270000,Married,House,4,0
+6153705,F,270000,Married,House,4,0
+6153706,F,270000,Married,House,4,0
+6153707,F,270000,Married,House,4,0
+5010138,M,112500,Married,House,2,0
+5010139,M,112500,Married,House,2,0
+5010140,M,112500,Married,House,2,0
+5010141,M,112500,Married,House,2,0
+5010143,M,112500,Married,House,2,0
+5010144,M,112500,Married,House,2,0
+5010145,M,112500,Married,House,2,0
+5010146,M,112500,Married,House,2,0
+6153713,M,112500,Married,House,2,0
+6153714,M,112500,Married,House,2,0
+5010147,F,157500,Married,House,3,0
+5010150,F,157500,Married,House,3,0
+5010151,F,157500,Married,House,3,C
+5010152,F,157500,Married,House,3,C
+5010153,F,157500,Married,House,3,C
+5010154,F,157500,Married,House,3,C
+5010156,F,157500,Married,House,3,C
+5090887,F,157500,Married,House,3,C
+5010158,M,202500,Married,House,2,C
+5010159,M,202500,Married,House,2,0
+5010160,M,252000,Married,House,2,0
+5010161,M,252000,Married,House,2,0
+5010162,M,252000,Married,House,2,0
+5010163,M,252000,Married,House,2,0
+5010164,M,252000,Married,House,2,0
+5010165,F,135000,Married,House,2,0
+5010166,F,135000,Married,House,2,0
+5010170,F,135000,Married,House,2,0
+5010172,F,135000,Married,House,2,0
+5010173,F,135000,Married,House,2,0
+6153758,F,135000,Married,House,2,0
+5010174,M,90000,Married,House,2,0
+5010175,M,225000,Civil marriage,House,4,0
+5010176,M,225000,Civil marriage,House,4,0
+5010177,M,225000,Civil marriage,House,4,0
+5010178,M,225000,Civil marriage,House,4,0
+5010179,M,225000,Civil marriage,House,4,C
+5010182,M,247500,Single,House,2,C
+5010183,M,247500,Single,House,2,C
+5010184,M,247500,Single,House,2,C
+5010185,M,247500,Single,House,2,C
+5010186,M,247500,Single,House,2,C
+5010187,M,247500,Single,House,2,C
+6153762,M,247500,Single,House,2,C
+6153763,M,247500,Single,House,2,C
+5010188,F,76500,Married,House,2,C
+5010190,F,76500,Married,House,2,C
+6153769,F,76500,Married,House,2,C
+5010192,F,126000,Married,House,2,C
+5010193,F,126000,Married,House,2,C
+5010195,M,360000,Married,House,2,C
+5010196,F,135000,Single,House,1,C
+5010197,F,135000,Single,House,1,C
+5010198,M,135000,Married,With parents,2,C
+5010199,M,135000,Married,With parents,2,C
+5010200,M,135000,Married,With parents,2,C
+5010201,M,135000,Married,With parents,2,C
+5010202,M,135000,Married,With parents,2,C
+5010203,M,135000,Married,With parents,2,C
+5010204,M,135000,Married,With parents,2,C
+5010205,M,135000,Married,With parents,2,C
+5010206,M,135000,Married,With parents,2,0
+5010207,M,135000,Married,With parents,2,0
+5010208,F,135000,Married,House,2,C
+5010209,F,135000,Married,House,2,C
+5010210,M,202500,Married,House,2,C
+5010211,M,202500,Married,House,2,C
+5010212,M,202500,Married,House,2,C
+5010213,M,202500,Married,House,2,C
+5010215,F,90000,Married,House,3,C
+5010217,F,90000,Married,House,3,C
+5010218,F,90000,Married,House,3,C
+5010222,F,90000,Married,House,3,C
+5010223,F,90000,Married,House,3,C
+5010224,F,90000,Married,House,3,C
+5010225,F,90000,Married,House,3,C
+5010226,F,90000,Married,House,3,C
+5010227,F,90000,Married,House,3,C
+5010228,M,315000,Married,House,2,C
+5010230,M,315000,Married,House,2,C
+5010231,M,315000,Married,House,2,C
+5010234,M,225000,Married,House,2,C
+5010235,M,225000,Married,House,2,C
+5010236,M,225000,Married,House,2,C
+5010238,M,225000,Married,House,2,C
+5010239,M,225000,Married,House,2,C
+5010240,M,225000,Married,House,2,C
+5010241,M,225000,Married,House,2,C
+5010242,M,225000,Married,House,2,C
+5010243,M,225000,Married,House,2,C
+5010244,M,225000,Married,House,2,C
+5010245,M,225000,Married,House,2,C
+5010246,M,225000,Married,House,2,C
+5010247,M,225000,Married,House,2,0
+5010248,M,225000,Married,House,2,0
+5010249,M,225000,Married,House,2,0
+5010250,M,225000,Married,House,2,X
+5010253,F,247500,Married,House,2,X
+5090944,F,247500,Married,House,2,X
+6153599,F,247500,Married,House,2,X
+5010256,F,67500,Civil marriage,House,3,X
+5010257,F,67500,Civil marriage,House,3,X
+5010258,M,562500,Married,House,3,X
+5010259,M,562500,Married,House,3,X
+5010261,M,562500,Married,House,3,X
+5010262,M,562500,Married,House,3,X
+5010263,M,562500,Married,House,3,X
+5010264,M,562500,Married,House,3,X
+5010265,M,562500,Married,House,3,X
+5010266,M,562500,Married,House,3,X
+5010268,M,562500,Married,House,3,X
+5010269,M,562500,Married,House,3,X
+5010270,M,562500,Married,House,3,X
+5010271,M,562500,Married,House,3,X
+5010272,M,562500,Married,House,3,X
+5010273,M,562500,Married,House,3,X
+5010274,M,562500,Married,House,3,X
+5010275,M,562500,Married,House,3,X
+5010276,M,562500,Married,House,3,X
+5010277,M,562500,Married,House,3,X
+5010278,M,562500,Married,House,3,X
+5010279,M,562500,Married,House,3,X
+5010280,M,562500,Married,House,3,X
+5010281,M,562500,Married,House,3,X
+5010282,M,562500,Married,House,3,X
+6153649,M,562500,Married,House,3,X
+5010283,F,126000,Married,House,2,X
+5010284,F,126000,Married,House,2,X
+5010285,F,126000,Married,House,2,X
+5010286,F,126000,Married,House,2,X
+5010287,F,126000,Married,House,2,X
+5010288,F,126000,Married,House,2,X
+5010289,F,126000,Married,House,2,X
+5010290,F,126000,Married,House,2,X
+5010291,F,126000,Married,House,2,X
+5010292,F,126000,Married,House,2,X
+5010293,F,99000,Single,House,1,X
+5010294,F,99000,Single,House,1,X
+5010295,F,99000,Single,House,1,X
+5010296,F,135000,Married,House,2,X
+5010297,F,135000,Married,House,2,X
+5010298,F,135000,Married,House,2,X
+5010299,F,135000,Married,House,2,X
+5010300,F,135000,Married,House,2,X
+5010302,F,189000,Married,House,2,X
+5010303,F,189000,Married,House,2,X
+5010304,F,189000,Married,House,2,X
+5010305,F,157500,Married,House,2,X
+5010306,F,157500,Married,House,2,X
+5010307,F,157500,Married,House,2,X
+6153716,F,157500,Married,House,2,X
+5010309,F,112500,Married,House,3,X
+5010310,F,112500,Married,House,3,X
+5010311,F,112500,Married,House,3,X
+5010312,F,112500,Married,House,3,X
+5010313,F,112500,Married,House,3,X
+5010314,F,112500,Married,House,3,X
+5010315,F,112500,Married,House,3,X
+5010316,F,112500,Married,House,3,X
+5010317,M,135000,Married,House,2,X
+5010318,M,135000,Married,House,2,X
+5010319,M,135000,Married,House,2,X
+5010320,M,135000,Married,House,2,X
+5010321,M,135000,Married,House,2,X
+6153726,M,135000,Married,House,2,X
+5010322,F,216000,Married,House,2,X
+5010323,F,216000,Married,House,2,X
+5010324,F,216000,Married,House,2,X
+5010325,F,216000,Married,House,2,X
+5010326,F,216000,Married,House,2,X
+5010327,F,216000,Married,House,2,X
+5010328,F,216000,Married,House,2,X
+5010329,F,216000,Married,House,2,X
+5010330,F,216000,Married,House,2,X
+5010331,F,216000,Married,House,2,X
+5010332,F,216000,Married,House,2,X
+5010333,F,216000,Married,House,2,X
+5010334,F,216000,Married,House,2,X
+5010335,F,216000,Married,House,2,X
+5010336,F,216000,Married,House,2,X
+5010337,F,216000,Married,House,2,X
+5010338,F,216000,Married,House,2,X
+5010339,F,216000,Married,House,2,X
+5010340,F,216000,Married,House,2,X
+5010341,F,216000,Married,House,2,X
+5010342,F,216000,Married,House,2,X
+5010343,F,216000,Married,House,2,X
+5010344,F,216000,Married,House,2,X
+5010345,F,216000,Married,House,2,X
+5010346,F,328500,Married,House,2,X
+5010347,F,328500,Married,House,2,X
+6153727,F,328500,Married,House,2,X
+5010348,F,126000,Single,With parents,1,X
+5010351,M,180000,Married,With parents,3,X
+5010352,M,180000,Married,With parents,3,X
+5010356,F,310500,Single,House,1,X
+6153746,F,310500,Single,House,1,X
+5010358,F,126000,Married,House,2,X
+5010359,F,126000,Married,House,2,X
+5010360,F,67500,Separated,House,3,X
+5010361,M,90000,Single,House,1,X
+5010362,M,90000,Single,House,1,X
+5010363,M,90000,Single,House,1,X
+5010364,M,90000,Single,House,1,X
+5010365,F,157500,Separated,House,2,X
+5010366,F,157500,Separated,House,2,X
+5010367,F,157500,Separated,House,2,X
+5010368,F,157500,Separated,House,2,X
+5010369,F,157500,Separated,House,2,X
+5010370,F,157500,Separated,House,2,X
+6153764,F,157500,Separated,House,2,X
+5010371,F,270000,Married,House,2,X
+5010372,F,270000,Married,House,2,X
+5010373,F,270000,Married,House,2,X
+5010374,F,270000,Married,House,2,X
+5010375,F,270000,Married,House,2,X
+5010376,F,270000,Married,House,2,X
+5010377,F,270000,Married,House,2,X
+5010378,F,270000,Married,House,2,X
+5010379,F,270000,Married,House,2,X
+5010380,F,270000,Married,House,2,X
+5010381,F,270000,Married,House,2,X
+5010382,F,270000,Married,House,2,X
+5010383,F,270000,Married,House,2,X
+5010385,F,540000,Married,House,2,0
+5010386,F,540000,Married,House,2,0
+5010387,F,540000,Married,House,2,0
+5010388,F,540000,Married,House,2,0
+5010389,F,540000,Married,House,2,0
+5010390,F,540000,Married,House,2,0
+5010391,F,540000,Married,House,2,0
+6153782,F,540000,Married,House,2,0
+6153783,F,540000,Married,House,2,0
+5010394,F,225000,Married,House,3,0
+5010397,F,225000,Married,House,3,0
+5010398,F,225000,Married,House,3,0
+5010400,F,225000,Married,House,3,0
+5010402,F,202500,Married,House,2,X
+5010404,F,202500,Married,House,2,0
+5010406,F,202500,Married,House,2,X
+5010407,F,202500,Married,House,2,X
+5010408,F,202500,Married,House,2,0
+5010409,F,202500,Married,House,2,0
+5010410,F,202500,Married,House,2,X
+5010411,F,202500,Married,House,2,0
+5010412,F,202500,Married,House,2,X
+5010413,F,202500,Married,House,2,0
+6153792,F,202500,Married,House,2,0
+6153793,F,202500,Married,House,2,X
+6153794,F,202500,Married,House,2,0
+5010414,M,270000,Separated,House,2,0
+5010416,M,270000,Separated,House,2,0
+5010417,M,270000,Separated,House,2,0
+5010418,M,270000,Separated,House,2,X
+5010419,M,270000,Separated,House,2,X
+5010420,F,67500,Married,House,2,0
+5010421,F,67500,Married,House,2,0
+5010423,F,67500,Married,House,2,0
+5010424,F,67500,Married,House,2,0
+5010425,F,67500,Married,House,2,0
+5010426,F,67500,Married,House,2,0
+5010427,F,67500,Married,House,2,0
+5010428,F,67500,Married,House,2,X
+5010429,F,67500,Married,House,2,0
+5010430,F,67500,Married,House,2,0
+6153816,F,67500,Married,House,2,0
+6153817,F,67500,Married,House,2,0
+5010431,F,180000,Married,House,3,0
+5010432,F,180000,Married,House,3,0
+5010434,F,90000,Married,House,2,0
+5010435,F,90000,Married,House,2,X
+5010436,F,90000,Married,House,2,X
+5010437,F,90000,Married,House,2,X
+5010438,F,90000,Married,House,2,X
+5010439,F,90000,Married,House,2,X
+5010443,F,90000,Married,House,2,X
+5010444,F,90000,Married,House,2,X
+6153563,F,90000,Married,House,2,X
+6153565,F,90000,Married,House,2,C
+6153566,F,90000,Married,House,2,C
+5010447,F,202500,Married,House,2,C
+5010448,F,202500,Married,House,2,C
+5010449,F,202500,Married,House,2,C
+5010450,F,202500,Married,House,2,C
+5010451,F,202500,Married,House,2,C
+5010452,F,202500,Married,House,2,C
+6153568,F,202500,Married,House,2,C
+5010453,F,157500,Married,House,2,C
+5010454,F,157500,Married,House,2,C
+5010455,F,157500,Married,House,2,C
+5010456,F,171000,Married,House,2,C
+5010457,F,171000,Married,House,2,C
+5010458,F,171000,Married,House,2,C
+5010459,F,171000,Married,House,2,C
+5010460,F,171000,Married,House,2,C
+5010461,F,171000,Married,House,2,C
+5010462,F,171000,Married,House,2,C
+5010463,F,171000,Married,House,2,C
+5010465,F,157500,Married,House,3,C
+5010466,F,157500,Married,House,3,C
+5010467,F,157500,Married,House,3,C
+5010468,M,675000,Married,House,2,C
+5010470,M,675000,Married,House,2,C
+5010471,M,675000,Married,House,2,C
+5010472,M,675000,Married,House,2,C
+5010473,M,135000,Civil marriage,House,2,C
+5010474,M,135000,Civil marriage,House,2,C
+6153650,M,135000,Civil marriage,House,2,C
+5010480,M,315000,Married,House,4,C
+5010481,M,315000,Married,House,4,C
+5010482,M,315000,Married,House,4,C
+5010483,M,315000,Married,House,4,C
+5010484,M,315000,Married,House,4,C
+5010485,M,112500,Married,House,2,C
+5010486,M,112500,Married,House,2,C
+5010487,M,112500,Married,House,2,C
+5010488,M,112500,Married,House,2,1
+5010489,M,112500,Married,House,2,0
+5010490,M,112500,Married,House,2,0
+5010491,F,270000,Married,House,4,0
+5010492,F,270000,Married,House,4,0
+5010493,F,270000,Married,House,4,0
+5010494,F,270000,Married,House,4,0
+5010496,M,202500,Married,House,3,0
+5010497,M,202500,Married,House,3,0
+5010498,M,202500,Married,House,3,0
+5010499,M,202500,Married,House,3,0
+5010500,M,202500,Married,House,3,0
+5010501,F,90000,Separated,Rent,2,0
+5010503,F,135000,Single,House,1,0
+5010504,F,135000,Single,House,1,0
+5010507,F,157500,Married,House,3,0
+5010508,F,157500,Married,House,3,0
+5010509,F,157500,Married,House,3,0
+5010511,F,157500,Married,House,3,0
+5010512,F,157500,Married,House,3,0
+5010513,F,157500,Married,House,3,0
+6153717,F,157500,Married,House,3,X
+5010515,M,112500,Married,House,2,X
+5010516,M,112500,Married,House,2,X
+5010517,M,112500,Married,House,2,X
+5010518,M,450000,Married,Office apartment,3,X
+5010519,M,450000,Married,Office apartment,3,X
+5010520,M,450000,Married,Office apartment,3,X
+5010521,M,450000,Married,Office apartment,3,X
+5010522,M,450000,Married,Office apartment,3,X
+5010523,M,450000,Married,Office apartment,3,X
+5010524,M,450000,Married,Office apartment,3,X
+5010525,M,450000,Married,Office apartment,3,X
+5010526,M,450000,Married,Office apartment,3,X
+5010527,M,450000,Married,Office apartment,3,X
+5010528,M,450000,Married,Office apartment,3,X
+5010529,M,450000,Married,Office apartment,3,X
+5010530,M,450000,Married,Office apartment,3,X
+6153718,M,450000,Married,Office apartment,3,X
+5010531,F,76500,Civil marriage,House,2,X
+5010532,F,76500,Civil marriage,House,2,X
+5010533,F,76500,Civil marriage,House,2,X
+5010534,M,90000,Married,House,2,X
+5010535,F,135000,Married,House,4,X
+5010536,F,135000,Married,House,4,X
+5010539,F,135000,Married,House,4,X
+5010540,F,135000,Married,House,4,X
+5010541,F,135000,Married,House,4,X
+5010542,F,315000,Separated,House,1,X
+5010543,F,315000,Separated,House,1,X
+5010544,F,315000,Separated,House,1,X
+5010545,F,315000,Separated,House,1,X
+5010546,F,315000,Separated,House,1,X
+5010547,F,315000,Separated,House,1,X
+5010548,F,315000,Separated,House,1,X
+5010549,F,315000,Separated,House,1,C
+5010551,F,315000,Separated,House,1,C
+5010553,F,315000,Separated,House,1,C
+6153729,F,315000,Separated,House,1,C
+6153730,F,315000,Separated,House,1,C
+5010556,M,135000,Married,House,2,C
+5010557,M,135000,Married,House,2,C
+5010558,M,135000,Married,House,2,C
+5010559,M,135000,Married,House,2,C
+5010560,M,135000,Married,House,2,C
+5010564,F,121500,Married,House,2,C
+5010565,F,121500,Married,House,2,C
+5010566,F,121500,Married,House,2,C
+5010567,F,121500,Married,House,2,C
+5010568,F,121500,Married,House,2,C
+5010569,F,121500,Married,House,2,C
+5010570,F,121500,Married,House,2,C
+5010571,F,121500,Married,House,2,C
+5010572,F,121500,Married,House,2,C
+5010573,F,121500,Married,House,2,C
+6153731,F,121500,Married,House,2,C
+5010574,M,247500,Married,House,3,C
+5010575,M,247500,Married,House,3,X
+5010578,M,247500,Married,House,3,X
+5010579,M,247500,Married,House,3,X
+5010583,F,72000,Married,House,3,X
+6153747,F,72000,Married,House,3,X
+5010584,M,135000,Married,House,2,X
+5010585,M,135000,Married,House,2,X
+5010586,M,180000,Married,House,3,X
+5010587,M,180000,Married,House,3,X
+5010588,M,180000,Married,House,3,X
+5010589,M,180000,Married,House,3,X
+5010590,M,180000,Married,House,3,C
+5010591,M,180000,Married,House,3,C
+5010592,F,112500,Married,House,2,C
+5010593,F,112500,Married,House,2,C
+5010594,F,112500,Married,House,2,C
+5010595,F,112500,Married,House,2,C
+5010596,F,112500,Married,House,2,C
+5010597,F,112500,Married,House,2,0
+5010598,F,247500,Married,House,3,0
+5090697,F,247500,Married,House,3,0
+5010599,F,90000,Married,House,4,0
+5010600,F,90000,Married,House,4,0
+5010601,F,90000,Married,House,4,0
+5010602,F,90000,Married,House,4,0
+5010603,F,90000,Married,House,4,0
+5010604,F,90000,Married,House,4,0
+5010605,F,90000,Married,House,4,0
+5010606,F,65250,Widow,House,1,0
+5010607,F,65250,Widow,House,1,0
+5010608,F,65250,Widow,House,1,X
+5010609,F,65250,Widow,House,1,X
+5010610,F,65250,Widow,House,1,0
+6153759,F,65250,Widow,House,1,0
+6153760,F,65250,Widow,House,1,0
+5010613,F,184500,Married,House,2,0
+5010615,F,90000,Civil marriage,House,2,0
+5010616,F,90000,Civil marriage,House,2,0
+5010617,F,90000,Civil marriage,House,2,0
+5010620,F,103500,Married,House,2,0
+5010621,F,103500,Married,House,2,0
+5010622,F,103500,Married,House,2,0
+5010623,F,103500,Married,House,2,0
+5010624,F,103500,Married,House,2,0
+5010625,F,180000,Single,House,1,0
+5010626,F,180000,Single,House,1,0
+5010627,F,180000,Single,House,1,0
+5010629,F,180000,Single,House,1,0
+5010630,F,180000,Single,House,1,0
+5010632,F,180000,Civil marriage,House,2,0
+5010633,F,180000,Civil marriage,House,2,0
+5010635,F,180000,Civil marriage,House,2,0
+5010636,F,180000,Civil marriage,House,2,0
+5010637,F,180000,Civil marriage,House,2,0
+5010638,F,180000,Civil marriage,House,2,X
+5010639,F,180000,Civil marriage,House,2,X
+5010640,F,180000,Civil marriage,House,2,0
+5010641,F,180000,Civil marriage,House,2,1
+5010642,F,180000,Married,Municipal apartment,2,1
+5010643,F,180000,Married,Municipal apartment,2,0
+6153785,F,180000,Married,Municipal apartment,2,0
+5010644,M,157500,Married,House,2,0
+5010645,F,67500,Married,House,4,0
+5010646,F,67500,Married,House,4,1
+5010647,M,112500,Married,House,3,0
+5010648,M,112500,Married,House,3,0
+5010649,M,112500,Married,House,3,0
+5010650,M,112500,Married,House,3,0
+5010651,M,112500,Married,House,3,0
+6153795,M,112500,Married,House,3,0
+5010652,M,180000,Single,House,1,0
+5010653,M,270000,Married,House,4,0
+5010654,M,270000,Married,House,4,0
+5010655,M,270000,Married,House,4,0
+5010656,M,270000,Married,House,4,0
+5010657,M,270000,Married,House,4,0
+5010658,M,270000,Married,House,4,0
+5010659,M,270000,Married,House,4,0
+5010660,M,270000,Married,House,4,0
+5010661,M,270000,Married,House,4,0
+5010662,M,270000,Married,House,4,1
+5010663,M,270000,Married,House,4,1
+5010664,M,270000,Married,House,4,0
+5010665,M,180000,Married,House,2,1
+5010666,M,180000,Married,House,2,1
+5010667,M,180000,Married,House,2,1
+5010668,M,180000,Married,House,2,1
+5010669,M,180000,Married,House,2,1
+5010670,M,180000,Married,House,2,0
+5010671,M,180000,Married,House,2,0
+5010672,F,157500,Civil marriage,House,3,0
+5010673,F,157500,Civil marriage,House,3,0
+5010674,F,157500,Civil marriage,House,3,0
+6153569,F,157500,Civil marriage,House,3,0
+5010675,F,225000,Civil marriage,House,4,0
+5010676,M,189000,Married,House,2,0
+5010677,M,189000,Married,House,2,0
+5010678,M,292500,Married,House,2,0
+5010679,M,292500,Married,House,2,0
+5010680,M,292500,Married,House,2,0
+5010681,M,292500,Married,House,2,0
+5010682,M,292500,Married,House,2,0
+5010683,M,292500,Married,House,2,0
+5010684,M,292500,Married,House,2,0
+5010685,M,292500,Married,House,2,0
+5010686,M,292500,Married,House,2,0
+5010689,M,99000,Single,House,1,0
+5010690,M,99000,Single,House,1,C
+6153623,M,99000,Single,House,1,C
+5010691,M,202500,Civil marriage,With parents,2,C
+5010692,M,202500,Civil marriage,With parents,2,C
+5010693,M,202500,Civil marriage,With parents,2,C
+5010694,M,202500,Civil marriage,With parents,2,C
+5010696,F,292500,Married,House,4,C
+5010697,F,292500,Married,House,4,C
+5010699,F,292500,Married,House,4,C
+5010700,F,292500,Married,House,4,C
+5010701,F,292500,Married,House,4,C
+5010702,F,292500,Married,House,4,C
+5010703,F,292500,Married,House,4,C
+5010706,M,202500,Married,House,2,C
+5010707,M,202500,Married,House,2,C
+5010708,M,202500,Married,House,2,C
+6153664,M,202500,Married,House,2,C
+5010709,M,180000,Married,House,4,C
+5010710,M,180000,Married,House,4,C
+5010711,M,180000,Married,House,4,C
+5010713,M,180000,Married,House,4,C
+5010715,F,135000,Married,House,2,C
+5010716,F,135000,Married,House,2,C
+5010717,F,135000,Married,House,2,C
+5010722,F,135000,Married,House,2,C
+5010724,F,135000,Married,House,2,C
+5010725,F,135000,Married,House,2,C
+5010726,F,135000,Married,House,2,0
+5010727,F,135000,Married,House,2,0
+5010728,F,135000,Married,House,2,0
+5010729,F,135000,Married,House,2,0
+5010730,F,135000,Married,House,2,0
+5010731,F,135000,Married,House,2,0
+6153708,F,135000,Married,House,2,0
+5010734,F,157500,Civil marriage,House,2,0
+5010735,F,157500,Civil marriage,House,2,0
+5010737,F,157500,Civil marriage,House,2,X
+5010739,F,157500,Civil marriage,House,2,X
+5010740,F,157500,Civil marriage,House,2,X
+5010741,F,157500,Civil marriage,House,2,X
+5010742,F,157500,Civil marriage,House,2,X
+5010743,M,157500,Married,House,2,X
+5010745,M,157500,Married,House,2,X
+5010746,M,157500,Married,House,2,X
+5010747,M,157500,Married,House,2,X
+6153748,M,157500,Married,House,2,X
+5010750,F,67500,Married,House,2,X
+5010751,F,67500,Married,House,2,X
+5010752,F,67500,Married,House,2,X
+5010754,F,67500,Married,House,2,X
+5010755,F,67500,Married,House,2,X
+6153749,F,67500,Married,House,2,X
+6153750,F,67500,Married,House,2,X
+5010758,F,162000,Married,House,2,X
+5010759,F,162000,Married,House,2,X
+6153751,F,162000,Married,House,2,X
+5010760,F,112500,Single,House,2,X
+5010761,F,112500,Single,House,2,X
+5010762,F,112500,Single,House,2,X
+5010763,F,112500,Single,House,2,X
+5010764,M,135000,Single,House,1,X
+5010765,M,135000,Single,House,1,X
+5010766,M,135000,Single,House,1,X
+5010767,M,135000,Single,House,1,X
+5010768,M,135000,Single,House,1,X
+5010769,M,135000,Single,House,1,X
+5010770,M,135000,Single,House,1,X
+5010771,M,135000,Single,House,1,X
+5010772,F,360000,Married,House,2,X
+5010773,F,135000,Married,With parents,2,X
+5010774,F,135000,Married,With parents,2,X
+5010775,F,135000,Married,With parents,2,X
+5010779,F,157500,Married,House,3,X
+5010781,F,157500,Married,House,3,X
+5010782,F,157500,Married,House,3,X
+5010783,F,165150,Married,House,2,X
+6153765,F,165150,Married,House,2,X
+5010785,M,337500,Married,House,2,X
+5010786,M,337500,Married,House,2,X
+5010787,M,337500,Married,House,2,X
+6153766,M,337500,Married,House,2,X
+6153767,M,337500,Married,House,2,X
+5010789,F,99000,Married,Municipal apartment,3,X
+5010790,F,99000,Married,Municipal apartment,3,X
+5010791,F,99000,Married,Municipal apartment,3,X
+5010792,F,99000,Married,Municipal apartment,3,X
+5010793,F,99000,Married,Municipal apartment,3,X
+5010794,F,99000,Married,Municipal apartment,3,X
+5010795,F,45000,Married,House,2,X
+5010796,F,45000,Married,House,2,X
+5010797,F,270000,Married,Municipal apartment,2,X
+5010798,F,270000,Married,Municipal apartment,2,X
+5010799,F,270000,Married,Municipal apartment,2,X
+5010800,F,270000,Married,Municipal apartment,2,X
+5010801,F,270000,Married,Municipal apartment,2,X
+5010802,F,270000,Married,Municipal apartment,2,X
+5010803,F,270000,Married,Municipal apartment,2,X
+6153786,F,270000,Married,Municipal apartment,2,X
+5010804,F,135000,Married,House,3,X
+5010805,F,135000,Married,House,3,X
+5010806,F,135000,Married,House,3,X
+5010807,F,135000,Married,House,3,X
+5010808,F,135000,Married,House,3,X
+5010809,F,135000,Married,House,3,X
+5010810,F,135000,Married,House,3,X
+5010811,F,135000,Married,House,3,X
+5010812,F,135000,Married,House,3,X
+5010813,F,67500,Married,House,4,X
+5010814,F,67500,Married,House,4,X
+5010815,F,67500,Married,House,4,X
+5010817,F,67500,Married,House,4,X
+5010818,F,67500,Married,House,4,X
+6153796,F,67500,Married,House,4,X
+5010819,F,270000,Married,House,2,X
+5010820,F,270000,Married,House,2,X
+5010821,F,270000,Married,House,2,C
+5010822,F,270000,Married,House,2,C
+5010823,F,270000,Married,House,2,C
+5010824,F,270000,Married,House,2,C
+5010825,F,270000,Married,House,2,C
+5010826,F,270000,Married,House,2,C
+5010827,F,270000,Married,House,2,C
+5010828,F,270000,Married,House,2,C
+5010829,F,270000,Married,House,2,C
+5010830,F,270000,Married,House,2,C
+5010831,F,270000,Married,House,2,C
+5010832,F,270000,Married,House,2,C
+5010835,M,139500,Married,House,4,C
+5010836,F,90000,Married,House,2,C
+5010837,F,90000,Married,House,2,C
+5010840,F,180000,Married,House,3,C
+5010841,F,112500,Married,House,2,C
+5010842,F,112500,Married,House,2,C
+5010843,F,157500,Married,House,2,C
+5010844,F,157500,Married,House,2,C
+5010847,F,157500,Married,House,2,C
+5010848,F,54000,Married,House,2,C
+5010849,F,54000,Married,House,2,C
+5010850,F,90000,Married,House,3,C
+5010854,F,90000,Married,House,3,C
+5010855,F,90000,Married,House,3,C
+6153602,F,90000,Married,House,3,C
+5010856,F,157500,Married,House,2,C
+5010857,F,157500,Married,House,2,C
+5010858,F,157500,Married,House,2,C
+5010859,F,157500,Married,House,2,C
+5010860,F,157500,Married,House,2,C
+5090783,F,157500,Married,House,2,C
+5010861,F,112500,Married,House,3,C
+5010862,M,450000,Married,House,3,C
+5010863,M,450000,Married,House,3,C
+5010864,M,450000,Married,House,3,C
+5010865,M,450000,Married,House,3,C
+5010866,M,450000,Married,House,3,C
+5010870,M,450000,Married,House,3,C
+5010871,M,450000,Married,House,3,C
+5010872,M,450000,Married,House,3,C
+5010873,M,450000,Married,House,3,C
+5010874,F,45000,Married,House,2,C
+5010875,F,45000,Married,House,2,C
+5010876,F,45000,Married,House,2,C
+5010877,F,45000,Married,House,2,C
+5010878,F,45000,Married,House,2,C
+5010879,F,45000,Married,House,2,C
+5010880,F,45000,Married,House,2,C
+5010881,F,45000,Married,House,2,C
+5010883,F,270000,Married,House,3,C
+5010886,F,157500,Married,House,2,0
+5010887,F,157500,Married,House,2,0
+5010888,F,157500,Married,House,2,0
+5010890,F,157500,Married,House,2,X
+5010891,F,157500,Married,House,2,X
+5010892,F,157500,Married,House,2,0
+5010893,F,157500,Married,House,2,0
+6153666,F,157500,Married,House,2,0
+5010897,M,112500,Married,House,2,0
+5010898,M,112500,Married,House,2,0
+5010899,M,112500,Married,House,2,X
+5010900,M,112500,Married,House,2,X
+5010902,F,360000,Married,House,3,X
+5010903,F,360000,Married,House,3,X
+5010904,F,360000,Married,House,3,X
+5010906,F,360000,Married,House,3,X
+6153687,F,360000,Married,House,3,X
+5010908,F,81000,Married,House,2,X
+5010910,F,81000,Married,House,2,X
+5010913,F,81000,Married,House,2,X
+6153688,F,81000,Married,House,2,X
+6153690,F,81000,Married,House,2,X
+5010916,M,243000,Married,House,2,X
+5010917,M,243000,Married,House,2,X
+5010918,M,243000,Married,House,2,X
+5010919,M,243000,Married,House,2,X
+5010921,F,94500,Widow,Rent,1,X
+5010923,F,94500,Widow,Rent,1,X
+5010924,F,270000,Civil marriage,House,4,X
+5010925,F,270000,Civil marriage,House,4,X
+5010926,F,270000,Civil marriage,House,4,X
+5010927,F,270000,Civil marriage,House,4,X
+5010928,F,270000,Civil marriage,House,4,X
+5010929,F,270000,Civil marriage,House,4,X
+5010930,F,270000,Civil marriage,House,4,X
+5010931,F,270000,Civil marriage,House,4,X
+5010932,F,270000,Civil marriage,House,4,X
+5010934,F,135000,Single,House,1,X
+5010935,F,135000,Single,House,1,X
+5010936,F,135000,Single,House,1,X
+5010937,F,135000,Single,House,1,X
+5010938,F,135000,Single,House,1,X
+5010939,F,135000,Single,House,1,X
+5010940,F,135000,Single,House,1,X
+5010941,F,135000,Single,House,1,X
+5090803,F,135000,Single,House,1,X
+5090805,F,135000,Single,House,1,X
+5010943,F,157500,Married,House,2,X
+5010944,F,270000,Married,House,3,X
+5010945,F,270000,Married,House,3,X
+5010946,F,270000,Married,House,3,X
+5010947,F,270000,Married,House,3,X
+5010948,F,270000,Married,House,3,X
+5010949,F,270000,Married,House,3,X
+5010950,F,270000,Married,House,3,X
+5010951,F,270000,Married,House,3,X
+5010952,F,270000,Married,House,3,X
+6153710,F,270000,Married,House,3,C
+5010953,M,337500,Married,House,2,C
+5010954,M,337500,Married,House,2,C
+5010956,M,337500,Married,House,2,C
+5010957,M,337500,Married,House,2,0
+5010958,M,337500,Married,House,2,0
+5010959,M,337500,Married,House,2,0
+5010960,M,202500,Married,House,2,0
+5010961,M,202500,Married,House,2,0
+5010962,F,256500,Married,House,2,0
+5010963,F,256500,Married,House,2,C
+5010964,F,256500,Married,House,2,C
+5010965,F,256500,Married,House,2,C
+5010966,F,256500,Married,House,2,C
+5010967,F,256500,Married,House,2,C
+6153719,F,256500,Married,House,2,C
+5010972,F,135000,Married,House,3,C
+6153753,F,135000,Married,House,3,C
+5010974,M,126000,Married,House,2,C
+5010975,M,126000,Married,House,2,C
+5010976,M,126000,Married,House,2,C
+5010977,F,67500,Separated,Municipal apartment,1,C
+5010978,F,67500,Separated,Municipal apartment,1,C
+5010980,M,225000,Single,House,1,C
+5090824,M,225000,Single,House,1,C
+5010981,M,270000,Married,House,3,C
+5010982,M,270000,Married,House,3,C
+5010983,M,135000,Married,House,2,C
+5010984,M,135000,Married,House,2,C
+5010986,F,121500,Single,Rent,1,0
+5010987,F,121500,Single,Rent,1,0
+5010989,F,121500,Single,Rent,1,0
+5010990,F,90000,Married,House,2,0
+5010991,F,90000,Married,House,2,C
+5010992,F,90000,Married,House,2,C
+5010993,F,90000,Married,House,2,C
+5010994,F,90000,Married,House,2,C
+5010995,F,90000,Married,House,2,C
+5010996,F,90000,Married,House,2,C
+5010997,F,90000,Married,House,2,C
+5010998,F,90000,Married,House,2,C
+5010999,F,90000,Married,House,2,C
+5011000,F,90000,Married,House,2,C
+5011001,F,157500,Married,House,2,C
+5011002,F,157500,Married,House,2,C
+5011003,F,157500,Married,House,2,C
+5011004,F,157500,Married,House,2,C
+5011005,F,157500,Married,House,2,C
+5011006,F,157500,Married,House,2,C
+5011007,F,157500,Married,House,2,C
+5011008,F,157500,Married,House,2,C
+5011009,F,157500,Married,House,2,C
+5011010,F,157500,Married,House,2,C
+5011011,F,135000,Married,House,2,C
+5011012,F,135000,Married,House,2,C
+5011013,F,135000,Married,House,2,C
+5011014,F,135000,Married,House,2,0
+5011015,F,135000,Married,House,2,0
+6153771,F,135000,Married,House,2,0
+5011022,M,99000,Married,With parents,4,0
+5011023,M,99000,Married,With parents,4,0
+5011024,M,99000,Married,With parents,4,0
+5011025,M,99000,Married,With parents,4,0
+5011026,M,99000,Married,With parents,4,0
+5011027,M,99000,Married,With parents,4,0
+6153797,M,99000,Married,With parents,4,0
+5011028,F,292500,Civil marriage,House,2,0
+5011029,F,292500,Civil marriage,House,2,0
+5011031,F,135000,Civil marriage,House,3,C
+5011032,F,135000,Civil marriage,House,3,C
+5011033,F,135000,Civil marriage,House,3,C
+5011036,F,315000,Married,Municipal apartment,2,C
+5011037,F,315000,Married,Municipal apartment,2,C
+5011039,F,315000,Married,Municipal apartment,2,C
+5011040,F,315000,Married,Municipal apartment,2,C
+5011041,F,315000,Married,Municipal apartment,2,C
+5011042,F,315000,Married,Municipal apartment,2,C
+5011043,F,315000,Married,Municipal apartment,2,C
+5011044,F,315000,Married,Municipal apartment,2,C
+5011045,F,315000,Married,Municipal apartment,2,C
+6153820,F,315000,Married,Municipal apartment,2,C
+5018414,F,33300,Married,House,3,C
+5018415,F,33300,Married,House,3,C
+5018417,M,697500,Separated,House,3,C
+5018418,M,697500,Separated,House,3,C
+5018419,F,135000,Married,House,2,C
+5018420,F,135000,Married,House,2,C
+5018421,F,135000,Married,House,2,C
+5018422,F,202500,Married,Municipal apartment,2,C
+5018423,F,202500,Married,Municipal apartment,2,C
+5018424,F,202500,Married,Municipal apartment,2,C
+5018425,F,202500,Married,Municipal apartment,2,C
+5018426,F,202500,Married,Municipal apartment,2,C
+5018428,M,135000,Single,House,1,C
+5018429,M,135000,Single,House,1,C
+5018430,M,112500,Married,House,3,C
+5018431,M,112500,Married,House,3,C
+5018432,M,112500,Married,House,3,C
+5018433,M,112500,Married,House,3,C
+5018439,F,202500,Widow,House,1,C
+5018440,F,202500,Widow,House,1,C
+5018442,F,202500,Widow,House,1,C
+5585486,F,202500,Widow,House,1,C
+5585487,F,202500,Widow,House,1,C
+5018443,F,198000,Married,House,3,C
+5018444,F,675000,Married,House,3,0
+5018445,F,675000,Married,House,3,0
+5018446,F,675000,Married,House,3,0
+5018447,F,675000,Married,House,3,0
+5018448,F,675000,Married,House,3,0
+5018450,F,675000,Married,House,3,0
+5018451,F,675000,Married,House,3,0
+5018452,F,675000,Married,House,3,0
+5018453,F,101250,Widow,House,1,0
+5018455,F,101250,Widow,House,1,0
+5018457,F,101250,Widow,House,1,0
+5018458,F,101250,Widow,House,1,C
+5018459,F,101250,Widow,House,1,C
+5018460,F,101250,Widow,House,1,C
+5585320,F,101250,Widow,House,1,C
+5018461,F,166500,Married,House,3,C
+5018462,F,166500,Married,House,3,C
+5018464,F,166500,Married,House,3,C
+5018465,F,166500,Married,House,3,C
+5018466,F,166500,Married,House,3,C
+5018467,F,166500,Married,House,3,C
+5018469,F,166500,Married,House,3,C
+5018470,F,166500,Married,House,3,C
+5018471,F,166500,Married,House,3,C
+5018472,F,166500,Married,House,3,C
+5585321,F,166500,Married,House,3,C
+5018477,F,292500,Married,House,2,C
+5018478,F,292500,Married,House,2,C
+5018479,F,292500,Married,House,2,C
+5018480,M,112500,Married,House,3,C
+5018481,F,90000,Married,House,2,C
+5018482,F,90000,Married,House,2,C
+5018483,F,90000,Married,House,2,C
+5018484,F,90000,Married,House,2,C
+5018485,F,90000,Married,House,2,C
+5018486,F,90000,Married,House,2,C
+5018487,F,90000,Married,House,2,C
+5018488,F,90000,Married,House,2,C
+5018492,M,675000,Married,House,3,C
+5018493,M,675000,Married,House,3,C
+5018495,M,675000,Married,House,3,C
+5018496,F,54000,Separated,House,1,C
+5018498,F,90000,Married,House,2,C
+5018500,F,90000,Married,House,2,C
+5018501,F,90000,Married,House,2,C
+5018502,F,90000,Married,House,2,C
+5018503,F,90000,Married,House,2,C
+5018504,F,58500,Married,House,2,C
+5018505,F,58500,Married,House,2,C
+5018506,F,58500,Married,House,2,C
+5021187,F,180000,Single,House,1,C
+5021188,F,180000,Single,House,1,C
+5021189,F,180000,Single,House,1,C
+5021190,F,180000,Single,House,1,C
+5021191,M,112500,Married,House,2,C
+6736965,M,112500,Married,House,2,C
+6736966,M,112500,Married,House,2,0
+6736967,M,112500,Married,House,2,0
+6736968,M,112500,Married,House,2,0
+5021192,F,225000,Single,With parents,1,0
+5021193,F,225000,Separated,House,1,0
+5021194,F,225000,Separated,House,1,0
+5021195,F,225000,Separated,House,1,0
+5113230,F,225000,Separated,House,1,0
+5021196,F,675000,Civil marriage,House,2,0
+5021197,F,675000,Civil marriage,House,2,0
+5021201,F,675000,Civil marriage,House,2,0
+5021202,F,675000,Civil marriage,House,2,0
+5021203,F,675000,Civil marriage,House,2,0
+5021204,F,675000,Civil marriage,House,2,0
+5021205,F,675000,Civil marriage,House,2,0
+6423544,F,675000,Civil marriage,House,2,0
+6423545,F,675000,Civil marriage,House,2,0
+5021207,M,171000,Civil marriage,House,2,0
+5021208,M,225000,Married,House,3,0
+5021209,M,225000,Married,House,3,0
+5021210,M,225000,Married,House,3,0
+5021211,M,225000,Married,House,3,0
+6423589,M,225000,Married,House,3,0
+5021212,M,225000,Married,House,3,0
+5021213,M,225000,Married,House,3,0
+5021214,M,225000,Married,House,3,0
+5021217,M,225000,Married,House,3,0
+5021218,M,225000,Married,House,3,0
+5090155,M,225000,Married,House,3,0
+5021219,M,310500,Single,House,1,0
+5021220,M,310500,Single,House,1,0
+5021221,M,310500,Single,House,1,0
+5021222,M,310500,Single,House,1,0
+5021223,M,310500,Single,House,1,0
+5021224,M,310500,Single,House,1,0
+5021225,M,310500,Single,House,1,X
+5021226,M,310500,Single,House,1,X
+5021227,M,310500,Single,House,1,X
+5113048,M,310500,Single,House,1,X
+5021228,F,112500,Civil marriage,House,4,X
+5021229,F,112500,Civil marriage,House,4,X
+5021231,F,225000,Civil marriage,House,3,X
+5021232,F,225000,Civil marriage,House,3,X
+6423590,F,225000,Civil marriage,House,3,X
+5021234,F,67500,Married,House,3,X
+5021235,F,67500,Married,House,3,X
+5021236,F,67500,Married,House,3,X
+5021237,F,135000,Married,House,2,1
+5021238,F,135000,Married,House,2,0
+5021239,F,135000,Married,House,2,0
+5021240,F,135000,Married,House,2,0
+5021241,F,135000,Married,House,2,0
+5021242,F,135000,Married,House,2,0
+5021243,F,135000,Married,House,2,0
+5021244,F,135000,Married,House,2,X
+5021247,F,135000,Married,House,2,0
+5021248,F,135000,Married,House,2,0
+5021255,F,135000,Married,House,2,0
+5021256,F,135000,Married,House,2,0
+5021257,F,135000,Married,House,2,X
+5021258,F,135000,Married,House,2,1
+5021259,F,135000,Married,House,2,1
+5021260,F,135000,Married,House,2,0
+6423591,F,135000,Married,House,2,X
+5021250,F,157500,Married,House,2,0
+5021251,F,157500,Married,House,2,0
+5021253,F,157500,Married,House,2,X
+5021254,F,157500,Married,House,2,0
+5021261,F,157500,Married,House,2,0
+5113049,F,157500,Married,House,2,X
+5021263,F,135000,Single,House,1,C
+5021264,F,135000,Single,Rent,1,C
+5021265,F,135000,Single,Rent,1,C
+5021266,F,270000,Married,House,3,C
+5021267,F,270000,Married,House,3,C
+5021270,F,270000,Married,House,3,C
+5021271,F,270000,Married,House,3,C
+5021272,F,270000,Married,House,3,C
+5021273,M,110250,Single,House,1,C
+5021274,M,110250,Single,House,1,C
+5021276,M,110250,Single,House,1,C
+5021277,M,110250,Single,House,1,C
+5021278,M,110250,Single,House,1,C
+5021279,M,110250,Single,House,1,C
+5021280,M,110250,Single,House,1,C
+5021281,M,110250,Single,House,1,C
+5090156,M,110250,Single,House,1,C
+5021283,F,157500,Married,House,3,C
+5021284,F,135000,Married,House,4,C
+5021287,F,135000,Married,House,4,C
+5021288,F,135000,Married,House,4,C
+5021291,F,180000,Married,House,3,C
+5021292,F,180000,Married,House,3,C
+5021293,F,180000,Married,House,3,C
+5021294,F,180000,Married,House,3,C
+5021295,F,180000,Married,House,3,C
+5021296,F,180000,Married,House,3,C
+5021298,F,90000,Single,House,1,C
+5021299,F,90000,Single,House,1,C
+5021301,F,90000,Single,House,1,C
+6423690,F,90000,Single,House,1,C
+6423691,F,90000,Single,House,1,C
+5021302,M,472500,Married,With parents,3,C
+5021305,M,270000,Married,House,2,C
+5021306,M,270000,Married,House,2,C
+5021307,M,270000,Married,House,2,C
+5021308,M,270000,Married,House,2,C
+5021309,M,270000,Married,House,2,C
+5021312,M,270000,Married,House,2,C
+5021315,M,270000,Married,House,2,C
+5021316,M,270000,Married,House,2,C
+5021317,M,270000,Married,House,2,C
+5021318,M,270000,Married,House,2,C
+5021319,M,270000,Married,House,2,C
+5021320,M,270000,Married,House,2,C
+5021321,M,270000,Married,House,2,C
+5021322,M,270000,Married,House,2,C
+5021323,M,270000,Married,House,2,C
+5021324,M,270000,Married,House,2,0
+5113087,M,270000,Married,House,2,0
+5113088,M,270000,Married,House,2,0
+5021328,F,90000,Married,House,2,0
+5021329,F,90000,Married,House,2,0
+5021330,F,90000,Married,House,2,0
+5021331,F,90000,Married,House,2,X
+5021332,F,90000,Married,House,2,X
+5021334,F,90000,Married,House,2,X
+5021335,F,90000,Married,House,2,X
+5021336,F,90000,Married,House,2,X
+5021337,F,90000,Married,House,2,X
+5021338,F,90000,Married,House,2,X
+5021339,M,270000,Married,House,5,X
+5021340,M,270000,Married,House,5,X
+5021341,M,270000,Married,House,5,X
+5021342,M,270000,Married,House,5,X
+5021343,M,270000,Married,House,5,X
+5021344,M,112500,Civil marriage,House,2,X
+5021346,F,315000,Civil marriage,House,2,X
+5021347,F,67500,Married,Municipal apartment,2,X
+5021348,F,67500,Married,Municipal apartment,2,X
+5021349,F,67500,Married,Municipal apartment,2,X
+5021350,M,225000,Married,House,2,X
+5021353,M,225000,Married,House,2,X
+5021359,M,225000,Married,House,2,X
+5021360,M,225000,Married,House,2,X
+5021361,M,225000,Married,House,2,X
+5021362,M,225000,Married,House,2,X
+5113104,M,225000,Married,House,2,X
+5113105,M,225000,Married,House,2,X
+5113106,M,225000,Married,House,2,X
+5021354,F,67500,Married,With parents,4,X
+5021355,F,67500,Married,With parents,4,X
+5021358,F,67500,Married,With parents,4,X
+6423748,F,67500,Married,With parents,4,X
+5021365,M,270000,Married,House,2,X
+5021366,M,270000,Married,House,2,X
+5021367,M,270000,Married,House,2,X
+5021368,M,270000,Married,House,2,X
+5021370,F,247500,Married,House,2,X
+5021371,F,247500,Married,House,2,X
+5021372,F,247500,Married,House,2,X
+5021373,F,247500,Married,House,2,X
+5021375,F,247500,Married,House,2,X
+5021377,F,247500,Married,House,2,X
+5021378,F,247500,Married,House,2,X
+5021379,F,247500,Married,House,2,X
+5021380,F,247500,Married,House,2,X
+5021381,F,247500,Married,House,2,X
+5021382,F,121500,Married,House,3,X
+5021383,F,121500,Married,House,3,X
+5021384,F,121500,Married,House,3,X
+5021385,F,121500,Married,House,3,C
+5021386,F,121500,Married,House,3,C
+5021387,F,121500,Married,House,3,C
+5021388,F,121500,Married,House,3,C
+5021389,F,121500,Married,House,3,C
+5021390,F,121500,Married,House,3,C
+5021391,F,121500,Married,House,3,C
+5021392,F,121500,Married,House,3,C
+6416387,F,121500,Married,House,3,C
+6416388,F,121500,Married,House,3,C
+5021393,F,189000,Widow,House,1,0
+5021394,F,189000,Widow,House,1,0
+5021397,F,189000,Widow,House,1,X
+5021398,F,189000,Widow,House,1,X
+5021399,F,189000,Widow,House,1,X
+5021402,F,189000,Widow,House,1,X
+5021404,F,189000,Widow,House,1,0
+5021405,F,189000,Widow,House,1,0
+5021406,F,189000,Widow,House,1,X
+5113134,F,189000,Widow,House,1,0
+5113135,F,189000,Widow,House,1,X
+5021410,F,270000,Married,House,2,0
+5021413,F,270000,Married,House,2,0
+5021414,F,270000,Married,House,2,0
+5021415,F,270000,Married,House,2,0
+5021416,F,270000,Married,House,2,0
+5021419,F,270000,Married,House,2,0
+5021420,F,270000,Married,House,2,0
+5021421,F,270000,Married,House,2,0
+5021423,F,270000,Married,House,2,0
+6416468,F,270000,Married,House,2,0
+5021425,F,225000,Married,House,2,0
+5021429,F,126000,Single,House,1,0
+5021430,F,126000,Single,House,1,0
+5021431,F,126000,Single,House,1,0
+5021434,M,270000,Married,House,3,0
+5021435,M,270000,Married,House,3,0
+5113145,M,270000,Married,House,3,0
+5021436,M,135000,Married,House,3,0
+5021437,M,135000,Married,House,3,0
+5021438,M,135000,Married,House,3,0
+5021439,M,135000,Married,House,3,0
+5021440,M,135000,Married,House,3,0
+5021441,M,135000,Married,House,3,0
+5021442,M,135000,Married,House,3,0
+5021443,M,135000,Married,House,3,0
+6423221,M,135000,Married,House,3,0
+5021444,F,121500,Married,With parents,2,0
+5021445,F,121500,Married,With parents,2,0
+5021446,F,121500,Married,With parents,2,0
+6423222,F,121500,Married,With parents,2,0
+5021448,F,196650,Married,House,2,0
+5021450,F,196650,Married,House,2,0
+5021451,F,202500,Married,House,2,0
+5021452,F,202500,Married,House,2,0
+5021453,F,202500,Married,House,2,0
+5021454,F,202500,Married,House,2,0
+5113170,F,202500,Married,House,2,0
+5021455,F,81000,Married,House,2,0
+5021456,F,81000,Married,House,2,0
+5021457,F,81000,Married,House,2,0
+5021458,F,225000,Civil marriage,House,3,0
+5021459,F,225000,Civil marriage,House,3,0
+5021460,F,225000,Civil marriage,House,3,0
+5021461,F,225000,Civil marriage,House,3,0
+5021462,F,225000,Civil marriage,House,3,0
+5021463,F,225000,Civil marriage,House,3,X
+5021464,F,166500,Married,House,3,0
+5021465,F,166500,Married,House,3,0
+5021466,F,90000,Married,House,2,0
+5021467,F,90000,Married,House,2,X
+5021468,F,90000,Married,House,2,X
+5021471,F,157500,Married,House,2,X
+5021472,F,157500,Married,House,2,X
+5021474,M,135000,Married,House,3,X
+5021486,M,135000,Married,House,3,X
+6423322,M,135000,Married,House,3,X
+5021475,F,135000,Married,House,2,X
+5021476,F,135000,Married,House,2,X
+5021477,F,135000,Married,House,2,X
+5021478,F,135000,Married,House,2,X
+5021479,F,135000,Married,House,2,X
+5021480,F,135000,Married,House,2,X
+5021481,F,135000,Married,House,2,X
+5021482,F,135000,Married,House,2,X
+5021483,F,135000,Married,House,2,X
+5021484,F,135000,Married,House,2,X
+5021485,F,135000,Married,House,2,X
+5021487,M,135000,Civil marriage,With parents,2,X
+5021488,M,135000,Civil marriage,With parents,2,X
+5021489,M,135000,Civil marriage,With parents,2,X
+5021490,M,135000,Single,House,1,X
+5021491,M,135000,Single,House,1,X
+6423372,M,135000,Single,House,1,X
+5021493,F,157500,Married,Municipal apartment,3,X
+5021494,F,157500,Married,Municipal apartment,3,X
+5021496,F,157500,Married,House,3,X
+5021497,F,157500,Married,House,3,X
+5021498,F,157500,Married,House,3,X
+5021499,F,157500,Married,House,3,X
+5021500,M,292500,Married,House,6,X
+5113188,M,292500,Married,House,6,X
+5021502,F,202500,Married,House,2,X
+5021504,F,202500,Married,House,2,X
+5021506,F,202500,Married,House,2,X
+5021507,F,202500,Married,House,2,X
+5021508,F,144000,Married,House,2,X
+5021509,F,144000,Married,House,2,X
+5021510,F,144000,Married,House,2,X
+5021513,F,144000,Married,House,2,X
+5021514,F,144000,Married,House,2,X
+5021515,F,144000,Married,House,2,X
+5021516,F,144000,Married,House,2,X
+5021517,F,144000,Married,House,2,X
+5021518,F,144000,Married,House,2,X
+5021519,F,144000,Married,House,2,X
+5021520,F,144000,Married,House,2,X
+5021522,F,202500,Married,House,2,X
+5021525,F,202500,Married,House,2,X
+5021526,F,202500,Married,House,2,X
+5021527,F,202500,Married,House,2,X
+5021528,F,202500,Married,House,2,X
+5021529,F,202500,Married,House,2,X
+6423402,F,202500,Married,House,2,X
+5021530,F,112500,Widow,House,1,0
+5021532,F,112500,Widow,House,1,0
+6423404,F,112500,Widow,House,1,0
+5021533,M,135000,Married,With parents,2,0
+5021534,M,67500,Married,House,2,0
+5021535,M,67500,Married,House,2,0
+5021536,M,67500,Married,House,2,0
+5021537,M,67500,Married,House,2,0
+5021538,F,306000,Married,House,3,0
+5021539,F,306000,Married,House,3,X
+5021540,F,306000,Married,House,3,X
+5021541,F,306000,Married,House,3,X
+5021542,F,306000,Married,House,3,X
+5021543,F,306000,Married,House,3,0
+5113211,F,306000,Married,House,3,0
+5021544,F,202500,Married,House,2,X
+5021545,F,202500,Married,House,2,0
+5021546,F,202500,Married,House,2,0
+5021547,F,202500,Married,House,2,0
+5021548,F,202500,Married,House,2,0
+5021549,F,202500,Married,House,2,0
+5021550,F,202500,Married,House,2,0
+5021551,F,202500,Married,House,2,0
+5021552,F,202500,Married,House,2,0
+5021553,F,202500,Married,House,3,0
+5021554,M,202500,Separated,House,2,0
+5021555,M,135000,Married,House,2,X
+5021558,M,135000,Married,House,2,0
+5021559,M,360000,Married,House,2,X
+5021560,M,360000,Married,House,2,X
+5021561,M,360000,Married,House,2,X
+5021562,M,360000,Married,House,2,X
+5021563,M,360000,Married,House,2,X
+5021564,M,360000,Married,House,2,X
+5021565,M,360000,Married,House,2,X
+6423495,M,360000,Married,House,2,X
+6423496,M,360000,Married,House,2,0
+5021566,F,76500,Married,House,2,C
+5021568,F,126000,Married,House,4,C
+5021569,F,126000,Married,House,4,C
+5021570,F,126000,Married,House,4,C
+5021571,F,126000,Married,House,4,C
+5021572,M,270000,Married,House,2,C
+5021573,M,270000,Married,House,2,C
+5021574,M,270000,Married,House,2,C
+5021575,M,270000,Married,House,2,C
+5021576,M,270000,Married,House,2,0
+5021577,M,270000,Married,House,2,0
+5021578,M,270000,Married,House,2,0
+5021579,M,270000,Married,House,2,0
+5021580,M,270000,Married,House,2,0
+5021581,M,270000,Married,House,2,0
+5021582,F,40500,Married,Rent,3,0
+5021583,F,40500,Married,Rent,3,0
+5021584,F,40500,Married,Rent,3,0
+5021585,F,40500,Married,Rent,3,0
+5021586,F,247500,Separated,House,1,0
+5021587,F,247500,Separated,House,1,0
+5021588,F,247500,Separated,House,1,0
+5021589,F,247500,Separated,House,1,0
+5021590,F,247500,Separated,House,1,0
+5021591,F,112500,Married,House,2,0
+5021594,M,306000,Married,House,3,0
+5021595,M,306000,Married,House,3,0
+5021597,F,360000,Married,House,2,0
+5021608,F,360000,Married,House,2,0
+5021609,F,360000,Married,House,2,0
+5021610,F,360000,Married,House,2,0
+5021611,F,360000,Married,House,2,0
+5021612,F,360000,Married,House,2,0
+5021613,F,360000,Married,House,2,C
+5021600,F,225000,Married,House,2,C
+5021601,F,225000,Married,House,2,C
+5021602,F,225000,Married,House,2,C
+5021603,F,225000,Married,House,2,C
+5021604,F,225000,Married,House,2,C
+5021605,F,225000,Married,House,2,C
+5021606,F,225000,Married,House,2,C
+5021607,F,225000,Married,House,2,C
+5021614,M,189000,Married,Municipal apartment,3,C
+5021616,F,270000,Married,House,2,C
+5021617,F,99000,Civil marriage,House,2,C
+5021620,F,126000,Married,House,5,C
+5021622,F,126000,Married,House,5,C
+5021623,F,126000,Married,House,5,C
+5021624,F,126000,Married,House,5,C
+5021627,F,225000,Widow,House,1,C
+5021628,F,225000,Widow,House,1,C
+5021629,F,225000,Widow,House,1,C
+6423657,F,225000,Widow,House,1,C
+5021630,M,157500,Married,House,2,C
+5021632,M,157500,Married,House,2,C
+5021633,M,157500,Married,House,2,C
+5021634,M,157500,Married,House,2,0
+5021637,M,157500,Married,House,2,0
+5090274,M,157500,Married,House,2,0
+5021639,F,112500,Married,House,2,0
+5021640,F,112500,Married,House,2,0
+5021641,F,112500,Married,House,2,C
+5021642,F,112500,Married,House,2,C
+5021643,F,112500,Married,House,2,C
+6423692,F,112500,Married,House,2,C
+5021644,F,144000,Married,House,2,C
+5021645,F,292500,Civil marriage,House,2,C
+5021646,F,292500,Civil marriage,House,2,C
+5021647,F,292500,Civil marriage,House,2,C
+5021648,F,292500,Civil marriage,House,2,C
+5021649,F,292500,Civil marriage,House,2,C
+5021650,F,292500,Civil marriage,House,2,C
+5021651,F,292500,Civil marriage,House,2,C
+6423693,F,292500,Civil marriage,House,2,C
+5021652,M,270000,Married,House,3,C
+5021653,M,270000,Married,House,3,C
+5021654,M,270000,Married,House,3,C
+5021655,M,270000,Married,House,3,C
+5021656,M,270000,Married,House,3,C
+5021657,M,270000,Married,House,3,C
+5021658,M,270000,Married,House,3,C
+5021659,M,270000,Married,House,3,C
+5021660,M,270000,Married,House,3,C
+5021661,M,270000,Married,House,3,C
+5021662,M,225000,Married,House,3,C
+5021663,M,225000,Married,House,3,C
+5021664,M,225000,Married,House,3,C
+5021665,M,225000,Married,House,3,C
+5021668,M,225000,Married,House,3,C
+5021670,M,225000,Married,House,3,C
+5021671,M,225000,Married,House,3,0
+5021673,M,225000,Married,House,3,0
+5021674,M,225000,Married,House,3,0
+5021675,M,225000,Married,House,3,0
+5021676,M,225000,Married,House,3,1
+6423694,M,225000,Married,House,3,1
+6423696,M,225000,Married,House,3,0
+5021678,M,202500,Separated,House,1,0
+5021679,M,202500,Separated,House,1,0
+5021680,M,202500,Separated,House,1,0
+5021681,M,202500,Separated,House,1,0
+5021682,M,202500,Separated,House,1,0
+5021683,M,202500,Separated,House,1,0
+5021684,M,202500,Separated,House,1,X
+6423698,M,202500,Separated,House,1,X
+5021688,M,225000,Married,House,3,0
+5021691,M,225000,Married,House,3,0
+5113091,M,225000,Married,House,3,X
+5021693,M,337500,Married,House,4,0
+5021694,M,337500,Married,House,4,X
+5021695,M,337500,Married,House,4,0
+5021696,F,180000,Separated,House,2,X
+5021697,F,180000,Separated,House,2,0
+5021698,F,180000,Separated,House,2,0
+5021699,F,180000,Separated,House,2,X
+5021700,F,180000,Separated,House,2,0
+5021701,F,180000,Separated,House,2,0
+6423749,F,180000,Separated,House,2,0
+5021702,F,112500,Married,House,3,X
+5021703,F,112500,Married,House,3,X
+5021704,F,112500,Married,House,3,X
+5021705,F,112500,Married,House,3,0
+5021706,F,112500,Married,House,3,X
+5021707,F,112500,Married,House,3,0
+5021708,F,202500,Married,House,4,0
+5021709,F,202500,Married,House,4,0
+5021710,F,202500,Married,House,4,0
+5021711,F,202500,Married,House,4,0
+6416335,F,202500,Married,House,4,X
+5021712,F,243000,Married,House,3,0
+5021713,F,243000,Married,House,3,0
+5021715,F,243000,Married,House,3,X
+5021716,F,180000,Married,House,2,C
+5021717,F,180000,Married,House,2,C
+5021718,F,630000,Married,House,3,C
+5021719,F,630000,Married,House,3,C
+5021720,F,630000,Married,House,3,C
+5021721,F,630000,Married,House,3,C
+5021722,F,630000,Married,House,3,C
+5021723,F,630000,Married,House,3,C
+5021724,F,630000,Married,House,3,C
+5021725,F,630000,Married,House,3,C
+5021726,F,630000,Married,House,3,C
+5021727,F,630000,Married,House,3,C
+5021728,F,630000,Married,House,3,C
+5021730,F,180000,Married,House,3,C
+5021732,F,180000,Married,House,3,C
+5021733,F,135000,Widow,House,1,C
+5021734,F,189000,Widow,House,1,C
+5021735,F,189000,Widow,House,1,C
+5021737,F,189000,Widow,House,1,C
+5021738,F,189000,Widow,House,1,C
+5021739,F,189000,Widow,House,1,C
+5021740,F,112500,Married,House,3,C
+5021741,F,112500,Married,House,3,C
+5021742,F,112500,Married,House,3,C
+5021744,F,112500,Married,House,3,C
+5021745,F,112500,Married,House,3,C
+5021746,F,112500,Married,House,3,C
+5021747,F,112500,Married,House,3,C
+5021748,F,112500,Married,House,3,C
+5021749,F,112500,Married,House,3,C
+5021750,F,112500,Married,House,3,C
+5113118,F,112500,Married,House,3,C
+5113119,F,112500,Married,House,3,C
+5021752,F,171000,Married,House,2,C
+5021753,F,171000,Married,House,2,C
+5021754,F,171000,Married,House,2,C
+5021756,F,432000,Married,House,2,C
+5021761,F,112500,Married,With parents,2,C
+5021762,F,112500,Married,With parents,2,C
+5021763,F,112500,Married,With parents,2,C
+5021764,F,112500,Married,With parents,2,C
+5021765,F,112500,Married,With parents,2,C
+5021766,F,112500,Married,With parents,2,C
+5021767,F,112500,Married,With parents,2,C
+5021768,F,112500,Married,With parents,2,0
+6423223,F,112500,Married,With parents,2,0
+5021769,F,67500,Married,House,3,0
+5021772,F,292500,Civil marriage,House,2,0
+5021774,F,292500,Civil marriage,House,2,0
+5021775,F,292500,Civil marriage,House,2,0
+5021776,F,292500,Civil marriage,House,2,0
+5021777,F,292500,Civil marriage,House,2,0
+5021778,F,292500,Civil marriage,House,2,0
+5021779,F,292500,Civil marriage,House,2,0
+5021780,F,292500,Civil marriage,House,2,0
+5021781,F,292500,Civil marriage,House,2,0
+5021782,F,292500,Civil marriage,House,2,0
+5021783,F,292500,Civil marriage,House,2,0
+5021788,F,157500,Married,House,4,0
+5021789,F,157500,Married,House,4,0
+5021790,F,157500,Married,House,4,0
+5021791,F,157500,Married,House,4,0
+5021792,F,157500,Married,House,4,0
+6423224,F,157500,Married,House,4,0
+5021793,F,225000,Married,House,2,0
+5021794,F,225000,Married,House,2,0
+5021795,F,225000,Married,House,2,0
+5021796,F,225000,Married,House,2,0
+5021797,F,225000,Married,House,2,0
+5021798,F,225000,Married,House,2,0
+5021799,F,225000,Married,House,2,0
+5021800,F,225000,Married,House,2,0
+5021801,F,225000,Married,House,2,0
+5021802,F,225000,Married,House,2,0
+5021808,M,157500,Single,House,1,0
+5021809,F,112500,Married,House,2,0
+5021810,F,67500,Married,House,3,0
+5021814,F,67500,Married,House,3,0
+5021815,F,67500,Married,House,3,0
+5021816,F,67500,Married,House,3,0
+5021817,F,67500,Married,House,3,0
+5021818,F,67500,Married,House,3,0
+5021819,F,67500,Married,House,3,0
+5090358,F,67500,Married,House,3,0
+5113171,F,67500,Married,House,3,0
+5113172,F,67500,Married,House,3,0
+5021822,F,162000,Married,House,2,0
+5021826,M,270000,Married,House,2,0
+5021827,F,166500,Married,House,2,0
+5021828,F,166500,Married,House,2,0
+5021829,F,166500,Married,House,2,0
+5021830,F,166500,Married,House,2,0
+5021831,F,166500,Married,House,2,0
+5021832,F,157500,Married,House,3,0
+5021833,F,157500,Married,House,3,0
+5021834,F,157500,Married,House,3,0
+5021835,F,157500,Married,House,3,0
+5021836,F,157500,Married,House,3,C
+5021837,F,157500,Married,House,3,C
+5021838,F,157500,Married,House,2,C
+5021839,F,157500,Married,House,2,C
+5021840,F,157500,Married,House,2,C
+5021841,F,157500,Married,House,2,C
+5021842,F,157500,Married,House,2,C
+5021843,F,157500,Married,House,2,0
+6423373,F,157500,Married,House,2,0
+5021844,F,90000,Civil marriage,House,3,0
+5021845,F,90000,Civil marriage,House,3,0
+5021846,F,90000,Civil marriage,House,3,0
+5021847,F,135000,Civil marriage,With parents,3,0
+5021848,F,135000,Civil marriage,With parents,3,0
+5021849,F,135000,Civil marriage,With parents,3,0
+5021850,F,135000,Civil marriage,With parents,3,0
+5021851,F,135000,Civil marriage,With parents,3,C
+5021852,F,135000,Civil marriage,With parents,3,C
+5021855,F,135000,Civil marriage,With parents,3,C
+5021856,F,135000,Civil marriage,With parents,3,C
+5113189,F,135000,Civil marriage,With parents,3,0
+5021853,F,157500,Civil marriage,House,3,0
+5021854,F,180000,Married,House,2,0
+5021857,F,315000,Widow,House,2,0
+5021858,F,315000,Widow,House,2,0
+5021861,F,315000,Widow,House,2,0
+5021862,F,315000,Widow,House,2,0
+5021863,F,315000,Widow,House,2,0
+5021865,F,315000,Widow,House,2,0
+5021866,F,315000,Widow,House,2,0
+5021867,F,315000,Widow,House,2,0
+5021868,F,315000,Widow,House,2,0
+5021869,F,315000,Widow,House,2,0
+5021870,F,315000,Widow,House,2,0
+5021871,F,315000,Widow,House,2,0
+5021872,F,315000,Widow,House,2,0
+5021873,M,171000,Single,Rent,1,C
+5021874,M,171000,Single,Rent,1,C
+5021876,M,135000,Married,House,4,C
+5021877,M,135000,Married,House,4,C
+5021878,M,135000,Married,House,4,C
+5021879,M,112500,Married,House,4,C
+5021880,M,112500,Married,House,4,C
+5021881,M,112500,Married,House,4,C
+5113190,M,112500,Married,House,4,C
+5021882,F,135000,Married,House,2,C
+5021883,F,135000,Married,House,2,C
+5021884,F,135000,Married,House,2,C
+5021886,F,135000,Married,House,2,C
+5021887,F,135000,Married,House,2,C
+5021888,F,135000,Married,House,2,C
+5021889,F,135000,Married,House,2,C
+5021890,F,135000,Married,House,2,0
+5021891,F,135000,Married,House,2,0
+5021892,F,135000,Married,House,2,0
+6423407,F,135000,Married,House,2,0
+5021895,F,328500,Civil marriage,House,2,0
+5021898,F,328500,Civil marriage,House,2,0
+5021899,F,328500,Civil marriage,House,2,X
+5021900,F,328500,Civil marriage,House,2,0
+5021901,F,328500,Civil marriage,House,2,X
+5021902,F,328500,Civil marriage,House,2,0
+5021903,F,328500,Civil marriage,House,2,0
+5021904,M,225000,Married,House,2,0
+5021905,M,225000,Married,House,2,0
+5021906,M,225000,Married,House,2,0
+5021907,M,225000,Married,House,2,X
+5021908,M,225000,Married,House,2,X
+5021909,M,225000,Married,House,2,X
+5021910,M,225000,Married,House,2,X
+5021911,M,225000,Married,House,2,X
+5021912,M,225000,Married,House,2,X
+5021916,M,148500,Married,House,2,X
+5021917,M,148500,Married,House,2,0
+5021919,F,76500,Married,Municipal apartment,3,X
+5021920,F,76500,Married,Municipal apartment,3,X
+5021922,F,135000,Married,House,2,C
+5021923,F,135000,Married,House,2,C
+5021924,F,135000,Married,House,2,C
+5021926,F,135000,Separated,House,3,C
+5021928,F,67500,Married,House,2,C
+5021929,F,67500,Married,House,2,C
+5021930,F,67500,Married,House,2,C
+5021931,F,67500,Married,House,2,C
+5021933,F,67500,Married,House,2,C
+5021935,F,67500,Married,House,2,C
+5021936,F,67500,Married,House,2,C
+5021937,F,67500,Married,House,2,C
+5021938,F,67500,Married,House,2,C
+5021939,F,67500,Married,House,2,C
+6423546,F,67500,Married,House,2,C
+5021940,F,445500,Married,House,2,C
+5021942,F,445500,Married,House,2,C
+5021943,F,445500,Married,House,2,C
+5021944,F,445500,Married,House,2,C
+5021945,F,445500,Married,House,2,0
+5021946,F,445500,Married,House,2,X
+5021947,F,445500,Married,House,2,0
+5021948,F,445500,Married,House,2,0
+5021949,F,445500,Married,House,2,0
+5021950,F,445500,Married,House,2,0
+5021951,F,445500,Married,House,2,0
+5021954,F,67500,Single,With parents,1,X
+5021955,F,67500,Single,With parents,1,X
+5021956,F,67500,Single,With parents,1,C
+5113218,F,67500,Single,With parents,1,C
+5021958,F,76500,Married,House,2,C
+5021959,F,76500,Married,House,2,C
+5021961,F,76500,Married,House,2,C
+5021964,F,103500,Married,House,3,C
+5021965,F,103500,Married,House,3,C
+5021966,F,103500,Married,House,3,C
+5021967,F,103500,Married,House,3,C
+5021968,F,103500,Married,House,3,C
+5021969,F,103500,Married,House,3,C
+5021970,F,103500,Married,House,3,C
+5021972,F,103500,Married,House,3,C
+5021973,F,103500,Married,House,3,C
+5021974,F,103500,Married,House,3,C
+5021975,F,103500,Married,House,3,C
+5113221,F,103500,Married,House,3,X
+5021976,F,180000,Single,Rent,2,0
+5021977,F,180000,Single,Rent,2,X
+5021978,F,180000,Single,Rent,2,0
+5021979,F,180000,Single,Rent,2,0
+5021980,F,180000,Single,Rent,2,X
+5021981,M,315000,Married,House,2,1
+5021983,M,225000,Married,House,3,0
+5021984,M,225000,Married,House,3,0
+5021985,M,225000,Married,House,3,0
+5021986,M,225000,Married,House,3,X
+5113231,M,225000,Married,House,3,0
+5021987,M,135000,Married,House,2,X
+5021988,M,135000,Married,House,2,0
+5021989,M,135000,Married,House,2,X
+5021990,M,135000,Married,House,2,0
+5021991,M,135000,Married,House,2,0
+5021992,M,135000,Married,House,2,X
+5021993,M,135000,Married,House,2,X
+5021994,M,135000,Married,House,2,0
+5021995,M,135000,Married,House,2,0
+5021996,M,135000,Married,House,2,0
+5021997,M,90000,Married,House,2,X
+5021999,F,257625,Civil marriage,House,2,0
+5022000,M,157500,Single,House,1,X
+5022001,M,157500,Single,House,1,0
+5022002,M,157500,Single,House,1,X
+5113051,M,157500,Single,House,1,0
+5022003,M,112500,Single,House,1,0
+5022004,M,112500,Single,House,1,X
+5022005,M,112500,Single,House,1,0
+5022006,M,112500,Single,House,1,0
+5022007,M,112500,Single,House,1,X
+5022008,M,112500,Single,House,1,0
+5022009,M,112500,Single,House,1,X
+5022010,M,112500,Single,House,1,0
+5022011,M,112500,Single,House,1,0
+5022012,M,112500,Single,House,1,0
+5022013,M,112500,Single,House,1,X
+5022014,M,112500,Single,House,1,0
+5022015,M,112500,Single,House,1,0
+5022016,M,112500,Single,House,1,X
+5022017,M,112500,Single,House,1,0
+5022018,M,112500,Single,House,1,X
+5022019,M,112500,Single,House,1,0
+5022020,M,112500,Single,House,1,0
+5022021,M,112500,Single,House,1,X
+5022022,M,112500,Single,House,1,0
+5022023,M,112500,Single,House,1,0
+5022024,M,112500,Single,House,1,0
+5022025,M,112500,Single,House,1,X
+5022026,M,112500,Single,House,1,X
+5022027,M,112500,Single,House,1,X
+6423615,M,112500,Single,House,1,X
+6423616,M,112500,Single,House,1,X
+6423617,M,112500,Single,House,1,X
+5022029,M,315000,Married,House,3,X
+5022030,M,315000,Married,House,3,X
+5022031,M,315000,Married,House,3,X
+6423618,M,315000,Married,House,3,X
+5022033,M,143100,Married,House,2,X
+5022034,M,143100,Married,House,2,X
+5022038,M,180000,Married,House,2,0
+5022039,M,180000,Married,House,2,0
+5022040,M,180000,Married,House,2,0
+5022041,M,180000,Married,House,2,0
+5022042,M,180000,Married,House,2,0
+5090394,F,225000,Separated,House,2,X
+5113069,F,225000,Separated,House,2,0
+5113070,F,225000,Separated,House,2,0
+5022046,M,135000,Married,Office apartment,2,0
+5022047,M,135000,Married,Office apartment,2,X
+6423658,M,135000,Married,Office apartment,2,0
+5022048,M,202500,Single,House,1,0
+5022049,M,202500,Single,House,1,0
+5022051,M,202500,Single,House,1,0
+5022052,M,202500,Single,House,1,0
+5022054,M,202500,Single,House,1,0
+5022056,F,58500,Married,House,2,0
+5022057,F,58500,Married,House,2,0
+5022058,F,58500,Married,House,2,0
+5022059,F,58500,Married,House,2,0
+5022060,F,58500,Married,House,2,0
+6423699,F,58500,Married,House,2,0
+6423700,F,58500,Married,House,2,X
+5022062,F,180000,Married,House,2,0
+5022063,F,180000,Married,House,2,X
+5022064,F,180000,Married,House,2,0
+5022065,F,180000,Married,House,2,0
+5022066,F,216000,Married,With parents,2,0
+5022068,F,90000,Married,House,2,0
+5022071,F,90000,Married,House,2,0
+5022072,F,90000,Married,House,2,0
+5022073,F,90000,Married,House,2,0
+5022074,F,90000,Married,House,2,0
+5022075,F,90000,Married,House,2,0
+5022076,F,90000,Married,House,2,0
+5022077,F,90000,Married,House,2,0
+5022078,F,90000,Married,House,2,1
+5022079,F,90000,Married,House,2,0
+5022080,F,90000,Married,House,2,X
+5022081,F,90000,Married,House,2,0
+5022082,F,90000,Married,House,2,0
+5022083,F,90000,Married,House,2,0
+5022084,F,90000,Married,House,2,0
+5022085,F,90000,Married,House,2,0
+5022086,F,202500,Married,House,2,X
+5022087,F,202500,Married,House,2,0
+5022089,F,202500,Married,House,2,0
+5022090,F,202500,Married,House,2,X
+5022092,F,202500,Married,House,2,X
+5022093,F,76500,Single,House,1,0
+5022094,F,76500,Single,House,1,0
+5022095,F,76500,Single,House,1,0
+5022097,F,76500,Single,House,1,0
+5022098,F,76500,Single,House,1,0
+5022099,F,76500,Single,House,1,0
+5022100,F,76500,Single,House,1,0
+5022101,F,76500,Single,House,1,0
+5022102,F,94500,Single,Rent,1,0
+5022103,F,94500,Single,Rent,1,0
+5022105,F,112500,Single,House,2,0
+5022107,F,112500,Single,House,2,0
+5022108,F,112500,Single,House,2,X
+5022109,F,112500,Single,House,2,X
+5022111,F,112500,Single,House,2,C
+5022112,F,112500,Single,House,2,C
+6416337,F,112500,Single,House,2,0
+5022113,M,135000,Married,House,3,0
+5022114,M,135000,Married,House,3,0
+5022115,M,135000,Married,House,3,0
+5022116,M,315000,Married,House,2,0
+5022117,M,315000,Married,House,2,0
+5022118,M,315000,Married,House,2,0
+5022119,M,315000,Married,House,2,C
+5022120,M,315000,Married,House,2,0
+5022122,M,315000,Married,House,2,0
+5022123,M,315000,Married,House,2,0
+5022124,M,315000,Married,House,2,0
+5090465,M,315000,Married,House,2,0
+5022125,F,135000,Civil marriage,House,2,0
+5022126,F,135000,Civil marriage,House,2,0
+5022127,F,135000,Civil marriage,House,2,0
+5113120,F,135000,Civil marriage,House,2,0
+5022128,F,135000,Single,House,1,0
+5022130,M,207000,Married,House,4,C
+5022131,M,207000,Married,House,4,C
+5022132,M,207000,Married,House,4,C
+5022133,M,207000,Married,House,4,C
+5022134,M,207000,Married,House,4,C
+6416389,M,207000,Married,House,4,C
+5022135,F,126000,Married,House,2,C
+5022136,F,126000,Married,House,2,C
+5022137,F,126000,Married,House,2,C
+5022138,F,126000,Married,House,2,C
+5022140,F,207000,Single,House,1,C
+5022141,F,207000,Single,House,1,0
+5022142,F,207000,Single,House,1,C
+5022143,F,180000,Married,House,2,C
+5022144,F,180000,Married,House,2,C
+5022145,F,180000,Married,House,2,C
+5022146,F,180000,Married,House,2,C
+5022147,F,180000,Married,House,4,C
+5022148,F,180000,Married,House,4,C
+5022149,F,180000,Married,House,4,C
+5022150,F,180000,Married,House,4,C
+5022152,F,180000,Married,House,4,C
+5022153,F,180000,Married,House,4,C
+5022154,F,180000,Married,House,4,C
+5022155,F,180000,Married,House,4,C
+5022156,F,180000,Married,House,4,0
+5022157,F,180000,Married,House,4,0
+5022158,F,180000,Married,House,4,C
+5022161,F,288000,Separated,House,1,C
+5113146,F,288000,Separated,House,1,C
+5022163,F,112500,Married,House,3,C
+5022164,F,112500,Married,House,3,C
+5113147,F,112500,Married,House,3,C
+5022168,M,45000,Married,House,2,C
+5022172,F,135000,Single,Municipal apartment,1,C
+5022174,F,135000,Single,Municipal apartment,1,C
+5022175,F,135000,Single,Municipal apartment,1,0
+5022176,F,135000,Separated,House,2,0
+5022177,F,135000,Separated,House,2,0
+5022178,F,135000,Separated,House,2,0
+5022179,F,135000,Separated,House,2,0
+5022180,F,135000,Separated,House,2,0
+5022181,F,135000,Separated,House,2,0
+5022182,F,135000,Separated,House,2,0
+5022183,F,135000,Separated,House,2,C
+5022184,F,135000,Separated,House,2,C
+5022185,F,135000,Separated,House,2,C
+5022186,F,135000,Separated,House,2,C
+5022187,F,135000,Separated,House,2,C
+5022188,F,135000,Separated,House,2,C
+5022189,F,135000,Separated,House,2,C
+5022190,F,94500,Married,House,3,C
+5022192,F,94500,Married,House,3,C
+5022193,F,94500,Married,House,3,C
+5022195,F,94500,Married,House,3,C
+5022196,M,135000,Married,House,5,C
+5022197,M,135000,Married,House,5,C
+5022198,M,135000,Married,House,5,C
+5022199,M,135000,Married,House,5,C
+5022200,M,112500,Married,House,2,C
+5022201,M,112500,Married,House,2,0
+5022202,M,112500,Married,House,2,0
+5022203,M,202500,Married,House,3,0
+5022204,M,202500,Married,House,3,C
+5022206,M,202500,Married,House,3,C
+5022207,M,202500,Married,House,3,C
+5022208,M,202500,Married,House,3,C
+5022210,M,202500,Married,House,3,C
+5022211,F,315000,Separated,With parents,1,C
+5113158,F,315000,Separated,With parents,1,C
+5022212,M,180000,Married,House,2,C
+5022213,M,180000,Married,House,2,C
+5022216,M,180000,Married,House,2,C
+5022217,M,180000,Married,House,2,C
+5022218,M,180000,Married,House,2,C
+5022219,F,180000,Single,House,1,C
+5022220,F,180000,Single,House,1,C
+5022221,F,180000,Single,House,1,C
+5022222,F,180000,Single,House,1,C
+5022223,F,180000,Single,House,1,C
+5022224,F,180000,Single,House,1,C
+5022225,F,180000,Single,House,1,C
+5022226,F,180000,Single,House,1,C
+5022227,F,54000,Married,House,3,0
+5022228,F,54000,Married,House,3,0
+5022229,F,54000,Married,House,3,0
+5022230,F,54000,Married,House,3,C
+5022231,F,54000,Married,House,3,C
+5022235,F,180000,Separated,House,2,C
+5022236,F,180000,Separated,House,2,C
+5022237,F,180000,Separated,House,2,C
+5022238,F,180000,Separated,House,2,C
+5022239,F,180000,Separated,House,2,C
+6423323,F,180000,Separated,House,2,C
+5022240,F,202500,Married,House,2,C
+5022241,F,202500,Married,House,2,C
+5022243,F,202500,Married,House,2,C
+5022244,F,202500,Married,House,2,C
+5022246,F,202500,Married,House,2,C
+5022247,F,202500,Married,House,2,C
+5022248,F,202500,Married,House,2,C
+5022249,F,202500,Married,House,2,C
+5022250,F,202500,Married,House,2,C
+5022251,F,202500,Married,House,2,C
+5022252,F,202500,Married,House,2,C
+5022253,F,202500,Married,House,2,C
+5022254,F,202500,Married,House,2,C
+5022255,F,202500,Married,House,2,C
+5022256,F,202500,Married,House,2,C
+5113174,F,202500,Married,House,2,C
+5113175,F,202500,Married,House,2,C
+5022261,F,157500,Married,House,3,C
+5022262,F,157500,Married,House,3,C
+5022263,M,131400,Married,House,2,1
+5022264,M,131400,Married,House,2,0
+5022265,M,131400,Married,House,2,0
+5022266,M,131400,Married,House,2,0
+5022267,M,131400,Married,House,2,0
+5022268,M,131400,Married,House,2,0
+5022269,M,131400,Married,House,2,0
+5022270,M,131400,Married,House,2,0
+5022271,M,131400,Married,House,2,0
+5022272,M,131400,Married,House,2,0
+5022273,M,131400,Married,House,2,0
+5022274,M,131400,Married,House,2,0
+5022275,M,131400,Married,House,2,0
+5022277,F,166500,Single,Office apartment,1,0
+5022278,F,202500,Married,House,2,0
+5022280,F,202500,Married,House,2,0
+5022281,M,225000,Single,House,1,0
+5022282,M,225000,Single,House,1,0
+5022283,F,157500,Civil marriage,House,3,0
+5022285,F,157500,Civil marriage,House,3,0
+5022288,F,157500,Civil marriage,House,3,0
+5022289,F,157500,Civil marriage,House,3,0
+5022290,F,157500,Civil marriage,House,3,0
+5022291,F,157500,Civil marriage,House,3,0
+5022292,F,157500,Civil marriage,House,3,0
+5022294,F,157500,Civil marriage,House,3,0
+5022295,F,157500,Civil marriage,House,3,0
+5022297,F,157500,Civil marriage,House,3,0
+5022298,F,157500,Civil marriage,House,3,0
+5022299,F,157500,Civil marriage,House,3,0
+6423409,F,157500,Civil marriage,House,3,0
+5022284,M,157500,Single,House,1,0
+5022302,F,90000,Separated,House,1,0
+5022303,F,90000,Separated,House,1,0
+5022304,F,90000,Separated,House,1,0
+5022305,F,90000,Separated,House,1,0
+5022307,F,90000,Separated,House,1,X
+5022308,F,90000,Separated,House,1,X
+5022311,F,90000,Separated,House,1,X
+6423410,F,90000,Separated,House,1,X
+6423411,F,90000,Separated,House,1,X
+6423412,F,90000,Separated,House,1,C
+5022309,F,189000,Married,House,4,C
+5022310,F,189000,Married,House,4,C
+5022316,M,270000,Married,House,3,C
+5022317,M,270000,Married,House,3,C
+5022318,M,270000,Married,House,3,C
+5022320,M,270000,Married,House,3,C
+5022324,M,256500,Married,House,2,C
+5022325,M,256500,Married,House,2,C
+5022326,M,256500,Married,House,2,C
+5022327,M,256500,Married,House,2,C
+5022328,M,256500,Married,House,2,C
+5022329,M,256500,Married,House,2,C
+5022330,M,256500,Married,House,2,C
+5022332,M,256500,Married,House,2,C
+5022333,M,256500,Married,House,2,C
+5022334,M,256500,Married,House,2,C
+5022335,M,256500,Married,House,2,C
+5022336,M,256500,Married,House,2,C
+5022337,M,256500,Married,House,2,C
+5022338,M,135000,Single,House,1,0
+5022339,M,135000,Single,House,1,0
+5022340,M,135000,Single,House,1,0
+5022341,F,202500,Married,House,3,0
+5022342,F,202500,Married,House,3,0
+5022343,F,67500,Widow,House,1,0
+5022348,F,234000,Single,House,2,0
+5022349,F,234000,Single,House,2,0
+5022350,F,234000,Single,House,2,0
+5022351,F,234000,Single,House,2,0
+5022352,F,234000,Single,House,2,0
+5022353,F,234000,Single,House,2,0
+5022354,F,234000,Single,House,2,C
+5022355,F,234000,Single,House,2,C
+5022359,F,234000,Single,House,2,C
+5022362,F,234000,Single,House,2,C
+5022363,F,234000,Single,House,2,C
+5022373,F,234000,Single,House,2,C
+5022365,F,54000,Widow,House,1,C
+5022366,M,270000,Married,House,2,C
+5022367,M,270000,Married,House,2,C
+5022370,M,270000,Married,House,2,C
+5022371,M,270000,Married,House,2,C
+5113191,M,270000,Married,House,2,C
+5113192,M,270000,Married,House,2,C
+5022376,F,117000,Married,Municipal apartment,2,C
+5113201,F,117000,Married,Municipal apartment,2,C
+5022379,F,225000,Widow,House,1,C
+5022381,F,225000,Widow,House,1,C
+5022382,F,225000,Widow,House,1,C
+5022383,F,225000,Widow,House,1,C
+5022384,F,225000,Widow,House,1,C
+5113212,F,225000,Widow,House,1,C
+5022385,M,202500,Married,House,2,C
+5022386,M,202500,Married,House,2,C
+5022387,F,153000,Married,House,2,C
+5022388,F,153000,Married,House,2,C
+5022389,F,153000,Married,House,2,C
+5022396,F,153000,Married,House,2,C
+5022397,F,153000,Married,House,2,C
+5022398,F,153000,Married,House,2,C
+5022401,F,153000,Married,House,2,C
+5022402,F,153000,Married,House,2,0
+5022407,F,153000,Married,House,2,0
+5022410,F,153000,Married,House,2,0
+5022411,F,153000,Married,House,2,0
+5022412,F,153000,Married,House,2,X
+5022413,F,153000,Married,House,2,X
+5022414,F,153000,Married,House,2,X
+5022415,F,153000,Married,House,2,X
+6423548,F,153000,Married,House,2,X
+5022416,F,157500,Married,With parents,3,X
+5022417,F,157500,Married,With parents,3,X
+5022418,F,157500,Married,With parents,3,X
+5022419,F,157500,Married,With parents,3,X
+5022420,F,157500,Married,With parents,3,X
+5022421,F,157500,Married,With parents,3,X
+5113213,F,157500,Married,With parents,3,X
+5022422,F,180000,Married,House,2,X
+5022423,F,180000,Married,House,2,X
+5022424,F,180000,Married,House,2,X
+5022425,F,180000,Married,House,2,X
+5022429,F,90000,Civil marriage,House,2,X
+5022430,F,67500,Married,House,2,X
+5022431,F,67500,Married,House,2,X
+5022432,F,67500,Married,House,2,X
+5022433,F,67500,Married,House,2,X
+5022434,F,67500,Married,House,2,X
+5022435,F,67500,Married,House,2,X
+5022436,F,67500,Married,House,2,X
+6423592,F,67500,Married,House,2,X
+5022437,F,157500,Married,House,3,X
+5022438,F,157500,Married,House,3,X
+5022439,F,270000,Married,House,2,X
+5022440,M,225000,Married,House,2,X
+5022441,M,225000,Married,House,2,X
+5022442,F,180000,Married,House,2,X
+5022443,F,180000,Married,House,2,X
+5022444,F,180000,Married,House,2,X
+5022445,F,180000,Married,House,2,X
+5022446,F,180000,Married,House,2,X
+5022447,F,180000,Married,House,2,X
+6423619,F,180000,Married,House,2,X
+6423620,F,180000,Married,House,2,X
+5022448,F,315000,Separated,House,1,X
+5022449,F,315000,Separated,House,1,X
+5022451,F,315000,Separated,House,1,X
+5022452,F,315000,Separated,House,1,X
+5022453,F,315000,Separated,House,1,X
+5022454,M,144000,Married,House,3,X
+5022455,M,144000,Married,House,3,X
+5022456,M,144000,Married,House,3,X
+5022457,M,144000,Married,House,3,X
+5022458,M,144000,Married,House,3,X
+5022459,M,144000,Married,House,3,X
+5022460,F,135000,Married,House,3,X
+5022461,F,135000,Married,House,3,X
+5022462,M,405000,Married,House,2,X
+5022465,M,405000,Married,House,2,X
+5022466,M,405000,Married,House,2,X
+5022468,M,405000,Married,House,2,X
+5022469,M,405000,Married,House,2,X
+5022470,M,405000,Married,House,2,X
+5022471,M,405000,Married,House,2,X
+5022472,M,405000,Married,House,2,X
+5022473,M,405000,Married,House,2,X
+6423659,M,405000,Married,House,2,X
+6423660,M,405000,Married,House,2,X
+6423661,M,405000,Married,House,2,X
+5022477,F,135000,Married,House,2,X
+5022478,F,135000,Married,House,2,X
+5022479,F,135000,Married,House,2,X
+5022480,F,135000,Married,House,2,X
+5090587,F,135000,Married,House,2,X
+5113071,F,135000,Married,House,2,X
+5022481,M,112500,Single,House,1,X
+5022482,F,157500,Married,House,2,X
+5022483,F,157500,Married,House,2,X
+5022484,F,157500,Married,House,2,X
+5022485,F,157500,Married,House,2,X
+5022486,F,157500,Married,House,2,X
+5022487,F,157500,Married,House,2,X
+5022488,F,157500,Married,House,2,X
+5022489,F,157500,Married,House,2,X
+5113072,F,157500,Married,House,2,X
+5022492,M,405000,Married,House,3,X
+5022493,M,405000,Married,House,3,X
+5022494,M,405000,Married,House,3,X
+5022495,M,405000,Married,House,3,X
+5022496,M,405000,Married,House,3,X
+5022497,M,405000,Married,House,3,X
+5022498,M,405000,Married,House,3,X
+5022499,M,405000,Married,House,3,X
+5022502,M,405000,Married,House,3,X
+6423750,M,405000,Married,House,3,X
+6423751,M,405000,Married,House,3,X
+6423752,M,405000,Married,House,3,X
+5022504,F,720000,Married,House,3,X
+5022505,F,720000,Married,House,3,X
+5022506,F,720000,Married,House,3,X
+5022507,F,112500,Widow,House,1,X
+5022508,F,112500,Widow,House,1,X
+5022509,F,112500,Widow,House,1,X
+5022510,F,112500,Widow,House,1,X
+5022511,F,112500,Widow,House,1,X
+5113092,F,112500,Widow,House,1,X
+5022512,M,135000,Married,House,2,X
+5022513,M,135000,Married,House,2,X
+5022516,F,225000,Widow,House,1,X
+5022517,F,225000,Widow,House,1,X
+5022518,F,225000,Widow,House,1,X
+5022519,F,225000,Widow,House,1,X
+5022523,F,225000,Widow,House,1,X
+5113093,F,225000,Widow,House,1,X
+5022525,F,121500,Married,House,2,X
+5022527,F,121500,Married,House,2,X
+5022528,F,121500,Married,House,2,X
+5022529,F,121500,Married,House,2,X
+5022530,M,225000,Married,With parents,2,X
+5022531,M,225000,Married,With parents,2,X
+5022532,M,225000,Married,With parents,2,X
+5022535,F,202500,Married,House,4,X
+5022536,F,202500,Married,House,4,X
+5022539,M,202500,Married,House,2,X
+5022540,M,202500,Married,House,2,X
+5022541,F,247500,Single,House,1,X
+5022542,F,247500,Single,House,1,X
+5022543,F,247500,Single,House,1,X
+5022545,F,247500,Single,House,1,X
+5022546,F,247500,Single,House,1,X
+5022547,F,247500,Single,House,1,X
+5022548,F,247500,Single,House,1,X
+5022549,F,247500,Single,House,1,X
+5022550,F,247500,Single,House,1,X
+5022551,F,247500,Single,House,1,X
+5022553,F,112500,Civil marriage,House,2,X
+5022554,F,112500,Civil marriage,House,2,X
+5022555,F,112500,Civil marriage,House,2,X
+5022556,F,112500,Civil marriage,House,2,X
+5022557,F,112500,Civil marriage,House,2,X
+5022559,F,225000,Married,House,3,X
+5022560,F,225000,Married,House,3,X
+5022561,F,225000,Married,House,3,X
+5022562,F,225000,Married,House,3,X
+5022563,F,225000,Married,House,3,X
+5022564,F,225000,Married,House,3,X
+5022565,F,225000,Married,House,3,X
+5022566,F,225000,Married,House,3,X
+5022567,F,225000,Married,House,3,X
+5022568,F,225000,Married,House,3,X
+5090590,F,225000,Married,House,3,X
+5022569,M,225000,Married,House,2,X
+5022570,M,225000,Married,House,2,X
+5022571,M,202500,Married,House,2,X
+5022572,M,202500,Married,House,2,X
+5022573,M,202500,Married,House,2,C
+5022577,M,202500,Single,House,1,C
+5022578,M,202500,Single,House,1,C
+5022579,M,202500,Single,House,1,C
+5022580,M,202500,Single,House,1,C
+5022582,F,202500,Single,House,1,C
+5022583,F,202500,Single,House,1,C
+5022584,F,202500,Single,House,1,C
+5022585,F,202500,Single,House,1,C
+5022587,F,202500,Single,House,1,0
+5022589,F,202500,Single,House,1,X
+5022590,F,202500,Single,House,1,X
+5022591,F,202500,Single,House,1,X
+5113121,F,202500,Single,House,1,X
+5022592,F,144000,Civil marriage,House,3,X
+5022593,F,144000,Civil marriage,House,3,X
+5022594,F,144000,Civil marriage,House,3,X
+5022595,F,144000,Civil marriage,House,3,X
+5022596,F,144000,Civil marriage,House,3,X
+5022597,F,144000,Civil marriage,House,3,X
+5022598,F,144000,Civil marriage,House,3,X
+5022599,F,144000,Civil marriage,House,3,X
+6423270,F,144000,Civil marriage,House,3,X
+6423271,F,144000,Civil marriage,House,3,X
+5022602,M,337500,Married,House,2,X
+5022604,M,337500,Married,House,2,X
+5022605,M,337500,Married,House,2,X
+5113137,M,337500,Married,House,2,X
+5113138,M,337500,Married,House,2,X
+5022606,F,112500,Married,House,3,X
+5022607,F,112500,Married,House,3,X
+5022608,M,202500,Married,House,3,X
+5022609,M,202500,Married,House,3,X
+5022610,M,202500,Married,House,3,X
+5022611,M,202500,Married,House,3,X
+5022612,M,202500,Married,House,3,X
+5022614,M,202500,Civil marriage,House,2,X
+5022616,M,202500,Civil marriage,House,2,X
+5022617,M,202500,Civil marriage,House,2,X
+5022618,M,202500,Civil marriage,House,2,X
+5022619,M,202500,Civil marriage,House,2,X
+6423273,M,202500,Civil marriage,House,2,X
+5022620,M,247500,Married,With parents,2,X
+5022621,M,247500,Married,With parents,2,X
+5022622,M,247500,Married,With parents,2,X
+5022623,M,247500,Married,With parents,2,X
+5022624,M,247500,Married,With parents,2,X
+5022625,M,247500,Married,With parents,2,X
+5022626,M,247500,Married,With parents,2,X
+5022627,M,247500,Married,With parents,2,X
+5022628,F,157500,Single,Municipal apartment,1,X
+5022634,F,157500,Single,Municipal apartment,1,X
+5022635,F,157500,Single,Municipal apartment,1,X
+5022636,F,157500,Single,Municipal apartment,1,X
+5022637,F,157500,Single,Municipal apartment,1,X
+5022639,F,157500,Single,Municipal apartment,1,X
+6423325,F,157500,Single,Municipal apartment,1,X
+6423326,F,157500,Single,Municipal apartment,1,X
+5022640,F,76500,Married,House,3,X
+5022641,F,76500,Married,House,3,0
+5022642,F,76500,Married,House,3,X
+5022643,F,76500,Married,House,3,0
+5022644,M,135000,Married,House,3,0
+5022647,M,135000,Married,House,3,0
+5022648,M,135000,Married,House,3,0
+5022649,M,135000,Married,House,3,0
+5022651,M,135000,Married,House,3,0
+5022652,M,135000,Married,House,3,0
+6423328,M,135000,Married,House,3,0
+5022654,M,112500,Single,House,1,0
+5022655,M,112500,Single,House,1,0
+6423374,M,112500,Single,House,1,X
+5022656,F,202500,Widow,House,1,0
+5022657,F,202500,Widow,House,1,0
+5022658,F,202500,Widow,House,1,0
+6423375,F,202500,Widow,House,1,0
+5022659,F,247500,Single,House,1,0
+5022660,F,247500,Single,House,1,0
+5022661,F,247500,Single,House,1,0
+5022663,F,157500,Single,With parents,2,0
+5022664,M,157500,Single,Municipal apartment,1,0
+5022665,M,157500,Single,Municipal apartment,1,0
+5022666,M,157500,Single,Municipal apartment,1,0
+5022667,M,157500,Single,Municipal apartment,1,0
+5022668,M,157500,Single,Municipal apartment,1,0
+5022669,M,157500,Single,Municipal apartment,1,X
+5022670,M,157500,Single,Municipal apartment,1,X
+5022671,M,157500,Single,Municipal apartment,1,0
+5022672,M,157500,Single,Municipal apartment,1,0
+5113159,M,157500,Single,Municipal apartment,1,0
+5113160,M,157500,Single,Municipal apartment,1,0
+5022673,F,315000,Married,House,3,0
+5022679,F,315000,Married,House,3,0
+5022676,M,135000,Married,House,2,0
+5022677,M,135000,Married,House,2,X
+5022681,M,315000,Married,House,2,0
+5022682,M,315000,Married,House,2,0
+5022683,F,157500,Separated,With parents,1,0
+5022684,F,157500,Separated,With parents,1,0
+5022685,F,157500,Separated,With parents,1,0
+5022686,F,112500,Single,House,1,0
+5022687,F,112500,Single,House,1,0
+5022689,F,112500,Single,House,1,0
+5022690,F,112500,Single,House,1,0
+5022691,F,135000,Civil marriage,House,2,0
+5022692,F,135000,Civil marriage,House,2,X
+5022694,F,112500,Married,House,2,0
+5022696,F,112500,Married,House,2,0
+5022698,M,315000,Single,House,1,0
+5022700,M,315000,Single,House,1,0
+5022701,M,315000,Single,House,1,0
+5022702,M,315000,Single,House,1,0
+5022703,M,315000,Single,House,1,0
+5022704,M,315000,Single,House,1,0
+5022705,M,315000,Single,House,1,0
+5022707,M,315000,Single,House,1,0
+5022712,M,157500,Married,House,2,0
+5022713,M,157500,Married,House,2,0
+5022715,M,157500,Married,House,2,0
+5022716,M,157500,Married,House,2,X
+5022717,M,157500,Married,House,2,X
+5022718,M,157500,Married,House,2,0
+5022719,M,157500,Married,House,2,0
+6423444,M,157500,Married,House,2,0
+6423445,M,157500,Married,House,2,X
+5022720,M,157500,Married,House,4,X
+5022721,M,157500,Married,House,4,X
+5022722,M,157500,Married,House,4,X
+5090617,M,157500,Married,House,4,X
+5022730,M,360000,Married,House,5,X
+5022731,M,360000,Married,House,5,X
+5022732,F,90000,Married,House,2,X
+5022733,F,90000,Married,House,2,X
+5022734,F,90000,Married,House,2,X
+5022737,F,90000,Married,House,2,X
+5022738,F,90000,Married,House,2,X
+5022739,F,90000,Married,House,2,X
+5022740,F,90000,Married,House,2,X
+5022741,F,180000,Married,House,2,X
+5022742,F,180000,Married,House,2,X
+5022757,F,180000,Married,House,2,0
+5022758,F,180000,Married,House,2,0
+5022759,F,180000,Married,House,2,0
+5022760,F,180000,Married,House,2,0
+5022761,F,180000,Married,House,2,0
+5113193,F,180000,Married,House,2,0
+5022743,F,202500,Separated,House,2,0
+5022744,F,202500,Separated,House,2,0
+5022745,F,202500,Separated,House,2,0
+5022746,F,202500,Separated,House,2,0
+5022749,F,202500,Separated,House,2,0
+5022750,F,202500,Separated,House,2,0
+5022751,F,202500,Separated,House,2,0
+5022752,F,202500,Separated,House,2,0
+5022753,F,202500,Separated,House,2,0
+5022754,F,202500,Separated,House,2,0
+5022755,F,202500,Separated,House,2,0
+5022756,F,202500,Separated,House,2,0
+5022762,F,202500,Separated,House,2,0
+6423447,F,202500,Separated,House,2,0
+5022765,F,112500,Married,House,2,0
+5022767,F,90000,Married,With parents,4,0
+5022768,F,90000,Married,With parents,4,0
+5022769,F,90000,Married,With parents,4,0
+5022770,F,90000,Married,With parents,4,0
+5022771,F,90000,Married,With parents,4,0
+5022772,F,90000,Married,With parents,4,0
+5022773,F,90000,Married,With parents,4,0
+6423550,F,90000,Married,With parents,4,0
+6423551,F,90000,Married,With parents,4,0
+5022774,F,225000,Married,House,2,0
+5022775,F,225000,Married,House,2,0
+5022776,F,225000,Married,House,2,0
+5022778,F,225000,Married,House,2,0
+5022783,M,216000,Widow,House,2,0
+5022784,M,216000,Widow,House,2,0
+5022787,M,216000,Widow,House,2,X
+5022788,M,216000,Widow,House,2,X
+5022789,F,112500,Separated,House,1,X
+5022790,F,112500,Separated,House,1,X
+5022791,F,202500,Widow,House,1,X
+5022792,F,202500,Widow,House,1,X
+5022794,F,202500,Widow,House,1,X
+5022795,F,202500,Widow,House,1,C
+5022796,F,202500,Widow,House,1,C
+5022797,F,202500,Widow,House,1,C
+5022798,F,202500,Widow,House,1,C
+5022799,F,202500,Widow,House,1,0
+5022800,F,202500,Widow,House,1,C
+5022802,F,202500,Widow,House,1,C
+5022803,F,202500,Widow,House,1,C
+5022804,F,202500,Widow,House,1,C
+5090079,F,202500,Widow,House,1,C
+5022807,F,180000,Married,House,3,C
+5022808,F,180000,Married,House,3,C
+5022809,M,135000,Single,Rent,1,C
+5022810,M,135000,Single,Rent,1,C
+5022811,F,261000,Single,House,1,C
+5022812,F,261000,Single,House,1,C
+5022813,F,261000,Single,House,1,C
+5022814,F,261000,Single,House,1,C
+5022815,F,261000,Single,House,1,C
+5022816,F,261000,Single,House,1,C
+5022817,M,202500,Married,House,2,C
+5022818,M,202500,Married,House,2,C
+5022824,M,202500,Married,House,2,C
+5022825,M,202500,Married,House,2,C
+5022826,M,202500,Married,House,2,C
+5022827,M,202500,Married,House,2,C
+5022828,M,202500,Married,House,2,C
+5022831,M,202500,Married,House,2,C
+5022832,M,202500,Married,House,2,C
+5022833,M,202500,Married,House,2,C
+5022834,M,202500,Married,House,2,C
+5022835,M,202500,Married,House,2,C
+5022836,M,202500,Married,House,2,C
+5022837,M,202500,Married,House,2,C
+5113214,M,202500,Married,House,2,C
+5022840,M,180000,Separated,House,1,C
+5022841,M,180000,Separated,House,1,C
+5022842,M,180000,Separated,House,1,C
+5022843,M,180000,Separated,House,1,C
+5022844,M,180000,Separated,House,1,C
+5022845,M,180000,Separated,House,1,C
+5022846,M,180000,Separated,House,1,C
+5022847,M,180000,Separated,House,1,C
+5022848,M,180000,Separated,House,1,C
+5022849,M,180000,Separated,House,1,C
+5113222,M,180000,Separated,House,1,C
+5113223,M,180000,Separated,House,1,C
+5022851,F,202500,Married,House,2,0
+5022852,F,202500,Married,House,2,0
+5022853,F,202500,Married,House,2,0
+5022855,F,202500,Married,House,2,0
+5113224,F,202500,Married,House,2,0
+5022858,F,202500,Single,Rent,1,0
+6423621,F,202500,Single,Rent,1,0
+5022859,F,180000,Single,House,1,0
+5022860,F,180000,Single,House,1,0
+6423662,F,180000,Single,House,1,0
+5022862,F,67500,Single,House,1,0
+5022863,F,225000,Married,House,4,0
+5022864,F,225000,Married,House,4,0
+5022865,F,225000,Married,House,4,0
+5022866,F,225000,Married,House,4,0
+5022867,F,225000,Married,House,4,0
+5022868,F,225000,Married,House,4,0
+5022869,F,225000,Married,House,4,0
+5022870,F,225000,Married,House,4,0
+5022871,F,225000,Married,House,4,0
+5022872,F,225000,Married,House,4,0
+5022873,F,225000,Married,House,4,0
+5022875,F,225000,Married,House,4,0
+5022876,F,225000,Married,House,4,0
+5022877,F,225000,Married,House,4,0
+5022878,F,225000,Married,House,4,0
+6423663,F,225000,Married,House,4,0
+6423664,F,225000,Married,House,4,0
+6423665,F,225000,Married,House,4,0
+5022879,M,315000,Separated,House,2,0
+5022880,M,315000,Separated,House,2,0
+5022881,M,315000,Separated,House,2,0
+5022882,M,315000,Separated,House,2,0
+5022886,M,315000,Separated,House,2,0
+5022887,M,315000,Separated,House,2,0
+5022888,M,315000,Separated,House,2,0
+5022889,M,315000,Separated,House,2,0
+5022890,M,315000,Separated,House,2,0
+5022891,M,315000,Separated,House,2,1
+5022892,M,315000,Separated,House,2,1
+5022893,M,315000,Separated,House,2,0
+6423666,M,315000,Separated,House,2,0
+6423667,M,315000,Separated,House,2,0
+6423668,M,315000,Separated,House,2,0
+5022894,M,315000,Married,House,2,0
+5022895,M,315000,Married,House,2,0
+5022896,M,315000,Married,House,2,0
+5022897,F,126000,Married,House,2,0
+5022898,F,135000,Civil marriage,House,3,0
+5022900,F,135000,Civil marriage,House,3,0
+5022901,F,135000,Civil marriage,House,3,0
+5022902,F,135000,Civil marriage,House,3,0
+5022903,F,135000,Civil marriage,House,3,0
+5022904,F,135000,Civil marriage,House,3,0
+5022905,F,135000,Civil marriage,House,3,0
+5113232,F,135000,Civil marriage,House,3,0
+5113233,F,135000,Civil marriage,House,3,0
+5022906,M,189000,Married,House,2,0
+5022907,M,189000,Married,House,2,0
+5022908,M,189000,Married,House,2,0
+5022909,M,189000,Married,House,2,0
+5022910,M,189000,Married,House,2,0
+6423701,M,189000,Married,House,2,0
+5022912,F,225000,Single,House,1,0
+5022913,F,225000,Single,House,1,0
+5022914,F,225000,Single,House,1,0
+5022915,F,225000,Single,House,1,0
+5022917,F,225000,Single,House,1,0
+5022918,F,225000,Single,House,1,0
+5022921,F,225000,Single,House,1,0
+5022922,F,225000,Single,House,1,0
+5022923,F,225000,Single,House,1,0
+5090081,F,225000,Single,House,1,0
+5113052,F,225000,Single,House,1,0
+5113054,F,225000,Single,House,1,X
+5022925,F,144000,Civil marriage,House,2,0
+5022926,F,144000,Civil marriage,House,2,0
+5022927,F,144000,Civil marriage,House,2,0
+5022928,F,144000,Civil marriage,House,2,0
+5022929,F,144000,Civil marriage,House,2,0
+5022930,F,270000,Married,House,2,0
+5022931,F,270000,Married,House,2,0
+5022932,M,315000,Married,House,4,0
+5022933,M,315000,Married,House,4,0
+5022934,M,315000,Married,House,4,0
+5022935,M,135000,Married,House,3,0
+5022936,F,202500,Separated,House,1,0
+5022938,F,202500,Separated,House,1,0
+5022939,F,202500,Separated,House,1,0
+5022940,F,202500,Separated,House,1,0
+5022942,F,202500,Separated,House,1,0
+5022943,F,202500,Separated,House,1,0
+5022944,F,202500,Separated,House,1,0
+5022945,F,202500,Separated,House,1,0
+5022946,F,202500,Separated,House,1,0
+5022947,F,202500,Separated,House,1,0
+5113056,F,202500,Separated,House,1,0
+5113057,F,202500,Separated,House,1,0
+5022950,M,135000,Single,With parents,1,0
+5022951,M,135000,Single,With parents,1,0
+5022952,M,112500,Married,House,2,0
+5022953,M,112500,Married,House,2,0
+5022954,M,112500,Married,House,2,0
+5022955,M,112500,Married,House,2,0
+5022961,M,112500,Married,House,2,0
+5113058,M,112500,Married,House,2,0
+5113059,M,112500,Married,House,2,0
+5022958,F,99000,Separated,House,1,0
+5022963,F,135000,Married,House,5,0
+5022964,F,135000,Married,House,5,0
+5022965,F,135000,Married,House,5,0
+5022966,M,135000,Married,House,2,0
+5022967,M,135000,Married,House,2,0
+5022968,M,135000,Married,House,2,0
+5022969,M,135000,Married,House,2,0
+5022970,M,135000,Married,House,2,0
+5022971,M,135000,Married,House,2,C
+5022972,M,135000,Married,House,2,C
+5022975,F,315000,Civil marriage,House,2,C
+5022978,F,225000,Married,House,2,C
+5022979,F,225000,Married,House,2,C
+5022980,F,225000,Married,House,2,C
+5022981,F,225000,Married,House,2,C
+5022982,F,225000,Married,House,2,C
+5022984,F,225000,Married,House,2,C
+5022985,F,225000,Married,House,2,C
+5022986,F,225000,Married,House,2,C
+5022987,F,76500,Married,House,2,C
+5022988,F,76500,Married,House,2,C
+5022989,F,76500,Married,House,2,C
+5022990,F,76500,Married,House,2,C
+5022991,F,76500,Married,House,2,C
+5022992,F,76500,Married,House,2,C
+5022993,F,76500,Married,House,2,C
+6052100,F,76500,Married,House,2,C
+5022994,F,76500,Married,House,2,0
+5022995,F,76500,Married,House,2,0
+5022996,F,180000,Single,House,1,0
+5022997,F,180000,Single,House,1,0
+5023000,F,180000,Single,House,1,0
+5023001,F,180000,Single,House,1,0
+5023002,F,180000,Single,House,1,C
+5023004,F,180000,Single,House,1,C
+5023006,F,180000,Single,House,1,C
+6052102,F,180000,Single,House,1,C
+5023007,F,157500,Married,House,2,C
+5023008,F,157500,Married,House,2,C
+5023009,F,99900,Widow,House,1,C
+5023010,F,99900,Widow,House,1,C
+5023011,M,360000,Married,House,2,C
+5023012,F,144000,Married,House,2,C
+5023015,F,76500,Married,House,2,C
+5023019,F,76500,Married,House,2,C
+5023020,F,76500,Married,House,2,C
+5023021,F,76500,Married,House,2,C
+5023022,F,157500,Widow,House,1,C
+5023023,F,157500,Widow,House,1,C
+5023024,F,157500,Widow,House,1,C
+5023025,M,148500,Married,House,2,C
+5023027,M,148500,Married,House,2,C
+5023029,M,148500,Married,House,2,C
+5023031,F,202500,Married,House,2,C
+5023032,F,202500,Married,House,2,C
+5023033,F,202500,Married,House,2,C
+5023034,M,112500,Married,House,2,C
+5023035,M,112500,Married,House,2,C
+6052109,M,112500,Married,House,2,C
+5023036,M,112500,Civil marriage,With parents,2,C
+5023037,F,90000,Widow,House,1,C
+5023038,F,90000,Widow,House,1,C
+5023039,F,90000,Widow,House,1,C
+5023040,F,90000,Widow,House,1,C
+5023041,F,90000,Widow,House,1,C
+5023042,F,90000,Widow,House,1,C
+5023043,F,90000,Widow,House,1,C
+5023044,F,135000,Married,House,2,C
+5023045,F,135000,Married,House,2,C
+5023046,F,135000,Married,House,2,C
+5023048,F,67500,Married,House,2,C
+5023049,F,67500,Married,House,2,C
+5023050,F,67500,Married,House,2,C
+5023051,F,112500,Married,House,5,C
+5023052,F,112500,Married,House,5,C
+5023053,F,247500,Married,House,2,0
+5023054,F,247500,Married,House,2,0
+5023055,F,247500,Married,House,2,0
+5023056,F,247500,Married,House,2,0
+5023057,M,112500,Married,House,3,0
+5023058,M,112500,Married,House,3,0
+5023059,M,112500,Married,House,3,0
+5023060,F,202500,Separated,House,1,0
+5023061,F,202500,Separated,House,1,0
+5023063,F,202500,Civil marriage,Co-op apartment,4,X
+5023064,F,202500,Civil marriage,Co-op apartment,4,C
+5023065,F,38250,Married,House,2,C
+5023066,F,38250,Married,House,2,C
+5023067,F,38250,Married,House,2,C
+5023068,F,38250,Married,House,2,C
+5023069,F,38250,Married,House,2,C
+5023070,F,38250,Married,House,2,C
+5023071,F,38250,Married,House,2,C
+6051946,F,38250,Married,House,2,C
+5023072,F,81000,Married,House,2,C
+5023073,F,81000,Married,House,2,C
+5023074,F,81000,Married,House,2,C
+5023075,F,81000,Married,House,2,C
+5023076,F,81000,Married,House,2,C
+5023077,F,81000,Married,House,2,C
+5023078,F,81000,Married,House,2,C
+6051947,F,81000,Married,House,2,C
+5023079,F,81000,Married,House,2,C
+5023080,F,81000,Married,House,2,C
+5023081,M,135000,Single,House,1,C
+5023082,M,135000,Single,House,1,C
+5023083,F,175500,Single,Municipal apartment,2,C
+5023084,F,175500,Single,Municipal apartment,2,C
+5023085,F,175500,Single,Municipal apartment,2,C
+5023086,F,175500,Single,Municipal apartment,2,C
+5023087,F,175500,Single,Municipal apartment,2,C
+5023088,F,175500,Single,Municipal apartment,2,C
+5023089,F,202500,Separated,House,1,C
+5023092,F,202500,Separated,House,1,C
+5023095,F,202500,Separated,House,1,C
+5023096,F,202500,Separated,House,1,C
+6052103,F,202500,Separated,House,1,C
+5023097,M,180000,Married,House,3,C
+5023099,F,94500,Married,House,2,C
+5023100,F,94500,Married,House,2,C
+5023101,F,94500,Married,House,2,C
+5023102,F,94500,Married,House,2,C
+5023103,M,135000,Married,House,2,C
+5023105,M,67500,Married,House,3,C
+5023106,M,67500,Married,House,3,C
+5023107,M,67500,Married,House,3,C
+5023108,M,67500,Married,House,3,C
+5023109,M,67500,Married,House,3,C
+5023110,M,382500,Married,House,2,C
+5023111,M,382500,Married,House,2,C
+5023112,M,382500,Married,House,2,C
+5023113,M,382500,Married,House,2,C
+5023114,M,382500,Married,House,2,C
+5023115,F,81000,Married,House,2,C
+5023116,F,81000,Civil marriage,House,2,C
+5023117,F,81000,Civil marriage,House,2,C
+5023118,F,81000,Civil marriage,House,2,X
+5023120,F,328500,Married,House,2,X
+5023121,F,328500,Married,House,2,X
+5023122,F,328500,Married,House,2,X
+5023124,F,328500,Married,House,2,X
+5023125,F,328500,Married,House,2,X
+5023126,F,328500,Married,House,2,X
+5023127,F,328500,Married,House,2,X
+5023129,F,328500,Married,House,2,X
+5023130,F,328500,Married,House,2,X
+5023131,F,328500,Married,House,2,0
+6051983,F,328500,Married,House,2,0
+5023133,F,180000,Married,House,3,X
+5023134,F,180000,Married,House,3,X
+5023136,F,112500,Single,House,1,0
+5023137,F,112500,Single,House,1,X
+5023138,F,112500,Single,House,1,X
+5023139,F,112500,Single,House,1,X
+5023140,F,112500,Single,House,1,X
+5023141,F,112500,Single,House,1,X
+5023142,F,112500,Single,House,1,X
+5023143,F,112500,Single,House,1,X
+5023144,F,112500,Single,House,1,X
+5023145,F,112500,Single,House,1,X
+5023146,F,112500,Single,House,1,X
+5023147,F,112500,Single,House,1,X
+5023150,M,315000,Married,House,3,X
+5023151,M,315000,Married,House,3,X
+5023152,M,315000,Married,House,3,X
+6052073,M,315000,Married,House,3,X
+5023153,F,126000,Married,Municipal apartment,2,X
+5023159,F,126000,Married,Municipal apartment,2,X
+5023160,F,126000,Married,Municipal apartment,2,X
+5023161,F,126000,Married,Municipal apartment,2,X
+5023163,F,135000,Separated,House,1,X
+5023164,F,135000,Separated,House,1,X
+6052075,F,135000,Separated,House,1,X
+5023168,F,153000,Married,House,2,X
+5023169,F,153000,Married,House,2,X
+5023170,F,117000,Married,House,3,0
+5023171,F,117000,Married,House,3,X
+6052077,F,117000,Married,House,3,0
+5023172,F,337500,Civil marriage,House,3,X
+5023173,F,337500,Civil marriage,House,3,X
+5023176,F,337500,Civil marriage,House,3,X
+5023177,F,337500,Civil marriage,House,3,X
+6052079,F,337500,Civil marriage,House,3,X
+5023180,F,67500,Married,House,2,X
+5023181,F,67500,Married,House,2,X
+5023182,F,67500,Married,House,2,X
+6052081,F,67500,Married,House,2,X
+5023183,M,135000,Married,House,2,X
+5023184,M,135000,Married,House,2,X
+5023185,M,135000,Married,House,2,X
+5023186,M,135000,Married,House,2,X
+5023187,M,135000,Married,House,2,X
+5023188,M,135000,Married,House,2,X
+5023190,F,315000,Married,House,3,X
+5023191,M,49500,Civil marriage,House,2,X
+5023193,M,49500,Civil marriage,House,2,X
+5023194,M,49500,Civil marriage,House,2,X
+5023195,M,49500,Civil marriage,House,2,X
+5023196,M,49500,Civil marriage,House,2,X
+5023197,M,49500,Civil marriage,House,2,0
+5023198,M,49500,Civil marriage,House,2,0
+5023199,M,49500,Civil marriage,House,2,0
+5023200,M,180000,Married,House,4,0
+5023201,M,180000,Married,House,4,0
+5023202,M,180000,Married,House,4,0
+5023203,M,180000,Married,House,4,0
+5023204,M,180000,Married,House,4,C
+5023205,M,135000,Married,House,2,C
+5023206,F,135000,Married,House,3,C
+5023207,F,135000,Married,House,3,C
+5023208,F,135000,Married,House,3,C
+5023209,F,135000,Married,House,3,C
+5023210,F,135000,Married,House,3,C
+5023211,F,135000,Married,House,3,C
+5023212,F,135000,Married,House,3,C
+5023213,M,225000,Married,House,2,C
+5023214,M,225000,Married,House,2,C
+5023215,M,225000,Married,House,2,C
+5023216,M,225000,Married,House,2,C
+5023217,M,225000,Married,House,2,C
+5023224,F,135000,Married,House,2,C
+5023229,F,90000,Widow,House,1,C
+5023230,F,90000,Widow,House,1,C
+5023231,M,270000,Separated,House,1,C
+5023232,F,225000,Single,House,1,C
+5023233,F,225000,Single,House,1,C
+5023234,F,225000,Single,House,1,C
+5023235,F,225000,Single,House,1,C
+5023236,F,225000,Single,House,1,C
+5023237,F,225000,Single,House,1,C
+5023238,F,225000,Single,House,1,C
+6051994,F,225000,Single,House,1,C
+5023239,M,225000,Married,Rent,4,C
+5023240,M,225000,Married,Rent,4,0
+5023241,M,225000,Married,Rent,4,0
+5023242,M,225000,Married,Rent,4,0
+5023244,M,225000,Married,Rent,4,0
+5023245,M,225000,Married,Rent,4,0
+5023246,M,225000,Married,Rent,4,0
+5023247,M,225000,Married,Rent,4,X
+5023248,M,225000,Married,Rent,4,C
+5023249,M,225000,Married,Rent,4,C
+5023250,F,67500,Married,House,2,C
+5023251,F,67500,Married,House,2,C
+5023252,F,67500,Married,House,2,C
+6052086,F,67500,Married,House,2,C
+5023253,M,112500,Separated,House,1,C
+5023254,M,112500,Separated,House,1,C
+5023255,M,112500,Separated,House,1,C
+5023256,M,112500,Separated,House,1,0
+5023257,M,180000,Married,House,2,0
+5023258,M,180000,Married,House,2,0
+5023259,M,180000,Married,House,2,1
+5023260,M,180000,Married,House,2,0
+5023261,M,180000,Married,House,2,0
+5023262,M,180000,Married,House,2,0
+5023263,M,180000,Married,House,2,0
+5023264,M,180000,Married,House,2,0
+5023265,M,135000,Married,House,2,0
+5023266,F,157500,Married,House,3,X
+5023267,F,157500,Married,House,3,C
+5023268,F,157500,Married,House,3,C
+5023270,M,135000,Married,House,2,C
+5023271,M,135000,Married,House,2,C
+5023272,F,76500,Widow,House,1,0
+5023273,F,76500,Widow,House,1,0
+5023274,F,76500,Widow,House,1,0
+5023277,F,81000,Married,House,2,0
+5023279,F,180000,Married,House,2,0
+5023280,F,180000,Married,House,2,X
+5023282,F,180000,Married,House,2,X
+5023283,F,180000,Married,House,2,0
+5023284,F,180000,Married,House,2,0
+5023285,M,189000,Married,House,2,X
+6052082,M,189000,Married,House,2,0
+5023286,F,45000,Married,House,3,X
+5023287,F,45000,Married,House,3,0
+5023288,F,45000,Married,House,3,X
+5023289,F,45000,Married,House,3,X
+5023290,F,45000,Married,House,3,X
+5023292,F,225000,Civil marriage,House,3,X
+5023295,F,225000,Civil marriage,House,3,X
+6052083,F,225000,Civil marriage,House,3,X
+5023298,F,67500,Married,House,3,0
+5023299,F,67500,Married,House,3,0
+5023300,F,67500,Married,House,3,0
+5023301,F,67500,Married,House,3,X
+5023302,F,67500,Married,House,3,X
+5023303,M,225000,Married,House,3,X
+5023304,M,225000,Married,House,3,X
+5023305,M,225000,Married,House,3,X
+5023306,M,225000,Married,House,3,X
+5023307,M,225000,Married,House,3,X
+5023308,M,225000,Married,House,3,X
+5023309,M,225000,Married,House,3,X
+5023310,M,225000,Married,House,3,X
+5023311,M,225000,Married,House,3,X
+5023312,M,225000,Married,House,3,X
+5023313,M,225000,Married,House,3,X
+5023314,M,225000,Married,House,3,X
+5023315,M,225000,Married,House,3,X
+5023316,M,225000,Married,House,3,X
+5023318,F,202500,Married,House,2,X
+6052088,F,202500,Married,House,2,X
+5023320,F,135000,Married,House,2,X
+5023321,F,135000,Married,House,2,X
+6052089,F,135000,Married,House,2,X
+5023323,M,135000,Married,House,4,X
+5023324,M,135000,Married,House,4,X
+5023325,M,135000,Married,House,4,X
+5023326,M,135000,Married,House,4,0
+5023327,M,81000,Married,House,4,X
+5023328,M,81000,Married,House,4,X
+5023329,M,81000,Married,House,4,X
+5023330,M,81000,Married,House,4,0
+5023331,M,81000,Married,House,4,X
+5023332,M,81000,Married,House,4,X
+5023333,M,81000,Married,House,4,X
+5023334,M,81000,Married,House,4,0
+5023336,F,135000,Married,House,2,X
+5023339,F,135000,Married,House,2,X
+5023341,F,135000,Married,House,2,X
+5023342,M,900000,Married,House,2,X
+5023345,M,900000,Married,House,2,X
+5023347,M,900000,Married,House,2,X
+5023348,M,900000,Married,House,2,X
+5023350,M,900000,Married,House,2,X
+5023351,M,90000,Married,House,2,X
+5023352,M,90000,Married,House,2,X
+5023353,M,90000,Married,House,2,C
+6052005,M,90000,Married,House,2,C
+6052006,M,90000,Married,House,2,C
+5023354,M,180000,Single,House,1,C
+5023355,M,180000,Single,House,1,C
+5023356,M,180000,Single,House,1,C
+5023357,M,180000,Single,House,1,C
+5023358,M,180000,Single,House,1,C
+5023359,M,180000,Single,House,1,C
+5023361,M,180000,Single,House,1,C
+5023362,M,180000,Single,House,1,C
+5023363,M,180000,Single,House,1,C
+5023364,M,180000,Single,House,1,C
+5023365,M,180000,Single,House,1,C
+5023366,M,180000,Single,House,1,C
+6052092,M,180000,Single,House,1,C
+5023367,F,90000,Married,House,2,C
+5023368,F,67500,Married,House,2,C
+5023369,M,135000,Single,House,1,C
+5023370,M,135000,Single,House,1,C
+5023373,F,157500,Married,House,4,C
+5023374,F,157500,Married,House,4,C
+6052093,F,157500,Married,House,4,C
+6052094,F,157500,Married,House,4,C
+5023377,F,81000,Married,House,2,C
+5023378,F,81000,Married,House,2,C
+5023379,F,81000,Married,House,2,C
+5023380,F,81000,Married,House,2,C
+5023385,F,81000,Married,House,2,C
+5023386,F,81000,Married,House,2,C
+5023387,M,83250,Married,House,2,C
+5023389,M,157500,Married,House,4,C
+5023390,M,157500,Married,House,4,C
+5023392,F,99000,Widow,House,1,C
+5023394,F,99000,Widow,House,1,C
+5023397,F,99000,Widow,House,1,C
+5023398,F,99000,Widow,House,1,C
+5023399,F,99000,Widow,House,1,C
+5023400,F,99000,Widow,House,1,C
+5023401,F,99000,Widow,House,1,C
+5023402,F,99000,Widow,House,1,C
+5023406,F,99000,Widow,House,1,C
+5023407,F,135000,Married,House,2,0
+5023408,F,112500,Married,House,2,0
+5023409,F,112500,Married,House,2,0
+5023410,F,112500,Married,House,2,0
+5023411,F,112500,Married,House,2,0
+5023412,F,112500,Married,House,2,0
+5023414,F,225000,Married,House,3,0
+5023415,F,225000,Married,House,3,0
+5023417,F,225000,Married,House,3,0
+5023419,F,225000,Married,House,3,0
+5023420,F,225000,Married,House,3,0
+5023421,F,225000,Married,House,3,0
+5023422,F,225000,Married,House,3,0
+5023423,F,225000,Married,House,3,0
+6052096,F,225000,Married,House,3,C
+6052097,F,225000,Married,House,3,C
+6052098,F,225000,Married,House,3,C
+5023425,M,157500,Married,House,5,C
+5023426,M,157500,Married,House,5,C
+5023427,M,157500,Married,House,5,C
+5023428,M,157500,Married,House,5,C
+5023429,M,157500,Married,House,5,C
+5023430,F,108000,Married,House,2,C
+5023431,F,108000,Married,House,2,C
+5023432,F,108000,Married,House,2,C
+5023433,F,108000,Married,House,2,C
+5023435,F,180000,Single,House,1,C
+5023438,F,180000,Single,House,1,C
+5023439,F,180000,Single,House,1,C
+5023440,F,180000,Single,House,1,C
+5023441,F,180000,Single,House,1,C
+5023442,F,180000,Single,House,1,C
+5023443,F,180000,Single,House,1,C
+5023444,F,180000,Single,House,1,C
+5023445,F,180000,Single,House,1,C
+5023447,F,180000,Married,House,2,C
+5023448,F,180000,Married,House,2,C
+5023449,F,180000,Married,House,2,C
+5023450,F,180000,Married,House,2,C
+5023451,F,180000,Married,House,2,C
+5023452,F,180000,Married,House,2,C
+5023453,F,180000,Married,House,2,C
+5023454,F,180000,Married,House,2,C
+5023456,F,180000,Married,House,2,X
+5023457,F,180000,Married,House,2,X
+5023460,F,315000,Single,House,1,0
+5023461,F,315000,Single,House,1,0
+5023462,F,315000,Single,House,1,0
+5023465,F,315000,Single,House,1,0
+5023467,F,315000,Single,House,1,X
+5023468,F,315000,Single,House,1,0
+5023469,F,315000,Single,House,1,0
+5023470,F,315000,Single,House,1,X
+5023471,F,315000,Single,House,1,X
+5023472,F,315000,Single,House,1,X
+5023473,F,315000,Single,House,1,X
+5023474,F,315000,Single,House,1,X
+5023475,F,315000,Single,House,1,X
+6052099,F,315000,Single,House,1,0
+5023476,F,135000,Married,House,2,0
+5023478,F,135000,Married,House,2,0
+5023479,F,119250,Married,House,3,X
+5023480,F,119250,Married,House,3,X
+5023481,F,119250,Married,House,3,X
+5023482,F,119250,Married,House,3,X
+5023483,F,119250,Married,House,3,X
+5023484,F,119250,Married,House,3,X
+6052011,F,119250,Married,House,3,X
+5023486,F,112500,Married,House,2,X
+5023490,M,83250,Married,House,2,X
+5023491,M,83250,Married,House,2,X
+5023492,M,83250,Married,House,2,X
+5023493,M,83250,Married,House,2,X
+5023494,F,112500,Married,House,3,X
+5023495,F,112500,Married,House,3,X
+5023496,F,112500,Married,House,3,X
+5023497,F,112500,Married,House,3,X
+5023499,F,63000,Single,Municipal apartment,2,X
+5023500,F,63000,Single,Municipal apartment,2,X
+5023502,F,63000,Single,Municipal apartment,2,X
+5023503,F,63000,Single,Municipal apartment,2,X
+5023504,F,63000,Single,Municipal apartment,2,X
+6052012,F,63000,Single,Municipal apartment,2,X
+6052013,F,63000,Single,Municipal apartment,2,X
+5023505,F,207000,Widow,House,1,X
+5023506,F,207000,Widow,House,1,X
+5023507,F,207000,Widow,House,1,X
+5023508,M,112500,Married,House,3,X
+5023509,M,112500,Married,House,3,X
+5023511,M,112500,Married,House,3,X
+5023513,M,112500,Married,House,3,X
+5023514,M,112500,Married,House,3,X
+5023516,M,112500,Married,House,3,X
+5023517,M,112500,Married,House,3,X
+5023518,M,112500,Married,House,3,X
+5023519,M,112500,Married,House,3,X
+5023520,M,112500,Married,House,3,0
+5023521,M,112500,Married,House,3,X
+5023522,M,180000,Married,House,2,X
+5023523,M,180000,Married,House,2,X
+5023524,M,180000,Married,House,2,X
+6052014,M,180000,Married,House,2,X
+5023526,F,274500,Married,House,2,X
+5023527,F,274500,Married,House,2,X
+5023528,F,274500,Married,House,2,X
+5023531,F,274500,Married,House,2,X
+5023532,F,274500,Married,House,2,X
+5023533,F,202500,Separated,House,1,X
+5023534,F,202500,Separated,House,1,X
+5023535,F,202500,Separated,House,1,X
+5023536,F,202500,Separated,House,1,X
+5023537,F,202500,Separated,House,1,X
+5023539,F,81000,Married,Municipal apartment,2,C
+5023540,F,90000,Civil marriage,House,2,C
+5023541,F,90000,Civil marriage,House,2,C
+5023542,F,90000,Civil marriage,House,2,C
+5023543,F,90000,Civil marriage,House,2,C
+5023544,F,90000,Civil marriage,House,2,C
+5023545,F,90000,Civil marriage,House,2,C
+5023546,M,90900,Married,House,2,C
+5023547,M,90900,Married,House,2,C
+5023548,M,90900,Married,House,2,C
+5023549,M,90900,Married,House,2,C
+5023550,M,90900,Married,House,2,C
+6052032,M,90900,Married,House,2,C
+5023551,F,202500,Single,House,1,C
+5023552,F,202500,Single,House,1,C
+5023553,F,202500,Single,House,1,C
+5023554,F,180000,Married,House,3,C
+5023555,F,180000,Married,House,3,C
+5023556,F,180000,Married,House,3,C
+5023558,F,202500,Widow,House,1,C
+5023559,F,202500,Widow,House,1,C
+5023560,F,202500,Widow,House,1,C
+5023562,F,202500,Widow,House,1,C
+5023563,F,202500,Widow,House,1,C
+5023564,F,202500,Widow,House,1,C
+5023566,M,270000,Married,House,5,C
+5023567,M,270000,Married,House,5,C
+5023569,F,180000,Separated,House,1,C
+5023570,F,180000,Separated,House,1,C
+5023573,F,202500,Married,House,2,C
+5023576,F,202500,Married,House,2,C
+5023577,F,202500,Married,House,2,C
+5023579,F,180000,Widow,House,1,C
+5023580,F,180000,Widow,House,1,C
+5023581,F,180000,Widow,House,1,C
+5023582,F,180000,Widow,House,1,C
+5023584,M,202500,Separated,House,1,C
+5023585,M,202500,Separated,House,1,C
+5023587,M,202500,Separated,House,1,C
+5023588,M,202500,Separated,House,1,C
+5023589,M,202500,Separated,House,1,C
+5023590,M,202500,Separated,House,1,C
+5023591,M,202500,Separated,House,1,0
+5023592,M,202500,Separated,House,1,0
+5023593,M,202500,Separated,House,1,0
+5023594,M,135000,Married,House,2,0
+5023595,M,135000,Married,House,2,0
+5023596,M,135000,Married,House,2,0
+5023598,F,225000,Married,House,2,0
+5023599,F,225000,Married,House,2,0
+5023600,F,225000,Married,House,2,0
+5023602,F,135000,Married,House,2,0
+5023603,F,135000,Married,House,2,0
+5023604,F,135000,Married,House,2,0
+5023605,F,135000,Married,House,2,X
+5023608,M,360000,Married,House,3,X
+6052106,M,360000,Married,House,3,C
+5023609,F,135000,Married,House,2,C
+5023610,F,135000,Married,House,2,C
+6052037,F,135000,Married,House,2,C
+5023611,M,202500,Married,House,2,C
+5023612,M,202500,Married,House,2,C
+5023613,M,202500,Married,House,2,C
+5023614,M,202500,Married,House,2,C
+5023615,M,202500,Married,House,2,C
+5023616,M,202500,Married,House,2,C
+5023617,F,157500,Married,House,4,C
+5023618,F,157500,Married,House,4,C
+5023619,F,157500,Married,House,4,C
+5023621,F,157500,Married,House,4,C
+5023622,F,157500,Married,House,4,C
+5023623,F,180000,Married,House,4,C
+5023624,F,180000,Married,House,4,C
+5023626,F,180000,Married,House,4,C
+6052107,F,180000,Married,House,4,C
+5023627,F,270000,Widow,House,1,C
+5023628,F,270000,Widow,House,1,C
+5023629,F,270000,Widow,House,1,C
+5023630,F,270000,Widow,House,1,C
+5023631,F,270000,Widow,House,1,C
+5023632,F,270000,Widow,House,1,C
+5023635,M,157500,Married,House,3,C
+5023636,M,157500,Married,House,3,C
+5023638,M,157500,Married,House,3,C
+5023639,M,225000,Married,House,4,C
+5023640,M,225000,Married,House,4,C
+5023644,M,225000,Married,House,4,C
+5023645,M,225000,Married,House,4,C
+5023646,M,225000,Married,House,4,C
+5023647,M,225000,Married,House,4,C
+5023650,F,225000,Single,House,1,C
+5023651,F,225000,Single,House,1,C
+5023652,F,225000,Single,House,1,C
+5023655,F,225000,Single,House,1,C
+5023656,F,225000,Single,House,1,C
+5023657,F,225000,Single,House,1,C
+5023660,M,99000,Married,House,4,C
+5023661,M,99000,Married,House,4,0
+5023662,M,99000,Married,House,4,0
+5023663,M,99000,Married,House,4,0
+5023664,M,99000,Married,House,4,0
+5023665,M,99000,Married,House,4,0
+6052038,M,99000,Married,House,4,0
+5023666,F,90000,Married,House,2,0
+5023668,F,90000,Married,House,2,0
+5023671,F,90000,Married,House,2,0
+5023672,F,90000,Married,House,2,0
+5023673,F,90000,Married,House,2,X
+5023674,F,90000,Married,House,2,0
+5023675,F,90000,Married,House,2,0
+6052039,F,90000,Married,House,2,0
+6052040,F,90000,Married,House,2,X
+5023677,F,117000,Married,House,2,0
+5023678,F,117000,Married,House,2,0
+5023679,M,225000,Married,House,2,C
+5023681,F,67500,Civil marriage,House,3,C
+5023682,F,67500,Civil marriage,House,3,0
+5023683,F,67500,Civil marriage,House,3,C
+6052108,F,67500,Civil marriage,House,3,C
+5023684,M,279000,Married,House,2,C
+5023685,M,279000,Married,House,2,C
+5023687,M,279000,Married,House,2,0
+6052113,M,279000,Married,House,2,C
+5023688,F,135000,Single,House,1,C
+5023689,F,135000,Single,House,1,C
+5023690,F,135000,Single,House,1,C
+5023691,F,135000,Single,House,1,C
+5023692,F,135000,Single,House,1,C
+5023693,F,135000,Single,House,1,C
+5023696,F,117000,Civil marriage,House,2,C
+5023697,F,117000,Civil marriage,House,2,C
+5023698,F,117000,Civil marriage,House,2,C
+5023699,F,180000,Married,House,2,C
+5023700,F,180000,Married,House,2,C
+5023703,F,180000,Married,House,2,C
+5023705,F,180000,Married,House,2,C
+5023706,F,180000,Married,House,2,C
+5023707,F,180000,Married,House,2,C
+5023711,F,180000,Married,House,2,X
+5023712,F,180000,Married,House,2,C
+5023713,F,180000,Married,House,2,C
+5023714,F,180000,Married,House,2,C
+6052041,F,180000,Married,House,2,C
+6052042,F,180000,Married,House,2,C
+6052043,F,180000,Married,House,2,C
+6052045,F,180000,Married,House,2,C
+6052046,F,180000,Married,House,2,C
+5023716,F,175500,Married,House,2,C
+5023718,F,175500,Married,House,2,C
+5023719,F,175500,Married,House,2,C
+5023720,F,175500,Married,House,2,0
+5023721,M,112500,Married,House,2,X
+5023722,M,112500,Married,House,2,X
+5023723,M,112500,Married,House,2,X
+6052115,M,112500,Married,House,2,X
+5023724,M,495000,Married,House,3,X
+5023725,M,495000,Married,House,3,X
+5023726,M,495000,Married,House,3,X
+5023727,M,495000,Married,House,3,X
+5023728,M,495000,Married,House,3,X
+5023729,M,495000,Married,House,3,0
+5023730,M,495000,Married,House,3,X
+6052116,M,495000,Married,House,3,X
+5023731,F,90000,Single,With parents,1,X
+5023733,F,216000,Civil marriage,House,2,X
+6052048,F,216000,Civil marriage,House,2,X
+5023734,F,90000,Married,House,2,X
+5023735,F,90000,Married,House,2,X
+5023736,F,90000,Married,House,2,X
+5023737,F,90000,Married,House,2,X
+5023739,F,90000,Married,House,2,X
+5023743,F,90000,Married,House,2,X
+5023745,F,90000,Married,House,2,0
+5023748,M,157500,Married,House,2,X
+5023749,M,157500,Married,House,2,X
+5023750,M,157500,Married,House,2,X
+5023751,M,157500,Married,House,2,X
+5023752,M,157500,Married,House,2,X
+5023753,M,157500,Married,House,2,X
+6052049,M,157500,Married,House,2,X
+5023754,F,135000,Widow,House,1,X
+5023755,F,135000,Widow,House,1,X
+5023756,F,135000,Widow,House,1,X
+5023757,F,135000,Widow,House,1,0
+5023758,F,135000,Widow,House,1,C
+5023759,F,135000,Widow,House,1,C
+5023760,F,135000,Widow,House,1,C
+5023761,F,135000,Widow,House,1,C
+5023762,F,90000,Married,House,2,1
+5023763,F,90000,Married,House,2,1
+5023764,F,90000,Married,House,2,1
+5023765,F,90000,Married,House,2,1
+5023766,F,211500,Married,House,2,0
+5023767,F,211500,Married,House,2,0
+5023768,F,211500,Married,House,2,0
+5023770,F,211500,Married,House,2,0
+5023771,M,99000,Married,House,2,0
+5023774,M,99000,Married,House,2,0
+5023776,M,270000,Married,House,2,0
+5023777,M,270000,Married,House,2,C
+5023778,M,270000,Married,House,2,C
+5023779,M,270000,Married,House,2,C
+5023780,F,157500,Civil marriage,House,2,C
+5023811,M,202500,Married,With parents,2,C
+6641375,M,202500,Married,With parents,2,C
+6641376,M,202500,Married,With parents,2,C
+6790051,M,202500,Married,With parents,2,C
+6790052,M,202500,Married,With parents,2,C
+6790053,M,202500,Married,With parents,2,C
+6790054,M,202500,Married,With parents,2,C
+6790055,M,202500,Married,With parents,2,C
+6790056,M,202500,Married,With parents,2,C
+6790057,M,202500,Married,With parents,2,C
+6790059,M,202500,Married,With parents,2,C
+6790060,M,202500,Married,With parents,2,0
+6790061,M,202500,Married,With parents,2,0
+5023812,F,202500,Separated,House,2,0
+6790085,F,202500,Separated,House,2,0
+6790086,F,202500,Separated,House,2,0
+5023813,F,405000,Civil marriage,House,2,0
+5552568,F,405000,Civil marriage,House,2,0
+5552569,F,405000,Civil marriage,House,2,0
+5552571,F,405000,Civil marriage,House,2,0
+5552572,F,405000,Civil marriage,House,2,0
+5552573,F,405000,Civil marriage,House,2,0
+6641301,F,405000,Civil marriage,House,2,0
+5023814,M,180000,Married,House,2,0
+5552032,M,180000,Married,House,2,0
+5552033,M,180000,Married,House,2,0
+5552034,M,180000,Married,House,2,0
+6641419,M,180000,Married,House,2,0
+5023816,F,225000,Married,House,3,0
+6790240,F,225000,Married,House,3,0
+6790243,F,225000,Married,House,3,0
+6790244,F,225000,Married,House,3,0
+6790245,F,225000,Married,House,3,C
+5023819,M,135000,Civil marriage,House,2,C
+5552082,M,135000,Civil marriage,House,2,C
+5552083,M,135000,Civil marriage,House,2,C
+5552084,M,135000,Civil marriage,House,2,C
+6641361,M,135000,Civil marriage,House,2,C
+6641362,M,135000,Civil marriage,House,2,C
+5023820,F,112500,Married,House,2,C
+6790254,F,112500,Married,House,2,X
+6790255,F,112500,Married,House,2,0
+6790257,F,112500,Married,House,2,0
+6790258,F,112500,Married,House,2,X
+5023821,F,180000,Married,House,2,0
+6790268,F,180000,Married,House,2,0
+6790271,F,180000,Married,House,2,0
+6790272,F,180000,Married,House,2,X
+5023824,F,216000,Married,House,3,0
+5552161,F,216000,Married,House,3,X
+5552162,F,216000,Married,House,3,0
+5552163,F,216000,Married,House,3,0
+5552164,F,216000,Married,House,3,C
+5552165,F,216000,Married,House,3,C
+5552166,F,216000,Married,House,3,C
+5552168,F,216000,Married,House,3,C
+5552169,F,216000,Married,House,3,C
+5552170,F,216000,Married,House,3,C
+5552171,F,216000,Married,House,3,C
+5552172,F,216000,Married,House,3,C
+6641317,F,216000,Married,House,3,C
+6641318,F,216000,Married,House,3,C
+5023825,M,247500,Married,House,3,C
+6790359,M,247500,Married,House,3,C
+6790360,M,247500,Married,House,3,C
+5023827,F,292500,Married,House,2,C
+5552235,F,292500,Married,House,2,C
+5552237,F,292500,Married,House,2,C
+5552238,F,292500,Married,House,2,C
+5552241,F,292500,Married,House,2,C
+5552242,F,292500,Married,House,2,C
+5552243,F,292500,Married,House,2,0
+5023830,F,135000,Separated,House,2,X
+6641471,F,135000,Separated,House,2,X
+6764159,F,135000,Separated,House,2,0
+6764160,F,135000,Separated,House,2,1
+6764161,F,135000,Separated,House,2,X
+6764162,F,135000,Separated,House,2,0
+6641445,F,112500,Married,House,4,X
+6790404,F,112500,Married,House,4,0
+6790405,F,112500,Married,House,4,X
+6790408,F,112500,Married,House,4,X
+6790410,F,112500,Married,House,4,X
+6790411,F,112500,Married,House,4,0
+6790416,F,112500,Married,House,4,0
+5023832,F,112500,Married,House,2,0
+6790417,F,112500,Married,House,2,X
+6790418,F,112500,Married,House,2,X
+6790420,F,112500,Married,House,2,C
+6790422,F,112500,Married,House,2,C
+6790423,F,112500,Married,House,2,C
+6790424,F,112500,Married,House,2,C
+5023833,F,540000,Married,House,2,C
+6790425,F,540000,Married,House,2,C
+6790426,F,540000,Married,House,2,C
+6790427,F,540000,Married,House,2,C
+6790428,F,540000,Married,House,2,C
+6790431,F,540000,Married,House,2,C
+6790432,F,540000,Married,House,2,C
+6790434,F,540000,Married,House,2,C
+6790436,F,540000,Married,House,2,C
+6790437,F,540000,Married,House,2,C
+5023834,M,112500,Married,House,3,C
+5552280,M,112500,Married,House,3,C
+5552281,M,112500,Married,House,3,C
+5552282,M,112500,Married,House,3,C
+5552283,M,112500,Married,House,3,C
+5023836,F,135000,Widow,House,1,C
+5552300,F,135000,Widow,House,1,C
+5023837,F,112500,Married,House,2,C
+5508815,F,112500,Married,House,2,C
+5508817,F,112500,Married,House,2,C
+5508818,F,112500,Married,House,2,C
+5508819,F,112500,Married,House,2,C
+5508820,F,112500,Married,House,2,C
+6641382,F,112500,Married,House,2,C
+5023838,F,315000,Civil marriage,House,2,C
+5508842,F,315000,Civil marriage,House,2,C
+6641417,F,315000,Civil marriage,House,2,C
+6641418,F,315000,Civil marriage,House,2,C
+5023839,M,220500,Married,House,3,C
+5552311,M,220500,Married,House,3,C
+5552313,M,220500,Married,House,3,C
+5552314,M,220500,Married,House,3,C
+5552318,M,220500,Married,House,3,C
+5552319,M,220500,Married,House,3,C
+5552320,M,220500,Married,House,3,1
+5552321,M,220500,Married,House,3,1
+5552322,M,220500,Married,House,3,0
+5552323,M,220500,Married,House,3,1
+5552324,M,220500,Married,House,3,0
+6641338,M,220500,Married,House,3,0
+5023841,F,180000,Married,House,2,0
+5552362,F,180000,Married,House,2,0
+5552363,F,180000,Married,House,2,0
+5552364,F,180000,Married,House,2,0
+5552365,F,180000,Married,House,2,0
+5552366,F,180000,Married,House,2,X
+5552369,F,180000,Married,House,2,X
+5552371,F,180000,Married,House,2,X
+5552372,F,180000,Married,House,2,0
+5552373,F,180000,Married,House,2,X
+5552374,F,180000,Married,House,2,0
+5552376,F,180000,Married,House,2,0
+5552377,F,180000,Married,House,2,1
+5023842,F,292500,Single,House,1,0
+6789882,F,292500,Single,House,1,X
+6789885,F,292500,Single,House,1,0
+6789886,F,292500,Single,House,1,0
+5023843,F,90000,Married,House,2,X
+5508881,F,90000,Married,House,2,0
+5508882,F,90000,Married,House,2,0
+5023844,F,121500,Married,House,3,1
+6789931,F,121500,Married,House,3,0
+6789932,F,121500,Married,House,3,0
+6789933,F,121500,Married,House,3,X
+6789934,F,121500,Married,House,3,X
+6789935,F,121500,Married,House,3,0
+6789936,F,121500,Married,House,3,X
+6789937,F,121500,Married,House,3,X
+5023845,M,144000,Married,House,3,X
+6789955,M,144000,Married,House,3,X
+6789956,M,144000,Married,House,3,0
+6789957,M,144000,Married,House,3,X
+6789958,M,144000,Married,House,3,0
+5023846,M,405000,Married,House,2,X
+5508914,M,405000,Married,House,2,0
+5508915,M,405000,Married,House,2,X
+5023848,M,49500,Single,House,1,0
+6789991,M,49500,Single,House,1,0
+5023849,M,180000,Civil marriage,House,4,X
+6641442,M,180000,Civil marriage,House,4,X
+6641443,M,180000,Civil marriage,House,4,0
+6790022,M,180000,Civil marriage,House,4,1
+6790023,M,180000,Civil marriage,House,4,X
+6790024,M,180000,Civil marriage,House,4,0
+5023851,F,135000,Single,House,2,X
+5023856,F,450000,Married,House,2,0
+5023858,F,450000,Married,House,2,X
+5023859,F,450000,Married,House,2,X
+5023860,F,450000,Married,House,2,X
+5794717,F,450000,Married,House,2,0
+5023862,F,112500,Married,House,2,X
+5023863,F,112500,Married,House,2,X
+5023864,F,112500,Married,House,2,X
+5023865,F,112500,Married,House,2,0
+5023866,F,112500,Married,House,2,0
+5023867,F,112500,Married,House,2,0
+5023870,F,180000,Single,House,1,X
+5023872,F,180000,Single,House,1,0
+5023873,F,180000,Single,House,1,X
+5023874,F,180000,Single,House,1,0
+5023875,F,180000,Single,House,1,X
+5794744,F,180000,Single,House,1,0
+5794745,F,180000,Single,House,1,0
+5023876,F,360000,Married,House,2,X
+5023877,F,360000,Married,House,2,0
+5023878,F,360000,Married,House,2,X
+5023879,F,360000,Married,House,2,X
+5023880,F,360000,Married,House,2,X
+5794746,F,360000,Married,House,2,X
+5023882,F,135000,Married,House,2,X
+5023883,F,135000,Married,House,2,X
+5023885,F,135000,Married,House,2,0
+5023890,F,189000,Separated,House,1,0
+5794768,F,189000,Separated,House,1,0
+5023891,F,85500,Married,House,4,0
+5023892,F,85500,Married,House,4,0
+5023895,F,85500,Married,House,4,X
+5794796,F,85500,Married,House,4,X
+5023896,F,90000,Married,House,3,X
+5023897,F,90000,Married,House,3,X
+5023898,F,90000,Married,House,3,X
+5023899,F,90000,Married,House,3,X
+5023900,F,225000,Married,House,2,X
+5023901,F,225000,Married,House,2,0
+5023902,F,225000,Married,House,2,0
+5023903,F,225000,Married,House,2,0
+5023904,F,99000,Married,House,2,0
+5023906,F,99000,Married,House,2,0
+5023907,F,99000,Married,House,2,0
+5023908,F,99000,Married,House,2,0
+5023909,F,99000,Married,House,2,0
+5023910,F,99000,Married,House,2,0
+5023912,F,99000,Married,House,2,0
+5023913,F,99000,Married,House,2,0
+5023914,F,184500,Married,House,4,0
+5023915,M,225000,Civil marriage,House,3,0
+5023916,M,225000,Civil marriage,House,3,0
+5023917,M,225000,Civil marriage,House,3,0
+5023918,M,225000,Civil marriage,House,3,0
+5023919,M,225000,Civil marriage,House,3,0
+5023920,M,225000,Civil marriage,House,3,0
+5023921,M,225000,Civil marriage,House,3,0
+5023922,M,225000,Married,House,3,0
+5023923,M,225000,Married,House,3,0
+5023924,M,225000,Married,House,3,0
+5023925,M,225000,Married,House,3,X
+5023926,M,225000,Married,House,3,0
+5023927,M,225000,Married,House,3,0
+5023928,F,157500,Married,Rent,2,C
+5023929,F,157500,Married,Rent,2,C
+5794851,F,157500,Married,Rent,2,C
+5023930,F,135000,Separated,House,3,C
+5023931,F,135000,Separated,House,3,C
+5023932,F,135000,Separated,House,3,C
+5023933,F,135000,Separated,House,3,C
+5023934,F,135000,Separated,House,3,C
+5023935,F,135000,Separated,House,3,C
+5023936,F,135000,Separated,House,3,C
+5023937,F,135000,Separated,House,3,C
+6111085,F,135000,Separated,House,3,C
+6111086,F,135000,Separated,House,3,C
+5023938,M,157500,Married,House,3,C
+5023939,M,157500,Married,House,3,C
+5023940,M,157500,Married,House,3,C
+5023941,M,157500,Married,House,3,C
+5023942,M,157500,Married,House,3,C
+6111111,M,157500,Married,House,3,C
+5023943,F,90000,Married,House,2,C
+6111127,F,90000,Married,House,2,C
+5023944,M,148500,Married,House,3,C
+5023945,M,148500,Married,House,3,C
+5023946,M,148500,Married,House,3,C
+5023947,M,148500,Married,House,3,C
+5023948,M,148500,Married,House,3,C
+5023949,M,148500,Married,House,3,C
+5023950,M,148500,Married,House,3,1
+5023951,M,148500,Married,House,3,0
+5023952,M,148500,Married,House,3,C
+5023953,M,148500,Married,House,3,C
+5023955,M,292500,Civil marriage,House,2,C
+5023956,M,292500,Civil marriage,House,2,C
+5023957,M,292500,Civil marriage,House,2,C
+5023958,M,292500,Civil marriage,House,2,C
+5023959,M,292500,Civil marriage,House,2,C
+5023960,F,202500,Married,House,2,C
+5023961,F,202500,Married,House,2,C
+5023962,F,202500,Married,House,2,C
+5023964,M,202500,Married,House,2,C
+5023965,M,202500,Married,House,2,C
+5023966,M,202500,Married,House,2,C
+5023967,M,202500,Married,House,2,C
+5023968,M,202500,Married,House,2,C
+5023969,M,202500,Married,House,2,0
+6111165,M,202500,Married,House,2,0
+5023970,F,189000,Married,House,2,0
+5023971,F,189000,Married,House,2,0
+5023972,F,189000,Married,House,2,0
+5794718,F,189000,Married,House,2,0
+5023973,M,270000,Married,House,3,0
+5023974,M,270000,Married,House,3,0
+5023975,M,270000,Married,House,3,0
+5023976,M,270000,Married,House,3,0
+5023977,M,270000,Married,House,3,0
+5023979,M,270000,Married,House,3,0
+5023980,M,270000,Married,House,3,0
+5023982,M,270000,Married,House,3,0
+5023983,M,270000,Married,House,3,0
+5794769,M,270000,Married,House,3,0
+5794770,M,270000,Married,House,3,0
+5794772,M,270000,Married,House,3,0
+5023984,M,225000,Married,House,4,0
+5023985,M,225000,Married,House,4,0
+5023986,M,225000,Married,House,4,0
+5023987,M,225000,Married,House,4,0
+5023988,M,360000,Married,House,2,0
+5023990,F,157500,Married,House,3,0
+5023991,F,157500,Married,House,3,0
+5023994,M,112500,Married,House,2,0
+5023996,M,315000,Married,House,2,C
+5023997,M,315000,Married,House,2,C
+5023998,M,315000,Married,House,2,C
+5023999,M,315000,Married,House,2,C
+5024000,M,315000,Married,House,2,C
+5024001,M,315000,Married,House,2,C
+5024002,M,315000,Married,House,2,C
+5024004,M,315000,Married,House,2,C
+5024005,M,315000,Married,House,2,C
+5024006,M,315000,Married,House,2,C
+5024007,M,315000,Married,House,2,C
+5794837,M,315000,Married,House,2,0
+5794838,M,315000,Married,House,2,0
+5794839,M,315000,Married,House,2,0
+5024009,F,112500,Married,House,2,0
+5024010,F,112500,Married,House,2,0
+5024011,F,112500,Married,House,2,0
+5024013,F,180000,Single,House,1,0
+6111148,F,180000,Single,House,1,0
+5024014,F,202500,Married,House,2,0
+5024015,F,202500,Married,House,2,0
+5024020,F,135000,Single,House,1,0
+5024021,F,135000,Single,House,1,0
+5024022,F,135000,Single,House,1,0
+5024023,F,135000,Single,House,1,0
+5024024,F,135000,Single,House,1,0
+5794705,F,135000,Single,House,1,0
+5794706,F,135000,Single,House,1,0
+5024028,F,112500,Married,With parents,4,0
+5024033,F,112500,Married,With parents,4,0
+5024035,F,112500,Married,With parents,4,0
+5024036,F,112500,Married,With parents,4,C
+5024037,F,135000,Married,House,2,C
+5024038,F,135000,Married,House,2,C
+5024039,F,135000,Married,House,2,C
+5024040,F,135000,Married,House,2,C
+5024041,M,135000,Married,Municipal apartment,3,C
+5024043,F,144000,Married,House,3,C
+5024044,F,144000,Married,House,3,C
+5024045,F,144000,Married,House,3,C
+5024046,F,144000,Married,House,3,C
+5024047,F,144000,Married,House,3,C
+5024049,F,144000,Married,House,3,C
+5794727,F,144000,Married,House,3,C
+5024050,F,108000,Married,House,3,C
+5024051,F,108000,Married,House,3,C
+5024052,F,108000,Married,House,3,C
+5024053,F,108000,Married,House,3,C
+5024054,F,108000,Married,House,3,C
+5024055,F,108000,Married,House,3,C
+5024056,F,108000,Married,House,3,C
+5024057,F,108000,Married,House,3,C
+5024058,F,108000,Married,House,3,C
+5024059,F,108000,Married,House,3,C
+5024060,F,108000,Married,House,3,C
+5024061,F,135000,Married,House,5,0
+5024062,F,135000,Married,House,5,0
+5794728,F,135000,Married,House,5,0
+5024064,F,108000,Separated,House,2,0
+5024066,M,270000,Married,House,2,0
+5024067,M,270000,Married,House,2,0
+5024068,M,270000,Married,House,2,0
+5794798,M,270000,Married,House,2,0
+5024070,M,292500,Married,With parents,2,0
+5794801,M,292500,Married,With parents,2,0
+5024073,F,180000,Married,House,2,0
+5024075,F,157500,Widow,House,1,0
+5024077,F,157500,Widow,House,1,0
+5024078,F,157500,Widow,House,1,0
+5024079,F,157500,Widow,House,1,0
+5794812,F,157500,Widow,House,1,0
+5024080,F,112500,Separated,House,3,0
+5024081,F,112500,Separated,House,3,0
+5024082,F,112500,Separated,House,3,0
+5794852,F,112500,Separated,House,3,0
+5024083,F,157500,Separated,House,1,0
+5024084,F,157500,Separated,House,1,0
+5024085,F,157500,Separated,House,1,0
+5024086,F,157500,Separated,House,1,0
+5024087,F,157500,Separated,House,1,0
+5024088,F,157500,Separated,House,1,0
+5024089,F,126000,Single,House,1,0
+5024090,F,126000,Single,House,1,0
+5024091,F,126000,Single,House,1,0
+5024092,F,126000,Single,House,1,0
+5024094,F,126000,Single,House,1,0
+5024095,F,126000,Single,House,1,0
+5024096,F,126000,Single,House,1,0
+5024097,F,126000,Single,House,1,0
+5024098,F,126000,Single,House,1,0
+6111087,F,126000,Single,House,1,0
+6111088,F,126000,Single,House,1,C
+6111089,F,126000,Single,House,1,C
+5024099,F,90000,Single,House,1,C
+5024100,F,90000,Single,House,1,C
+5024103,M,180000,Married,House,2,C
+5024104,M,180000,Married,House,2,C
+5024105,M,180000,Married,House,2,C
+5024106,F,180000,Married,House,2,C
+5024109,F,180000,Married,House,2,C
+5024111,F,180000,Married,House,2,C
+5024113,F,180000,Married,House,2,C
+5024115,F,180000,Married,House,2,C
+5024117,F,180000,Married,House,2,C
+6111113,F,180000,Married,House,2,C
+5024121,F,135000,Widow,House,2,C
+5024122,F,135000,Widow,House,2,C
+5024123,F,135000,Widow,House,2,C
+5024124,F,135000,Widow,House,2,C
+5024125,F,135000,Widow,House,2,C
+5024126,F,135000,Widow,House,2,C
+5024127,F,135000,Widow,House,2,C
+5024128,F,135000,Widow,House,2,C
+5024129,F,135000,Widow,House,2,C
+5024130,F,135000,Widow,House,2,C
+5024131,M,202500,Married,House,2,C
+5024132,M,202500,Married,House,2,C
+5024133,M,202500,Married,House,2,C
+5024134,M,202500,Married,House,2,C
+5024135,M,202500,Married,House,2,C
+5024136,M,202500,Married,House,2,C
+5024137,M,202500,Married,House,2,C
+5024138,M,202500,Married,House,2,C
+5024139,M,202500,Married,House,2,C
+5024140,F,180000,Married,With parents,2,C
+5024141,F,180000,Married,With parents,2,C
+5024144,F,180000,Married,With parents,2,C
+5024145,F,180000,Married,With parents,2,C
+5024146,F,180000,Married,With parents,2,C
+5024147,F,180000,Married,With parents,2,C
+5024148,F,180000,Married,With parents,2,C
+5024150,F,337500,Married,House,3,C
+5024152,F,112500,Single,House,1,C
+5024153,F,112500,Single,House,1,C
+5024155,F,112500,Single,House,1,C
+5024156,F,202500,Married,House,3,C
+5024157,F,202500,Married,House,3,0
+5024158,F,202500,Married,House,3,0
+5024159,F,202500,Married,House,3,0
+5024161,M,202500,Married,House,5,0
+5024162,M,202500,Married,House,5,0
+5024163,M,202500,Married,House,5,0
+5024164,M,202500,Married,House,5,0
+5024165,M,202500,Married,House,5,0
+5024166,F,90000,Single,House,1,0
+5024167,F,90000,Single,House,1,0
+5024168,F,90000,Single,House,1,C
+5794730,F,90000,Single,House,1,C
+5024169,F,202500,Civil marriage,House,2,C
+5024170,F,202500,Civil marriage,House,2,C
+5024171,F,202500,Civil marriage,House,2,C
+5024172,F,202500,Civil marriage,House,2,C
+5024173,F,202500,Civil marriage,House,2,C
+5024174,F,202500,Civil marriage,House,2,C
+5024175,F,202500,Civil marriage,House,2,C
+5024176,F,202500,Civil marriage,House,2,C
+5024178,F,202500,Civil marriage,House,2,C
+5024179,F,202500,Civil marriage,House,2,C
+5794747,F,202500,Civil marriage,House,2,C
+5794748,F,202500,Civil marriage,House,2,C
+5024182,F,81000,Married,House,2,C
+5024183,F,81000,Married,House,2,C
+5024185,F,81000,Married,House,2,C
+5024187,F,81000,Married,House,2,C
+5024188,F,81000,Married,House,2,C
+5794773,F,81000,Married,House,2,C
+5024189,F,112500,Married,With parents,4,C
+5024191,F,270000,Married,House,4,C
+5024192,F,270000,Married,House,4,C
+5024193,F,270000,Married,House,4,C
+5024196,F,270000,Married,House,4,C
+5024197,F,270000,Married,House,4,C
+5024200,F,270000,Married,House,4,C
+5024201,F,202500,Single,House,1,C
+5024202,F,202500,Single,House,1,C
+5024203,F,202500,Single,House,1,C
+5024204,F,202500,Single,House,1,C
+5024205,F,202500,Single,House,1,C
+5024206,F,202500,Single,House,1,C
+5024207,F,202500,Single,House,1,C
+5024208,F,202500,Single,House,1,C
+5024209,F,202500,Single,House,1,C
+5024210,F,202500,Single,House,1,C
+5024211,F,202500,Single,House,1,C
+5024212,F,540000,Married,House,2,C
+5024213,F,540000,Married,House,2,0
+5024214,F,540000,Married,House,2,X
+5024215,F,540000,Married,House,2,0
+5024220,F,540000,Married,House,2,X
+5024222,F,540000,Married,House,2,0
+5024226,F,540000,Married,House,2,X
+5024227,F,540000,Married,House,2,X
+5024228,F,540000,Married,House,2,0
+5024229,F,540000,Married,House,2,0
+5024230,F,540000,Married,House,2,X
+5794820,F,540000,Married,House,2,0
+5024231,F,270000,Married,House,2,0
+5024232,F,270000,Married,House,2,0
+5024233,F,47250,Married,Municipal apartment,2,0
+5024234,F,47250,Married,Municipal apartment,2,0
+5024235,F,47250,Married,Municipal apartment,2,X
+5024236,F,47250,Married,Municipal apartment,2,X
+5024237,F,47250,Married,Municipal apartment,2,X
+5024238,F,47250,Married,Municipal apartment,2,0
+5024239,F,47250,Married,Municipal apartment,2,0
+5024241,M,180000,Civil marriage,House,2,0
+5024242,M,180000,Civil marriage,House,2,0
+5024243,M,180000,Civil marriage,House,2,0
+5024247,F,112500,Civil marriage,House,2,0
+5024248,F,112500,Civil marriage,House,2,0
+5794853,F,112500,Civil marriage,House,2,0
+5024249,F,135000,Married,House,3,0
+5024250,F,247500,Separated,House,1,0
+5024251,F,247500,Separated,House,1,0
+6111090,F,247500,Separated,House,1,0
+5024252,F,135000,Married,House,4,0
+5024253,F,135000,Married,House,4,0
+5024254,M,630000,Married,House,3,0
+5024255,F,148500,Separated,With parents,2,0
+5024256,M,121500,Single,House,2,0
+5024257,M,162000,Single,House,1,0
+5024258,M,162000,Single,House,1,0
+5024260,M,162000,Single,House,1,0
+5024261,M,202500,Married,House,2,0
+5024263,F,202500,Married,Municipal apartment,2,0
+5024265,F,202500,Married,Municipal apartment,2,0
+5024269,F,65250,Civil marriage,House,3,0
+5024270,M,315000,Married,House,4,0
+5024271,M,315000,Married,House,4,0
+5024272,M,315000,Married,House,4,0
+5024273,M,315000,Married,House,4,0
+5024276,M,315000,Married,House,4,0
+5024280,M,315000,Married,House,2,0
+5024281,M,315000,Married,House,2,0
+5024285,M,315000,Married,House,2,0
+5024286,M,315000,Married,House,2,0
+5024287,F,157500,Married,House,2,0
+5024288,F,157500,Married,House,2,0
+5024289,F,157500,Married,House,2,0
+5024290,F,157500,Married,House,2,0
+5794802,F,157500,Married,House,2,0
+5024291,F,112500,Married,With parents,2,0
+5024292,F,112500,Married,With parents,2,0
+5024293,F,67500,Separated,House,1,0
+5024294,F,202500,Civil marriage,House,2,0
+5024295,F,202500,Civil marriage,House,2,0
+5024296,F,202500,Civil marriage,House,2,0
+5024297,F,202500,Civil marriage,House,2,0
+5024298,F,99000,Married,House,2,0
+5024299,F,99000,Married,House,2,0
+5024300,F,99000,Married,House,2,0
+5024301,F,99000,Married,House,2,0
+5024302,F,99000,Married,House,2,0
+5794813,F,99000,Married,House,2,0
+5024303,M,202500,Single,With parents,1,0
+5024304,M,202500,Single,With parents,1,0
+5024305,M,157500,Single,House,1,0
+5024307,F,90000,Married,House,3,0
+5024308,F,90000,Married,House,3,0
+5024309,F,90000,Married,House,3,0
+5024314,F,216000,Widow,House,1,0
+5024318,F,135000,Civil marriage,House,2,0
+5024319,F,121500,Married,House,2,C
+5024320,F,121500,Married,House,2,C
+5024321,F,121500,Married,House,2,C
+5024322,F,121500,Married,House,2,C
+5024323,F,121500,Married,House,2,C
+5024324,F,121500,Married,House,2,C
+5024325,F,121500,Married,House,2,C
+5024326,F,121500,Married,House,2,C
+5024327,F,225000,Married,House,2,C
+5024328,F,225000,Married,House,2,C
+5024329,F,225000,Married,House,2,C
+5024330,F,225000,Married,House,2,C
+5024331,F,225000,Married,House,2,C
+5024332,F,427500,Married,House,2,C
+5024333,F,427500,Married,House,2,C
+6111149,F,427500,Married,House,2,C
+5024334,F,180000,Single,House,1,C
+5024335,M,135000,Civil marriage,House,2,C
+5024336,M,135000,Civil marriage,House,2,C
+5024337,M,135000,Civil marriage,House,2,C
+5024341,M,198000,Married,House,2,C
+5024342,M,198000,Married,House,2,C
+5024343,M,198000,Married,House,2,C
+5024344,M,585000,Married,With parents,2,C
+5024345,M,585000,Married,With parents,2,C
+5024346,M,585000,Married,With parents,2,C
+5024347,M,585000,Married,With parents,2,C
+5024348,M,585000,Married,With parents,2,C
+5024349,M,585000,Married,With parents,2,C
+5024350,M,585000,Married,With parents,2,C
+5024351,M,585000,Married,With parents,2,0
+5024352,M,585000,Married,With parents,2,0
+5024353,M,585000,Married,With parents,2,0
+5024354,F,139500,Civil marriage,House,2,0
+5024355,F,139500,Civil marriage,House,2,0
+5024358,M,270000,Married,House,2,0
+5024360,M,270000,Married,House,2,0
+5024361,M,270000,Married,House,2,0
+5024362,M,81000,Married,House,3,0
+5024363,M,81000,Married,House,3,0
+5024364,M,81000,Married,House,3,0
+5024365,M,81000,Married,House,3,0
+5794731,M,81000,Married,House,3,0
+5024366,F,67500,Married,House,2,0
+5024369,F,225000,Widow,House,1,0
+5794774,F,225000,Widow,House,1,0
+5024370,F,112500,Married,House,2,0
+5024373,F,90000,Married,House,2,0
+5024374,F,112500,Married,House,4,0
+5024378,M,270000,Married,House,2,0
+5024379,M,270000,Married,House,2,0
+5024380,M,270000,Married,House,2,0
+5024382,M,270000,Married,House,2,0
+5024384,M,270000,Married,House,2,0
+5024385,M,270000,Married,House,2,0
+5794821,M,270000,Married,House,2,0
+5794826,M,270000,Married,House,2,0
+5024386,F,117000,Married,Municipal apartment,2,0
+5024387,F,117000,Married,Municipal apartment,2,0
+5024388,F,117000,Married,Municipal apartment,2,0
+5024389,F,117000,Married,Municipal apartment,2,0
+5024390,F,117000,Married,Municipal apartment,2,0
+5024391,F,117000,Married,Municipal apartment,2,0
+5024392,F,117000,Married,Municipal apartment,2,0
+5024393,F,117000,Married,Municipal apartment,2,0
+5024394,F,117000,Married,Municipal apartment,2,0
+5024395,F,117000,Married,Municipal apartment,2,0
+5024396,F,117000,Married,Municipal apartment,2,0
+5024397,M,315000,Married,House,4,0
+5024398,M,315000,Married,House,4,0
+5024400,F,157500,Married,House,2,0
+5024401,F,76500,Single,With parents,1,0
+5024402,F,76500,Single,With parents,1,0
+5024403,F,76500,Single,With parents,1,0
+5024404,F,121500,Married,House,3,0
+5024405,F,121500,Married,House,3,0
+5024407,F,121500,Married,House,3,0
+5024409,F,121500,Married,House,3,0
+5024410,F,121500,Married,House,3,0
+5024411,F,121500,Married,House,3,0
+5024412,M,270000,Married,House,2,0
+6111091,M,270000,Married,House,2,0
+5024414,F,90000,Married,House,3,0
+6111092,F,90000,Married,House,3,0
+5024415,M,360000,Single,House,1,0
+5024416,M,360000,Single,House,1,0
+5024417,M,180000,Married,With parents,2,0
+5024418,M,180000,Married,With parents,2,0
+5024419,M,180000,Married,With parents,2,0
+6111093,M,180000,Married,With parents,2,0
+5024420,M,180000,Civil marriage,House,2,0
+5024421,M,180000,Civil marriage,House,2,0
+5024422,M,180000,Civil marriage,House,2,0
+5024424,M,180000,Civil marriage,House,2,0
+5024425,M,180000,Civil marriage,House,2,0
+6111094,M,180000,Civil marriage,House,2,0
+5024427,F,162000,Married,House,2,0
+5024428,F,162000,Married,House,2,X
+5024429,F,162000,Married,House,2,X
+5024430,F,162000,Married,House,2,X
+5024431,F,162000,Married,House,2,X
+5024432,F,162000,Married,House,2,X
+5024433,F,162000,Married,House,2,X
+5024434,F,162000,Married,House,2,X
+6111095,F,162000,Married,House,2,X
+6111096,F,162000,Married,House,2,X
+5024436,M,157500,Married,House,2,X
+5024438,F,202500,Married,House,2,X
+5024439,F,202500,Married,House,2,X
+5024440,F,202500,Married,House,2,X
+5024443,F,202500,Married,House,2,X
+5024444,F,202500,Married,House,2,X
+5024448,M,180000,Married,House,2,X
+5024449,M,180000,Married,House,2,X
+5024450,M,180000,Married,House,2,X
+5024452,M,180000,Married,House,2,X
+5024453,M,180000,Married,House,2,X
+5024455,F,157500,Married,House,2,X
+5024457,F,157500,Married,House,2,X
+5024458,F,157500,Married,House,2,X
+6111129,F,157500,Married,House,2,X
+5024461,F,139050,Married,Municipal apartment,3,X
+5024462,F,139050,Married,Municipal apartment,3,X
+5024463,F,139050,Married,Municipal apartment,3,X
+6111167,F,139050,Married,Municipal apartment,3,X
+5024466,F,135000,Married,House,4,X
+5024467,F,135000,Married,House,4,X
+5024469,F,135000,Married,House,4,X
+5024470,F,135000,Married,House,4,X
+5024471,F,135000,Married,House,4,X
+5024472,F,135000,Married,House,4,C
+5024473,F,90000,Married,House,2,C
+5024474,F,90000,Married,House,2,0
+5024475,F,90000,Married,House,2,X
+5024476,F,90000,Married,House,2,X
+5024478,F,202500,Civil marriage,House,3,X
+5024479,F,202500,Civil marriage,House,3,X
+5024480,F,202500,Civil marriage,House,3,0
+5024481,F,202500,Civil marriage,House,3,0
+5024482,F,202500,Civil marriage,House,3,X
+5024483,F,162000,Civil marriage,House,2,X
+5024484,F,162000,Civil marriage,House,2,X
+5024485,F,162000,Civil marriage,House,2,0
+5794707,F,162000,Civil marriage,House,2,0
+5024486,F,225000,Single,House,1,0
+5024487,F,225000,Single,House,1,0
+5024488,M,171000,Married,House,2,0
+5024489,M,171000,Married,House,2,0
+5024490,M,135000,Married,Rent,3,0
+5024491,M,135000,Married,Rent,3,

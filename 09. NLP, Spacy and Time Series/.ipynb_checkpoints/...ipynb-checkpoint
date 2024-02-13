@@ -1,0 +1,603 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "2cb5da43",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "reading -----> Aspect=Prog|Tense=Pres|VerbForm=Part\n",
+      "[]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Morphology\n",
+    "\n",
+    "\n",
+    "doc = nlp(\"I was reading the paper.\")\n",
+    "token = doc[2]\n",
+    "print(token.text,\"----->\",token.morph)  \n",
+    "print(token.morph.get(\"PronType\"))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "9e02048f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Case=Nom|Gender=Masc|Number=Sing|Person=2|PronType=Prs\n",
+      "PRON\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Statistical morphology\n",
+    "\n",
+    "nlp = spacy.load(\"de_core_news_sm\")  # !python -m spacy download de_core_news_sm\n",
+    "doc = nlp(\"Wo bist du?\") # English: 'Where are you?'\n",
+    "print(doc[2].morph)  # 'Case=Nom|Number=Sing|Person=2|PronType=Prs'\n",
+    "print(doc[2].pos_) # 'PRON'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "8f4eed4b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Foreign=Yes\n",
+      "X\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Rule-based morphology\n",
+    "\n",
+    "doc = nlp(\"Where are you?\")\n",
+    "print(doc[2].morph)  # 'Case=Nom|Person=2|PronType=Prs'\n",
+    "print(doc[2].pos_)  # 'PRON'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "0f6e4f92",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "rule\n",
+      "['Where', 'are', 'you', '--']\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Lemmatization:two pipeline components for lemmatization.\n",
+    "# -> Lemmatizer\n",
+    "# -> EditTreeLemmatizer\n",
+    "\n",
+    "# English pipelines include a rule-based lemmatizer\n",
+    "lemmatizer = nlp.get_pipe(\"lemmatizer\")\n",
+    "print(lemmatizer.mode)  # \"lookup\" or \"rule\" it gives\n",
+    "\n",
+    "print([token.lemma_ for token in doc])\n",
+    "\n",
+    "# token.lemma  # hash value"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "180db8c2",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['morphologizer', 'lemmatizer', 'lemmatizer1']"
+      ]
+     },
+     "execution_count": 19,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "nlp.pipe_names"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "70deb3db",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "<spacy.pipeline.lemmatizer.Lemmatizer at 0x27bc2837680>"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Lookup lemmatizer\n",
+    "\n",
+    "nlp = spacy.blank(\"sv\")\n",
+    "nlp.add_pipe(\"lemmatizer\", config={\"mode\": \"lookup\"})"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "1a87958e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "<spacy.pipeline.lemmatizer.Lemmatizer at 0x27bca5dc4c0>"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#Rule-based lemmatizer\n",
+    "\n",
+    "nlp = spacy.blank(\"de\")\n",
+    "# Morphologizer (note: model is not yet trained!)\n",
+    "nlp.add_pipe(\"morphologizer\")\n",
+    "# Rule-based lemmatizer\n",
+    "nlp.add_pipe(\"lemmatizer\", config={\"mode\": \"rule\"})"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "9e668e5e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "<spacy.pipeline.edit_tree_lemmatizer.EditTreeLemmatizer at 0x27bca6fbca0>"
+      ]
+     },
+     "execution_count": 23,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#Trainable lemmatizer\n",
+    "from spacy.pipeline.edit_tree_lemmatizer import DEFAULT_EDIT_TREE_LEMMATIZER_MODEL\n",
+    "\n",
+    "config = {\"model\": DEFAULT_EDIT_TREE_LEMMATIZER_MODEL}\n",
+    "nlp.add_pipe(\"trainable_lemmatizer\", config=config, name=\"lemmatizer1\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0556d7a2",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "4a6be409",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "ValueError",
+     "evalue": "[E109] Component 'morphologizer' could not be run. Did you forget to call `initialize()`?",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mKeyError\u001b[0m                                  Traceback (most recent call last)",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\language.py:1020\u001b[0m, in \u001b[0;36mLanguage.__call__\u001b[1;34m(self, text, disable, component_cfg)\u001b[0m\n\u001b[0;32m   1019\u001b[0m \u001b[38;5;28;01mtry\u001b[39;00m:\n\u001b[1;32m-> 1020\u001b[0m     doc \u001b[38;5;241m=\u001b[39m proc(doc, \u001b[38;5;241m*\u001b[39m\u001b[38;5;241m*\u001b[39mcomponent_cfg\u001b[38;5;241m.\u001b[39mget(name, {}))  \u001b[38;5;66;03m# type: ignore[call-arg]\u001b[39;00m\n\u001b[0;32m   1021\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mKeyError\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m e:\n\u001b[0;32m   1022\u001b[0m     \u001b[38;5;66;03m# This typically happens if a component is not initialized\u001b[39;00m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\pipeline\\trainable_pipe.pyx:56\u001b[0m, in \u001b[0;36mspacy.pipeline.trainable_pipe.TrainablePipe.__call__\u001b[1;34m()\u001b[0m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\util.py:1658\u001b[0m, in \u001b[0;36mraise_error\u001b[1;34m(proc_name, proc, docs, e)\u001b[0m\n\u001b[0;32m   1657\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m \u001b[38;5;21mraise_error\u001b[39m(proc_name, proc, docs, e):\n\u001b[1;32m-> 1658\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m e\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\pipeline\\trainable_pipe.pyx:52\u001b[0m, in \u001b[0;36mspacy.pipeline.trainable_pipe.TrainablePipe.__call__\u001b[1;34m()\u001b[0m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\pipeline\\tagger.pyx:143\u001b[0m, in \u001b[0;36mspacy.pipeline.tagger.Tagger.predict\u001b[1;34m()\u001b[0m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:315\u001b[0m, in \u001b[0;36mModel.predict\u001b[1;34m(self, X)\u001b[0m\n\u001b[0;32m    312\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function with `is_train=False`, and return\u001b[39;00m\n\u001b[0;32m    313\u001b[0m \u001b[38;5;124;03monly the output, instead of the `(output, callback)` tuple.\u001b[39;00m\n\u001b[0;32m    314\u001b[0m \u001b[38;5;124;03m\"\"\"\u001b[39;00m\n\u001b[1;32m--> 315\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[38;5;28;43;01mFalse\u001b[39;49;00m\u001b[43m)\u001b[49m[\u001b[38;5;241m0\u001b[39m]\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\chain.py:55\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     54\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers:\n\u001b[1;32m---> 55\u001b[0m     Y, inc_layer_grad \u001b[38;5;241m=\u001b[39m \u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n\u001b[0;32m     56\u001b[0m     callbacks\u001b[38;5;241m.\u001b[39mappend(inc_layer_grad)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\chain.py:55\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     54\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers:\n\u001b[1;32m---> 55\u001b[0m     Y, inc_layer_grad \u001b[38;5;241m=\u001b[39m \u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n\u001b[0;32m     56\u001b[0m     callbacks\u001b[38;5;241m.\u001b[39mappend(inc_layer_grad)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\chain.py:55\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     54\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers:\n\u001b[1;32m---> 55\u001b[0m     Y, inc_layer_grad \u001b[38;5;241m=\u001b[39m \u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n\u001b[0;32m     56\u001b[0m     callbacks\u001b[38;5;241m.\u001b[39mappend(inc_layer_grad)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\concatenate.py:44\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     43\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m \u001b[38;5;21mforward\u001b[39m(model: Model[InT, OutT], X: InT, is_train: \u001b[38;5;28mbool\u001b[39m) \u001b[38;5;241m-\u001b[39m\u001b[38;5;241m>\u001b[39m Tuple[OutT, Callable]:\n\u001b[1;32m---> 44\u001b[0m     Ys, callbacks \u001b[38;5;241m=\u001b[39m \u001b[38;5;28mzip\u001b[39m(\u001b[38;5;241m*\u001b[39m[layer(X, is_train\u001b[38;5;241m=\u001b[39mis_train) \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers])\n\u001b[0;32m     45\u001b[0m     \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28misinstance\u001b[39m(Ys[\u001b[38;5;241m0\u001b[39m], \u001b[38;5;28mlist\u001b[39m):\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\concatenate.py:44\u001b[0m, in \u001b[0;36m<listcomp>\u001b[1;34m(.0)\u001b[0m\n\u001b[0;32m     43\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m \u001b[38;5;21mforward\u001b[39m(model: Model[InT, OutT], X: InT, is_train: \u001b[38;5;28mbool\u001b[39m) \u001b[38;5;241m-\u001b[39m\u001b[38;5;241m>\u001b[39m Tuple[OutT, Callable]:\n\u001b[1;32m---> 44\u001b[0m     Ys, callbacks \u001b[38;5;241m=\u001b[39m \u001b[38;5;28mzip\u001b[39m(\u001b[38;5;241m*\u001b[39m[\u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers])\n\u001b[0;32m     45\u001b[0m     \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28misinstance\u001b[39m(Ys[\u001b[38;5;241m0\u001b[39m], \u001b[38;5;28mlist\u001b[39m):\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\chain.py:55\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     54\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers:\n\u001b[1;32m---> 55\u001b[0m     Y, inc_layer_grad \u001b[38;5;241m=\u001b[39m \u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n\u001b[0;32m     56\u001b[0m     callbacks\u001b[38;5;241m.\u001b[39mappend(inc_layer_grad)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\ml\\_character_embed.py:33\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, docs, is_train)\u001b[0m\n\u001b[0;32m     32\u001b[0m output \u001b[38;5;241m=\u001b[39m []\n\u001b[1;32m---> 33\u001b[0m E \u001b[38;5;241m=\u001b[39m \u001b[43mmodel\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mget_param\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43mE\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m)\u001b[49m\n\u001b[0;32m     34\u001b[0m nC \u001b[38;5;241m=\u001b[39m model\u001b[38;5;241m.\u001b[39mget_dim(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mnC\u001b[39m\u001b[38;5;124m\"\u001b[39m)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:216\u001b[0m, in \u001b[0;36mModel.get_param\u001b[1;34m(self, name)\u001b[0m\n\u001b[0;32m    215\u001b[0m \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;129;01mnot\u001b[39;00m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_params\u001b[38;5;241m.\u001b[39mhas_param(\u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mid, name):\n\u001b[1;32m--> 216\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m \u001b[38;5;167;01mKeyError\u001b[39;00m(\n\u001b[0;32m    217\u001b[0m         \u001b[38;5;124mf\u001b[39m\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mParameter \u001b[39m\u001b[38;5;124m'\u001b[39m\u001b[38;5;132;01m{\u001b[39;00mname\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m'\u001b[39m\u001b[38;5;124m for model \u001b[39m\u001b[38;5;124m'\u001b[39m\u001b[38;5;132;01m{\u001b[39;00m\u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mname\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m'\u001b[39m\u001b[38;5;124m has not been allocated yet.\u001b[39m\u001b[38;5;124m\"\u001b[39m\n\u001b[0;32m    218\u001b[0m     )\n\u001b[0;32m    219\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_params\u001b[38;5;241m.\u001b[39mget_param(\u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mid, name)\n",
+      "\u001b[1;31mKeyError\u001b[0m: \"Parameter 'E' for model 'charembed' has not been allocated yet.\"",
+      "\nThe above exception was the direct cause of the following exception:\n",
+      "\u001b[1;31mValueError\u001b[0m                                Traceback (most recent call last)",
+      "Input \u001b[1;32mIn [25]\u001b[0m, in \u001b[0;36m<cell line: 5>\u001b[1;34m()\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[38;5;66;03m#Dependency Parsing\u001b[39;00m\n\u001b[0;32m      2\u001b[0m \n\u001b[0;32m      3\u001b[0m \u001b[38;5;66;03m# 1)Noun chunks\u001b[39;00m\n\u001b[1;32m----> 5\u001b[0m doc \u001b[38;5;241m=\u001b[39m \u001b[43mnlp\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43mAutonomous cars shift insurance liability toward manufacturers\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m)\u001b[49m\n\u001b[0;32m      6\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m chunk \u001b[38;5;129;01min\u001b[39;00m doc\u001b[38;5;241m.\u001b[39mnoun_chunks:\n\u001b[0;32m      7\u001b[0m     \u001b[38;5;28mprint\u001b[39m(chunk\u001b[38;5;241m.\u001b[39mtext, chunk\u001b[38;5;241m.\u001b[39mroot\u001b[38;5;241m.\u001b[39mtext, chunk\u001b[38;5;241m.\u001b[39mroot\u001b[38;5;241m.\u001b[39mdep_,chunk\u001b[38;5;241m.\u001b[39mroot\u001b[38;5;241m.\u001b[39mhead\u001b[38;5;241m.\u001b[39mtext)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\language.py:1023\u001b[0m, in \u001b[0;36mLanguage.__call__\u001b[1;34m(self, text, disable, component_cfg)\u001b[0m\n\u001b[0;32m   1020\u001b[0m     doc \u001b[38;5;241m=\u001b[39m proc(doc, \u001b[38;5;241m*\u001b[39m\u001b[38;5;241m*\u001b[39mcomponent_cfg\u001b[38;5;241m.\u001b[39mget(name, {}))  \u001b[38;5;66;03m# type: ignore[call-arg]\u001b[39;00m\n\u001b[0;32m   1021\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mKeyError\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m e:\n\u001b[0;32m   1022\u001b[0m     \u001b[38;5;66;03m# This typically happens if a component is not initialized\u001b[39;00m\n\u001b[1;32m-> 1023\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m \u001b[38;5;167;01mValueError\u001b[39;00m(Errors\u001b[38;5;241m.\u001b[39mE109\u001b[38;5;241m.\u001b[39mformat(name\u001b[38;5;241m=\u001b[39mname)) \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01me\u001b[39;00m\n\u001b[0;32m   1024\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mException\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m e:\n\u001b[0;32m   1025\u001b[0m     error_handler(name, proc, [doc], e)\n",
+      "\u001b[1;31mValueError\u001b[0m: [E109] Component 'morphologizer' could not be run. Did you forget to call `initialize()`?"
+     ]
+    }
+   ],
+   "source": [
+    "#Dependency Parsing\n",
+    "\n",
+    "# 1)Noun chunks\n",
+    "\n",
+    "doc = nlp(\"Autonomous cars shift insurance liability toward manufacturers\")\n",
+    "for chunk in doc.noun_chunks:\n",
+    "    print(chunk.text, chunk.root.text, chunk.root.dep_,chunk.root.head.text)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "504a8c92",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "ValueError",
+     "evalue": "[E109] Component 'morphologizer' could not be run. Did you forget to call `initialize()`?",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mKeyError\u001b[0m                                  Traceback (most recent call last)",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\language.py:1020\u001b[0m, in \u001b[0;36mLanguage.__call__\u001b[1;34m(self, text, disable, component_cfg)\u001b[0m\n\u001b[0;32m   1019\u001b[0m \u001b[38;5;28;01mtry\u001b[39;00m:\n\u001b[1;32m-> 1020\u001b[0m     doc \u001b[38;5;241m=\u001b[39m proc(doc, \u001b[38;5;241m*\u001b[39m\u001b[38;5;241m*\u001b[39mcomponent_cfg\u001b[38;5;241m.\u001b[39mget(name, {}))  \u001b[38;5;66;03m# type: ignore[call-arg]\u001b[39;00m\n\u001b[0;32m   1021\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mKeyError\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m e:\n\u001b[0;32m   1022\u001b[0m     \u001b[38;5;66;03m# This typically happens if a component is not initialized\u001b[39;00m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\pipeline\\trainable_pipe.pyx:56\u001b[0m, in \u001b[0;36mspacy.pipeline.trainable_pipe.TrainablePipe.__call__\u001b[1;34m()\u001b[0m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\util.py:1658\u001b[0m, in \u001b[0;36mraise_error\u001b[1;34m(proc_name, proc, docs, e)\u001b[0m\n\u001b[0;32m   1657\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m \u001b[38;5;21mraise_error\u001b[39m(proc_name, proc, docs, e):\n\u001b[1;32m-> 1658\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m e\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\pipeline\\trainable_pipe.pyx:52\u001b[0m, in \u001b[0;36mspacy.pipeline.trainable_pipe.TrainablePipe.__call__\u001b[1;34m()\u001b[0m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\pipeline\\tagger.pyx:143\u001b[0m, in \u001b[0;36mspacy.pipeline.tagger.Tagger.predict\u001b[1;34m()\u001b[0m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:315\u001b[0m, in \u001b[0;36mModel.predict\u001b[1;34m(self, X)\u001b[0m\n\u001b[0;32m    312\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function with `is_train=False`, and return\u001b[39;00m\n\u001b[0;32m    313\u001b[0m \u001b[38;5;124;03monly the output, instead of the `(output, callback)` tuple.\u001b[39;00m\n\u001b[0;32m    314\u001b[0m \u001b[38;5;124;03m\"\"\"\u001b[39;00m\n\u001b[1;32m--> 315\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[38;5;28;43;01mFalse\u001b[39;49;00m\u001b[43m)\u001b[49m[\u001b[38;5;241m0\u001b[39m]\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\chain.py:55\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     54\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers:\n\u001b[1;32m---> 55\u001b[0m     Y, inc_layer_grad \u001b[38;5;241m=\u001b[39m \u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n\u001b[0;32m     56\u001b[0m     callbacks\u001b[38;5;241m.\u001b[39mappend(inc_layer_grad)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\chain.py:55\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     54\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers:\n\u001b[1;32m---> 55\u001b[0m     Y, inc_layer_grad \u001b[38;5;241m=\u001b[39m \u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n\u001b[0;32m     56\u001b[0m     callbacks\u001b[38;5;241m.\u001b[39mappend(inc_layer_grad)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\chain.py:55\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     54\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers:\n\u001b[1;32m---> 55\u001b[0m     Y, inc_layer_grad \u001b[38;5;241m=\u001b[39m \u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n\u001b[0;32m     56\u001b[0m     callbacks\u001b[38;5;241m.\u001b[39mappend(inc_layer_grad)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\concatenate.py:44\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     43\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m \u001b[38;5;21mforward\u001b[39m(model: Model[InT, OutT], X: InT, is_train: \u001b[38;5;28mbool\u001b[39m) \u001b[38;5;241m-\u001b[39m\u001b[38;5;241m>\u001b[39m Tuple[OutT, Callable]:\n\u001b[1;32m---> 44\u001b[0m     Ys, callbacks \u001b[38;5;241m=\u001b[39m \u001b[38;5;28mzip\u001b[39m(\u001b[38;5;241m*\u001b[39m[layer(X, is_train\u001b[38;5;241m=\u001b[39mis_train) \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers])\n\u001b[0;32m     45\u001b[0m     \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28misinstance\u001b[39m(Ys[\u001b[38;5;241m0\u001b[39m], \u001b[38;5;28mlist\u001b[39m):\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\concatenate.py:44\u001b[0m, in \u001b[0;36m<listcomp>\u001b[1;34m(.0)\u001b[0m\n\u001b[0;32m     43\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m \u001b[38;5;21mforward\u001b[39m(model: Model[InT, OutT], X: InT, is_train: \u001b[38;5;28mbool\u001b[39m) \u001b[38;5;241m-\u001b[39m\u001b[38;5;241m>\u001b[39m Tuple[OutT, Callable]:\n\u001b[1;32m---> 44\u001b[0m     Ys, callbacks \u001b[38;5;241m=\u001b[39m \u001b[38;5;28mzip\u001b[39m(\u001b[38;5;241m*\u001b[39m[\u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers])\n\u001b[0;32m     45\u001b[0m     \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28misinstance\u001b[39m(Ys[\u001b[38;5;241m0\u001b[39m], \u001b[38;5;28mlist\u001b[39m):\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\chain.py:55\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     54\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers:\n\u001b[1;32m---> 55\u001b[0m     Y, inc_layer_grad \u001b[38;5;241m=\u001b[39m \u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n\u001b[0;32m     56\u001b[0m     callbacks\u001b[38;5;241m.\u001b[39mappend(inc_layer_grad)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\ml\\_character_embed.py:33\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, docs, is_train)\u001b[0m\n\u001b[0;32m     32\u001b[0m output \u001b[38;5;241m=\u001b[39m []\n\u001b[1;32m---> 33\u001b[0m E \u001b[38;5;241m=\u001b[39m \u001b[43mmodel\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mget_param\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43mE\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m)\u001b[49m\n\u001b[0;32m     34\u001b[0m nC \u001b[38;5;241m=\u001b[39m model\u001b[38;5;241m.\u001b[39mget_dim(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mnC\u001b[39m\u001b[38;5;124m\"\u001b[39m)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:216\u001b[0m, in \u001b[0;36mModel.get_param\u001b[1;34m(self, name)\u001b[0m\n\u001b[0;32m    215\u001b[0m \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;129;01mnot\u001b[39;00m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_params\u001b[38;5;241m.\u001b[39mhas_param(\u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mid, name):\n\u001b[1;32m--> 216\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m \u001b[38;5;167;01mKeyError\u001b[39;00m(\n\u001b[0;32m    217\u001b[0m         \u001b[38;5;124mf\u001b[39m\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mParameter \u001b[39m\u001b[38;5;124m'\u001b[39m\u001b[38;5;132;01m{\u001b[39;00mname\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m'\u001b[39m\u001b[38;5;124m for model \u001b[39m\u001b[38;5;124m'\u001b[39m\u001b[38;5;132;01m{\u001b[39;00m\u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mname\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m'\u001b[39m\u001b[38;5;124m has not been allocated yet.\u001b[39m\u001b[38;5;124m\"\u001b[39m\n\u001b[0;32m    218\u001b[0m     )\n\u001b[0;32m    219\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_params\u001b[38;5;241m.\u001b[39mget_param(\u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mid, name)\n",
+      "\u001b[1;31mKeyError\u001b[0m: \"Parameter 'E' for model 'charembed' has not been allocated yet.\"",
+      "\nThe above exception was the direct cause of the following exception:\n",
+      "\u001b[1;31mValueError\u001b[0m                                Traceback (most recent call last)",
+      "Input \u001b[1;32mIn [17]\u001b[0m, in \u001b[0;36m<cell line: 3>\u001b[1;34m()\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[38;5;66;03m# 2)Navigating the parse tree\u001b[39;00m\n\u001b[0;32m      2\u001b[0m \u001b[38;5;66;03m#terms head and child to describe the words connected by a single arc in the dependency tree. The term dep is used for the arc label, which describes the type of syntactic relation that connects the child to the head. As with other attributes, the value of .dep is a hash value. You can get the string value with .dep_.\u001b[39;00m\n\u001b[1;32m----> 3\u001b[0m doc \u001b[38;5;241m=\u001b[39m \u001b[43mnlp\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43mAutonomous cars shift insurance liability toward manufacturers\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m)\u001b[49m\n\u001b[0;32m      4\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m token \u001b[38;5;129;01min\u001b[39;00m doc:\n\u001b[0;32m      5\u001b[0m     \u001b[38;5;28mprint\u001b[39m(token\u001b[38;5;241m.\u001b[39mtext, token\u001b[38;5;241m.\u001b[39mdep_, token\u001b[38;5;241m.\u001b[39mhead\u001b[38;5;241m.\u001b[39mtext, token\u001b[38;5;241m.\u001b[39mhead\u001b[38;5;241m.\u001b[39mpos_,[child \u001b[38;5;28;01mfor\u001b[39;00m child \u001b[38;5;129;01min\u001b[39;00m token\u001b[38;5;241m.\u001b[39mchildren])\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\language.py:1023\u001b[0m, in \u001b[0;36mLanguage.__call__\u001b[1;34m(self, text, disable, component_cfg)\u001b[0m\n\u001b[0;32m   1020\u001b[0m     doc \u001b[38;5;241m=\u001b[39m proc(doc, \u001b[38;5;241m*\u001b[39m\u001b[38;5;241m*\u001b[39mcomponent_cfg\u001b[38;5;241m.\u001b[39mget(name, {}))  \u001b[38;5;66;03m# type: ignore[call-arg]\u001b[39;00m\n\u001b[0;32m   1021\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mKeyError\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m e:\n\u001b[0;32m   1022\u001b[0m     \u001b[38;5;66;03m# This typically happens if a component is not initialized\u001b[39;00m\n\u001b[1;32m-> 1023\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m \u001b[38;5;167;01mValueError\u001b[39;00m(Errors\u001b[38;5;241m.\u001b[39mE109\u001b[38;5;241m.\u001b[39mformat(name\u001b[38;5;241m=\u001b[39mname)) \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01me\u001b[39;00m\n\u001b[0;32m   1024\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mException\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m e:\n\u001b[0;32m   1025\u001b[0m     error_handler(name, proc, [doc], e)\n",
+      "\u001b[1;31mValueError\u001b[0m: [E109] Component 'morphologizer' could not be run. Did you forget to call `initialize()`?"
+     ]
+    }
+   ],
+   "source": [
+    "# 2)Navigating the parse tree\n",
+    "#terms head and child to describe the words connected by a single arc in the dependency tree. The term dep is used for the arc label, which describes the type of syntactic relation that connects the child to the head. As with other attributes, the value of .dep is a hash value. You can get the string value with .dep_.\n",
+    "doc = nlp(\"Autonomous cars shift insurance liability toward manufacturers\")\n",
+    "for token in doc:\n",
+    "    print(token.text, token.dep_, token.head.text, token.head.pos_,[child for child in token.children])\n",
+    "    \n",
+    "# token.dep # hash value"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "e8b37822",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "ValueError",
+     "evalue": "[E109] Component 'morphologizer' could not be run. Did you forget to call `initialize()`?",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mKeyError\u001b[0m                                  Traceback (most recent call last)",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\language.py:1020\u001b[0m, in \u001b[0;36mLanguage.__call__\u001b[1;34m(self, text, disable, component_cfg)\u001b[0m\n\u001b[0;32m   1019\u001b[0m \u001b[38;5;28;01mtry\u001b[39;00m:\n\u001b[1;32m-> 1020\u001b[0m     doc \u001b[38;5;241m=\u001b[39m proc(doc, \u001b[38;5;241m*\u001b[39m\u001b[38;5;241m*\u001b[39mcomponent_cfg\u001b[38;5;241m.\u001b[39mget(name, {}))  \u001b[38;5;66;03m# type: ignore[call-arg]\u001b[39;00m\n\u001b[0;32m   1021\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mKeyError\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m e:\n\u001b[0;32m   1022\u001b[0m     \u001b[38;5;66;03m# This typically happens if a component is not initialized\u001b[39;00m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\pipeline\\trainable_pipe.pyx:56\u001b[0m, in \u001b[0;36mspacy.pipeline.trainable_pipe.TrainablePipe.__call__\u001b[1;34m()\u001b[0m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\util.py:1658\u001b[0m, in \u001b[0;36mraise_error\u001b[1;34m(proc_name, proc, docs, e)\u001b[0m\n\u001b[0;32m   1657\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m \u001b[38;5;21mraise_error\u001b[39m(proc_name, proc, docs, e):\n\u001b[1;32m-> 1658\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m e\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\pipeline\\trainable_pipe.pyx:52\u001b[0m, in \u001b[0;36mspacy.pipeline.trainable_pipe.TrainablePipe.__call__\u001b[1;34m()\u001b[0m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\pipeline\\tagger.pyx:143\u001b[0m, in \u001b[0;36mspacy.pipeline.tagger.Tagger.predict\u001b[1;34m()\u001b[0m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:315\u001b[0m, in \u001b[0;36mModel.predict\u001b[1;34m(self, X)\u001b[0m\n\u001b[0;32m    312\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function with `is_train=False`, and return\u001b[39;00m\n\u001b[0;32m    313\u001b[0m \u001b[38;5;124;03monly the output, instead of the `(output, callback)` tuple.\u001b[39;00m\n\u001b[0;32m    314\u001b[0m \u001b[38;5;124;03m\"\"\"\u001b[39;00m\n\u001b[1;32m--> 315\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[38;5;28;43;01mFalse\u001b[39;49;00m\u001b[43m)\u001b[49m[\u001b[38;5;241m0\u001b[39m]\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\chain.py:55\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     54\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers:\n\u001b[1;32m---> 55\u001b[0m     Y, inc_layer_grad \u001b[38;5;241m=\u001b[39m \u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n\u001b[0;32m     56\u001b[0m     callbacks\u001b[38;5;241m.\u001b[39mappend(inc_layer_grad)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\chain.py:55\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     54\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers:\n\u001b[1;32m---> 55\u001b[0m     Y, inc_layer_grad \u001b[38;5;241m=\u001b[39m \u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n\u001b[0;32m     56\u001b[0m     callbacks\u001b[38;5;241m.\u001b[39mappend(inc_layer_grad)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\chain.py:55\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     54\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers:\n\u001b[1;32m---> 55\u001b[0m     Y, inc_layer_grad \u001b[38;5;241m=\u001b[39m \u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n\u001b[0;32m     56\u001b[0m     callbacks\u001b[38;5;241m.\u001b[39mappend(inc_layer_grad)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\concatenate.py:44\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     43\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m \u001b[38;5;21mforward\u001b[39m(model: Model[InT, OutT], X: InT, is_train: \u001b[38;5;28mbool\u001b[39m) \u001b[38;5;241m-\u001b[39m\u001b[38;5;241m>\u001b[39m Tuple[OutT, Callable]:\n\u001b[1;32m---> 44\u001b[0m     Ys, callbacks \u001b[38;5;241m=\u001b[39m \u001b[38;5;28mzip\u001b[39m(\u001b[38;5;241m*\u001b[39m[layer(X, is_train\u001b[38;5;241m=\u001b[39mis_train) \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers])\n\u001b[0;32m     45\u001b[0m     \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28misinstance\u001b[39m(Ys[\u001b[38;5;241m0\u001b[39m], \u001b[38;5;28mlist\u001b[39m):\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\concatenate.py:44\u001b[0m, in \u001b[0;36m<listcomp>\u001b[1;34m(.0)\u001b[0m\n\u001b[0;32m     43\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m \u001b[38;5;21mforward\u001b[39m(model: Model[InT, OutT], X: InT, is_train: \u001b[38;5;28mbool\u001b[39m) \u001b[38;5;241m-\u001b[39m\u001b[38;5;241m>\u001b[39m Tuple[OutT, Callable]:\n\u001b[1;32m---> 44\u001b[0m     Ys, callbacks \u001b[38;5;241m=\u001b[39m \u001b[38;5;28mzip\u001b[39m(\u001b[38;5;241m*\u001b[39m[\u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers])\n\u001b[0;32m     45\u001b[0m     \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28misinstance\u001b[39m(Ys[\u001b[38;5;241m0\u001b[39m], \u001b[38;5;28mlist\u001b[39m):\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\chain.py:55\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     54\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers:\n\u001b[1;32m---> 55\u001b[0m     Y, inc_layer_grad \u001b[38;5;241m=\u001b[39m \u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n\u001b[0;32m     56\u001b[0m     callbacks\u001b[38;5;241m.\u001b[39mappend(inc_layer_grad)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\ml\\_character_embed.py:33\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, docs, is_train)\u001b[0m\n\u001b[0;32m     32\u001b[0m output \u001b[38;5;241m=\u001b[39m []\n\u001b[1;32m---> 33\u001b[0m E \u001b[38;5;241m=\u001b[39m \u001b[43mmodel\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mget_param\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43mE\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m)\u001b[49m\n\u001b[0;32m     34\u001b[0m nC \u001b[38;5;241m=\u001b[39m model\u001b[38;5;241m.\u001b[39mget_dim(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mnC\u001b[39m\u001b[38;5;124m\"\u001b[39m)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:216\u001b[0m, in \u001b[0;36mModel.get_param\u001b[1;34m(self, name)\u001b[0m\n\u001b[0;32m    215\u001b[0m \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;129;01mnot\u001b[39;00m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_params\u001b[38;5;241m.\u001b[39mhas_param(\u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mid, name):\n\u001b[1;32m--> 216\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m \u001b[38;5;167;01mKeyError\u001b[39;00m(\n\u001b[0;32m    217\u001b[0m         \u001b[38;5;124mf\u001b[39m\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mParameter \u001b[39m\u001b[38;5;124m'\u001b[39m\u001b[38;5;132;01m{\u001b[39;00mname\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m'\u001b[39m\u001b[38;5;124m for model \u001b[39m\u001b[38;5;124m'\u001b[39m\u001b[38;5;132;01m{\u001b[39;00m\u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mname\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m'\u001b[39m\u001b[38;5;124m has not been allocated yet.\u001b[39m\u001b[38;5;124m\"\u001b[39m\n\u001b[0;32m    218\u001b[0m     )\n\u001b[0;32m    219\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_params\u001b[38;5;241m.\u001b[39mget_param(\u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mid, name)\n",
+      "\u001b[1;31mKeyError\u001b[0m: \"Parameter 'E' for model 'charembed' has not been allocated yet.\"",
+      "\nThe above exception was the direct cause of the following exception:\n",
+      "\u001b[1;31mValueError\u001b[0m                                Traceback (most recent call last)",
+      "Input \u001b[1;32mIn [18]\u001b[0m, in \u001b[0;36m<cell line: 5>\u001b[1;34m()\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[38;5;66;03m#Iterating around the local tree\u001b[39;00m\n\u001b[0;32m      2\u001b[0m \u001b[38;5;66;03m# Token.lefts and Token.rights attributes provide sequences of syntactic children that occur before and after the token.\u001b[39;00m\n\u001b[0;32m      3\u001b[0m \u001b[38;5;66;03m# There are also two integer-typed attributes, Token.n_lefts and Token.n_rights that give the number of left and right children.\u001b[39;00m\n\u001b[1;32m----> 5\u001b[0m doc \u001b[38;5;241m=\u001b[39m \u001b[43mnlp\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43mbright red apples on the tree\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m)\u001b[49m\n\u001b[0;32m      6\u001b[0m \u001b[38;5;28mprint\u001b[39m([token\u001b[38;5;241m.\u001b[39mtext \u001b[38;5;28;01mfor\u001b[39;00m token \u001b[38;5;129;01min\u001b[39;00m doc[\u001b[38;5;241m2\u001b[39m]\u001b[38;5;241m.\u001b[39mlefts])  \u001b[38;5;66;03m# ['bright', 'red']\u001b[39;00m\n\u001b[0;32m      7\u001b[0m \u001b[38;5;28mprint\u001b[39m([token\u001b[38;5;241m.\u001b[39mtext \u001b[38;5;28;01mfor\u001b[39;00m token \u001b[38;5;129;01min\u001b[39;00m doc[\u001b[38;5;241m2\u001b[39m]\u001b[38;5;241m.\u001b[39mrights])  \u001b[38;5;66;03m# ['on']\u001b[39;00m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\language.py:1023\u001b[0m, in \u001b[0;36mLanguage.__call__\u001b[1;34m(self, text, disable, component_cfg)\u001b[0m\n\u001b[0;32m   1020\u001b[0m     doc \u001b[38;5;241m=\u001b[39m proc(doc, \u001b[38;5;241m*\u001b[39m\u001b[38;5;241m*\u001b[39mcomponent_cfg\u001b[38;5;241m.\u001b[39mget(name, {}))  \u001b[38;5;66;03m# type: ignore[call-arg]\u001b[39;00m\n\u001b[0;32m   1021\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mKeyError\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m e:\n\u001b[0;32m   1022\u001b[0m     \u001b[38;5;66;03m# This typically happens if a component is not initialized\u001b[39;00m\n\u001b[1;32m-> 1023\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m \u001b[38;5;167;01mValueError\u001b[39;00m(Errors\u001b[38;5;241m.\u001b[39mE109\u001b[38;5;241m.\u001b[39mformat(name\u001b[38;5;241m=\u001b[39mname)) \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01me\u001b[39;00m\n\u001b[0;32m   1024\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mException\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m e:\n\u001b[0;32m   1025\u001b[0m     error_handler(name, proc, [doc], e)\n",
+      "\u001b[1;31mValueError\u001b[0m: [E109] Component 'morphologizer' could not be run. Did you forget to call `initialize()`?"
+     ]
+    }
+   ],
+   "source": [
+    "#Iterating around the local tree\n",
+    "# Token.lefts and Token.rights attributes provide sequences of syntactic children that occur before and after the token.\n",
+    "# There are also two integer-typed attributes, Token.n_lefts and Token.n_rights that give the number of left and right children.\n",
+    "\n",
+    "doc = nlp(\"bright red apples on the tree\")\n",
+    "print([token.text for token in doc[2].lefts])  # ['bright', 'red']\n",
+    "print([token.text for token in doc[2].rights])  # ['on']\n",
+    "print(doc[2].n_lefts)  # 2\n",
+    "print(doc[2].n_rights)  # 1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d68481a4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "#You can get a whole phrase by its syntactic head using the Token.subtree attribute. This returns an ordered sequence of tokens. You can walk up the tree with the Token.ancestors attribute, and check dominance with Token.is_ancestor\n",
+    "doc = nlp(\"Credit and mortgage account holders must submit their requests\")\n",
+    "\n",
+    "root = [token for token in doc if token.head == token][0]\n",
+    "subject = list(root.lefts)[0]\n",
+    "for descendant in subject.subtree:\n",
+    "    assert subject is descendant or subject.is_ancestor(descendant)\n",
+    "    print(descendant.text, descendant.dep_, descendant.n_lefts,\n",
+    "            descendant.n_rights,\n",
+    "            [ancestor.text for ancestor in descendant.ancestors])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "496e1457",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "ValueError",
+     "evalue": "[E109] Component 'morphologizer' could not be run. Did you forget to call `initialize()`?",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mKeyError\u001b[0m                                  Traceback (most recent call last)",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\language.py:1020\u001b[0m, in \u001b[0;36mLanguage.__call__\u001b[1;34m(self, text, disable, component_cfg)\u001b[0m\n\u001b[0;32m   1019\u001b[0m \u001b[38;5;28;01mtry\u001b[39;00m:\n\u001b[1;32m-> 1020\u001b[0m     doc \u001b[38;5;241m=\u001b[39m proc(doc, \u001b[38;5;241m*\u001b[39m\u001b[38;5;241m*\u001b[39mcomponent_cfg\u001b[38;5;241m.\u001b[39mget(name, {}))  \u001b[38;5;66;03m# type: ignore[call-arg]\u001b[39;00m\n\u001b[0;32m   1021\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mKeyError\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m e:\n\u001b[0;32m   1022\u001b[0m     \u001b[38;5;66;03m# This typically happens if a component is not initialized\u001b[39;00m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\pipeline\\trainable_pipe.pyx:56\u001b[0m, in \u001b[0;36mspacy.pipeline.trainable_pipe.TrainablePipe.__call__\u001b[1;34m()\u001b[0m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\util.py:1658\u001b[0m, in \u001b[0;36mraise_error\u001b[1;34m(proc_name, proc, docs, e)\u001b[0m\n\u001b[0;32m   1657\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m \u001b[38;5;21mraise_error\u001b[39m(proc_name, proc, docs, e):\n\u001b[1;32m-> 1658\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m e\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\pipeline\\trainable_pipe.pyx:52\u001b[0m, in \u001b[0;36mspacy.pipeline.trainable_pipe.TrainablePipe.__call__\u001b[1;34m()\u001b[0m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\pipeline\\tagger.pyx:143\u001b[0m, in \u001b[0;36mspacy.pipeline.tagger.Tagger.predict\u001b[1;34m()\u001b[0m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:315\u001b[0m, in \u001b[0;36mModel.predict\u001b[1;34m(self, X)\u001b[0m\n\u001b[0;32m    312\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function with `is_train=False`, and return\u001b[39;00m\n\u001b[0;32m    313\u001b[0m \u001b[38;5;124;03monly the output, instead of the `(output, callback)` tuple.\u001b[39;00m\n\u001b[0;32m    314\u001b[0m \u001b[38;5;124;03m\"\"\"\u001b[39;00m\n\u001b[1;32m--> 315\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[38;5;28;43;01mFalse\u001b[39;49;00m\u001b[43m)\u001b[49m[\u001b[38;5;241m0\u001b[39m]\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\chain.py:55\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     54\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers:\n\u001b[1;32m---> 55\u001b[0m     Y, inc_layer_grad \u001b[38;5;241m=\u001b[39m \u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n\u001b[0;32m     56\u001b[0m     callbacks\u001b[38;5;241m.\u001b[39mappend(inc_layer_grad)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\chain.py:55\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     54\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers:\n\u001b[1;32m---> 55\u001b[0m     Y, inc_layer_grad \u001b[38;5;241m=\u001b[39m \u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n\u001b[0;32m     56\u001b[0m     callbacks\u001b[38;5;241m.\u001b[39mappend(inc_layer_grad)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\chain.py:55\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     54\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers:\n\u001b[1;32m---> 55\u001b[0m     Y, inc_layer_grad \u001b[38;5;241m=\u001b[39m \u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n\u001b[0;32m     56\u001b[0m     callbacks\u001b[38;5;241m.\u001b[39mappend(inc_layer_grad)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\concatenate.py:44\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     43\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m \u001b[38;5;21mforward\u001b[39m(model: Model[InT, OutT], X: InT, is_train: \u001b[38;5;28mbool\u001b[39m) \u001b[38;5;241m-\u001b[39m\u001b[38;5;241m>\u001b[39m Tuple[OutT, Callable]:\n\u001b[1;32m---> 44\u001b[0m     Ys, callbacks \u001b[38;5;241m=\u001b[39m \u001b[38;5;28mzip\u001b[39m(\u001b[38;5;241m*\u001b[39m[layer(X, is_train\u001b[38;5;241m=\u001b[39mis_train) \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers])\n\u001b[0;32m     45\u001b[0m     \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28misinstance\u001b[39m(Ys[\u001b[38;5;241m0\u001b[39m], \u001b[38;5;28mlist\u001b[39m):\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\concatenate.py:44\u001b[0m, in \u001b[0;36m<listcomp>\u001b[1;34m(.0)\u001b[0m\n\u001b[0;32m     43\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m \u001b[38;5;21mforward\u001b[39m(model: Model[InT, OutT], X: InT, is_train: \u001b[38;5;28mbool\u001b[39m) \u001b[38;5;241m-\u001b[39m\u001b[38;5;241m>\u001b[39m Tuple[OutT, Callable]:\n\u001b[1;32m---> 44\u001b[0m     Ys, callbacks \u001b[38;5;241m=\u001b[39m \u001b[38;5;28mzip\u001b[39m(\u001b[38;5;241m*\u001b[39m[\u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers])\n\u001b[0;32m     45\u001b[0m     \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28misinstance\u001b[39m(Ys[\u001b[38;5;241m0\u001b[39m], \u001b[38;5;28mlist\u001b[39m):\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\chain.py:55\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     54\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers:\n\u001b[1;32m---> 55\u001b[0m     Y, inc_layer_grad \u001b[38;5;241m=\u001b[39m \u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n\u001b[0;32m     56\u001b[0m     callbacks\u001b[38;5;241m.\u001b[39mappend(inc_layer_grad)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\ml\\_character_embed.py:33\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, docs, is_train)\u001b[0m\n\u001b[0;32m     32\u001b[0m output \u001b[38;5;241m=\u001b[39m []\n\u001b[1;32m---> 33\u001b[0m E \u001b[38;5;241m=\u001b[39m \u001b[43mmodel\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mget_param\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43mE\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m)\u001b[49m\n\u001b[0;32m     34\u001b[0m nC \u001b[38;5;241m=\u001b[39m model\u001b[38;5;241m.\u001b[39mget_dim(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mnC\u001b[39m\u001b[38;5;124m\"\u001b[39m)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:216\u001b[0m, in \u001b[0;36mModel.get_param\u001b[1;34m(self, name)\u001b[0m\n\u001b[0;32m    215\u001b[0m \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;129;01mnot\u001b[39;00m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_params\u001b[38;5;241m.\u001b[39mhas_param(\u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mid, name):\n\u001b[1;32m--> 216\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m \u001b[38;5;167;01mKeyError\u001b[39;00m(\n\u001b[0;32m    217\u001b[0m         \u001b[38;5;124mf\u001b[39m\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mParameter \u001b[39m\u001b[38;5;124m'\u001b[39m\u001b[38;5;132;01m{\u001b[39;00mname\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m'\u001b[39m\u001b[38;5;124m for model \u001b[39m\u001b[38;5;124m'\u001b[39m\u001b[38;5;132;01m{\u001b[39;00m\u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mname\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m'\u001b[39m\u001b[38;5;124m has not been allocated yet.\u001b[39m\u001b[38;5;124m\"\u001b[39m\n\u001b[0;32m    218\u001b[0m     )\n\u001b[0;32m    219\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_params\u001b[38;5;241m.\u001b[39mget_param(\u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mid, name)\n",
+      "\u001b[1;31mKeyError\u001b[0m: \"Parameter 'E' for model 'charembed' has not been allocated yet.\"",
+      "\nThe above exception was the direct cause of the following exception:\n",
+      "\u001b[1;31mValueError\u001b[0m                                Traceback (most recent call last)",
+      "Input \u001b[1;32mIn [27]\u001b[0m, in \u001b[0;36m<cell line: 2>\u001b[1;34m()\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[38;5;66;03m#Finally, the .left_edge and .right_edge attributes can be especially useful, because they give you the first and last token of the subtree.\u001b[39;00m\n\u001b[1;32m----> 2\u001b[0m doc \u001b[38;5;241m=\u001b[39m \u001b[43mnlp\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43mCredit and mortgage account holders must submit their requests\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m)\u001b[49m\n\u001b[0;32m      3\u001b[0m span \u001b[38;5;241m=\u001b[39m doc[doc[\u001b[38;5;241m4\u001b[39m]\u001b[38;5;241m.\u001b[39mleft_edge\u001b[38;5;241m.\u001b[39mi : doc[\u001b[38;5;241m4\u001b[39m]\u001b[38;5;241m.\u001b[39mright_edge\u001b[38;5;241m.\u001b[39mi\u001b[38;5;241m+\u001b[39m\u001b[38;5;241m1\u001b[39m]\n\u001b[0;32m      4\u001b[0m \u001b[38;5;28;01mwith\u001b[39;00m doc\u001b[38;5;241m.\u001b[39mretokenize() \u001b[38;5;28;01mas\u001b[39;00m retokenizer:\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\language.py:1023\u001b[0m, in \u001b[0;36mLanguage.__call__\u001b[1;34m(self, text, disable, component_cfg)\u001b[0m\n\u001b[0;32m   1020\u001b[0m     doc \u001b[38;5;241m=\u001b[39m proc(doc, \u001b[38;5;241m*\u001b[39m\u001b[38;5;241m*\u001b[39mcomponent_cfg\u001b[38;5;241m.\u001b[39mget(name, {}))  \u001b[38;5;66;03m# type: ignore[call-arg]\u001b[39;00m\n\u001b[0;32m   1021\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mKeyError\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m e:\n\u001b[0;32m   1022\u001b[0m     \u001b[38;5;66;03m# This typically happens if a component is not initialized\u001b[39;00m\n\u001b[1;32m-> 1023\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m \u001b[38;5;167;01mValueError\u001b[39;00m(Errors\u001b[38;5;241m.\u001b[39mE109\u001b[38;5;241m.\u001b[39mformat(name\u001b[38;5;241m=\u001b[39mname)) \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01me\u001b[39;00m\n\u001b[0;32m   1024\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mException\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m e:\n\u001b[0;32m   1025\u001b[0m     error_handler(name, proc, [doc], e)\n",
+      "\u001b[1;31mValueError\u001b[0m: [E109] Component 'morphologizer' could not be run. Did you forget to call `initialize()`?"
+     ]
+    }
+   ],
+   "source": [
+    "#Finally, the .left_edge and .right_edge attributes can be especially useful, because they give you the first and last token of the subtree.\n",
+    "doc = nlp(\"Credit and mortgage account holders must submit their requests\")\n",
+    "span = doc[doc[4].left_edge.i : doc[4].right_edge.i+1]\n",
+    "with doc.retokenize() as retokenizer:\n",
+    "    retokenizer.merge(span)\n",
+    "for token in doc:\n",
+    "    print(token.text, token.pos_, token.dep_, token.head.text)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "8b39dd48",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "ValueError",
+     "evalue": "[E109] Component 'morphologizer' could not be run. Did you forget to call `initialize()`?",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mKeyError\u001b[0m                                  Traceback (most recent call last)",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\language.py:1020\u001b[0m, in \u001b[0;36mLanguage.__call__\u001b[1;34m(self, text, disable, component_cfg)\u001b[0m\n\u001b[0;32m   1019\u001b[0m \u001b[38;5;28;01mtry\u001b[39;00m:\n\u001b[1;32m-> 1020\u001b[0m     doc \u001b[38;5;241m=\u001b[39m proc(doc, \u001b[38;5;241m*\u001b[39m\u001b[38;5;241m*\u001b[39mcomponent_cfg\u001b[38;5;241m.\u001b[39mget(name, {}))  \u001b[38;5;66;03m# type: ignore[call-arg]\u001b[39;00m\n\u001b[0;32m   1021\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mKeyError\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m e:\n\u001b[0;32m   1022\u001b[0m     \u001b[38;5;66;03m# This typically happens if a component is not initialized\u001b[39;00m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\pipeline\\trainable_pipe.pyx:56\u001b[0m, in \u001b[0;36mspacy.pipeline.trainable_pipe.TrainablePipe.__call__\u001b[1;34m()\u001b[0m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\util.py:1658\u001b[0m, in \u001b[0;36mraise_error\u001b[1;34m(proc_name, proc, docs, e)\u001b[0m\n\u001b[0;32m   1657\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m \u001b[38;5;21mraise_error\u001b[39m(proc_name, proc, docs, e):\n\u001b[1;32m-> 1658\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m e\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\pipeline\\trainable_pipe.pyx:52\u001b[0m, in \u001b[0;36mspacy.pipeline.trainable_pipe.TrainablePipe.__call__\u001b[1;34m()\u001b[0m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\pipeline\\tagger.pyx:143\u001b[0m, in \u001b[0;36mspacy.pipeline.tagger.Tagger.predict\u001b[1;34m()\u001b[0m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:315\u001b[0m, in \u001b[0;36mModel.predict\u001b[1;34m(self, X)\u001b[0m\n\u001b[0;32m    312\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function with `is_train=False`, and return\u001b[39;00m\n\u001b[0;32m    313\u001b[0m \u001b[38;5;124;03monly the output, instead of the `(output, callback)` tuple.\u001b[39;00m\n\u001b[0;32m    314\u001b[0m \u001b[38;5;124;03m\"\"\"\u001b[39;00m\n\u001b[1;32m--> 315\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[38;5;28;43;01mFalse\u001b[39;49;00m\u001b[43m)\u001b[49m[\u001b[38;5;241m0\u001b[39m]\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\chain.py:55\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     54\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers:\n\u001b[1;32m---> 55\u001b[0m     Y, inc_layer_grad \u001b[38;5;241m=\u001b[39m \u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n\u001b[0;32m     56\u001b[0m     callbacks\u001b[38;5;241m.\u001b[39mappend(inc_layer_grad)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\chain.py:55\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     54\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers:\n\u001b[1;32m---> 55\u001b[0m     Y, inc_layer_grad \u001b[38;5;241m=\u001b[39m \u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n\u001b[0;32m     56\u001b[0m     callbacks\u001b[38;5;241m.\u001b[39mappend(inc_layer_grad)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\chain.py:55\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     54\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers:\n\u001b[1;32m---> 55\u001b[0m     Y, inc_layer_grad \u001b[38;5;241m=\u001b[39m \u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n\u001b[0;32m     56\u001b[0m     callbacks\u001b[38;5;241m.\u001b[39mappend(inc_layer_grad)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\concatenate.py:44\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     43\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m \u001b[38;5;21mforward\u001b[39m(model: Model[InT, OutT], X: InT, is_train: \u001b[38;5;28mbool\u001b[39m) \u001b[38;5;241m-\u001b[39m\u001b[38;5;241m>\u001b[39m Tuple[OutT, Callable]:\n\u001b[1;32m---> 44\u001b[0m     Ys, callbacks \u001b[38;5;241m=\u001b[39m \u001b[38;5;28mzip\u001b[39m(\u001b[38;5;241m*\u001b[39m[layer(X, is_train\u001b[38;5;241m=\u001b[39mis_train) \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers])\n\u001b[0;32m     45\u001b[0m     \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28misinstance\u001b[39m(Ys[\u001b[38;5;241m0\u001b[39m], \u001b[38;5;28mlist\u001b[39m):\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\concatenate.py:44\u001b[0m, in \u001b[0;36m<listcomp>\u001b[1;34m(.0)\u001b[0m\n\u001b[0;32m     43\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m \u001b[38;5;21mforward\u001b[39m(model: Model[InT, OutT], X: InT, is_train: \u001b[38;5;28mbool\u001b[39m) \u001b[38;5;241m-\u001b[39m\u001b[38;5;241m>\u001b[39m Tuple[OutT, Callable]:\n\u001b[1;32m---> 44\u001b[0m     Ys, callbacks \u001b[38;5;241m=\u001b[39m \u001b[38;5;28mzip\u001b[39m(\u001b[38;5;241m*\u001b[39m[\u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers])\n\u001b[0;32m     45\u001b[0m     \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28misinstance\u001b[39m(Ys[\u001b[38;5;241m0\u001b[39m], \u001b[38;5;28mlist\u001b[39m):\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\chain.py:55\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     54\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers:\n\u001b[1;32m---> 55\u001b[0m     Y, inc_layer_grad \u001b[38;5;241m=\u001b[39m \u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n\u001b[0;32m     56\u001b[0m     callbacks\u001b[38;5;241m.\u001b[39mappend(inc_layer_grad)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\ml\\_character_embed.py:33\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, docs, is_train)\u001b[0m\n\u001b[0;32m     32\u001b[0m output \u001b[38;5;241m=\u001b[39m []\n\u001b[1;32m---> 33\u001b[0m E \u001b[38;5;241m=\u001b[39m \u001b[43mmodel\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mget_param\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43mE\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m)\u001b[49m\n\u001b[0;32m     34\u001b[0m nC \u001b[38;5;241m=\u001b[39m model\u001b[38;5;241m.\u001b[39mget_dim(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mnC\u001b[39m\u001b[38;5;124m\"\u001b[39m)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:216\u001b[0m, in \u001b[0;36mModel.get_param\u001b[1;34m(self, name)\u001b[0m\n\u001b[0;32m    215\u001b[0m \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;129;01mnot\u001b[39;00m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_params\u001b[38;5;241m.\u001b[39mhas_param(\u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mid, name):\n\u001b[1;32m--> 216\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m \u001b[38;5;167;01mKeyError\u001b[39;00m(\n\u001b[0;32m    217\u001b[0m         \u001b[38;5;124mf\u001b[39m\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mParameter \u001b[39m\u001b[38;5;124m'\u001b[39m\u001b[38;5;132;01m{\u001b[39;00mname\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m'\u001b[39m\u001b[38;5;124m for model \u001b[39m\u001b[38;5;124m'\u001b[39m\u001b[38;5;132;01m{\u001b[39;00m\u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mname\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m'\u001b[39m\u001b[38;5;124m has not been allocated yet.\u001b[39m\u001b[38;5;124m\"\u001b[39m\n\u001b[0;32m    218\u001b[0m     )\n\u001b[0;32m    219\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_params\u001b[38;5;241m.\u001b[39mget_param(\u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mid, name)\n",
+      "\u001b[1;31mKeyError\u001b[0m: \"Parameter 'E' for model 'charembed' has not been allocated yet.\"",
+      "\nThe above exception was the direct cause of the following exception:\n",
+      "\u001b[1;31mValueError\u001b[0m                                Traceback (most recent call last)",
+      "Input \u001b[1;32mIn [14]\u001b[0m, in \u001b[0;36m<cell line: 3>\u001b[1;34m()\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[38;5;66;03m#Visualizing dependencies\u001b[39;00m\n\u001b[0;32m      2\u001b[0m \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01mspacy\u001b[39;00m \u001b[38;5;28;01mimport\u001b[39;00m displacy\n\u001b[1;32m----> 3\u001b[0m doc \u001b[38;5;241m=\u001b[39m \u001b[43mnlp\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43mAutonomous cars shift insurance liability toward manufacturers\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m)\u001b[49m\n\u001b[0;32m      4\u001b[0m \u001b[38;5;66;03m# Since this is an interactive Jupyter environment, we can use displacy.render here\u001b[39;00m\n\u001b[0;32m      5\u001b[0m displacy\u001b[38;5;241m.\u001b[39mrender(doc, style\u001b[38;5;241m=\u001b[39m\u001b[38;5;124m'\u001b[39m\u001b[38;5;124mdep\u001b[39m\u001b[38;5;124m'\u001b[39m)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\language.py:1023\u001b[0m, in \u001b[0;36mLanguage.__call__\u001b[1;34m(self, text, disable, component_cfg)\u001b[0m\n\u001b[0;32m   1020\u001b[0m     doc \u001b[38;5;241m=\u001b[39m proc(doc, \u001b[38;5;241m*\u001b[39m\u001b[38;5;241m*\u001b[39mcomponent_cfg\u001b[38;5;241m.\u001b[39mget(name, {}))  \u001b[38;5;66;03m# type: ignore[call-arg]\u001b[39;00m\n\u001b[0;32m   1021\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mKeyError\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m e:\n\u001b[0;32m   1022\u001b[0m     \u001b[38;5;66;03m# This typically happens if a component is not initialized\u001b[39;00m\n\u001b[1;32m-> 1023\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m \u001b[38;5;167;01mValueError\u001b[39;00m(Errors\u001b[38;5;241m.\u001b[39mE109\u001b[38;5;241m.\u001b[39mformat(name\u001b[38;5;241m=\u001b[39mname)) \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01me\u001b[39;00m\n\u001b[0;32m   1024\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mException\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m e:\n\u001b[0;32m   1025\u001b[0m     error_handler(name, proc, [doc], e)\n",
+      "\u001b[1;31mValueError\u001b[0m: [E109] Component 'morphologizer' could not be run. Did you forget to call `initialize()`?"
+     ]
+    }
+   ],
+   "source": [
+    "#Visualizing dependencies\n",
+    "from spacy import displacy\n",
+    "doc = nlp(\"Autonomous cars shift insurance liability toward manufacturers\")\n",
+    "# Since this is an interactive Jupyter environment, we can use displacy.render here\n",
+    "displacy.render(doc, style='dep')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "f3c7e50c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Disabling the parser : In the trained pipelines provided by spaCy, the parser is loaded and enabled by default as part of the standard processing pipeline. If you don’t need any of the syntactic information, you should disable the parser. Disabling the parser will make spaCy load and run much faster. If you want to load the parser, but need to disable it for specific documents, you can also control its use on the nlp object. \n",
+    "\n",
+    "# nlp = spacy.load(\"en_core_web_sm\", disable=[\"parser\"])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "b87cb626",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "ValueError",
+     "evalue": "[E109] Component 'morphologizer' could not be run. Did you forget to call `initialize()`?",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mKeyError\u001b[0m                                  Traceback (most recent call last)",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\language.py:1020\u001b[0m, in \u001b[0;36mLanguage.__call__\u001b[1;34m(self, text, disable, component_cfg)\u001b[0m\n\u001b[0;32m   1019\u001b[0m \u001b[38;5;28;01mtry\u001b[39;00m:\n\u001b[1;32m-> 1020\u001b[0m     doc \u001b[38;5;241m=\u001b[39m proc(doc, \u001b[38;5;241m*\u001b[39m\u001b[38;5;241m*\u001b[39mcomponent_cfg\u001b[38;5;241m.\u001b[39mget(name, {}))  \u001b[38;5;66;03m# type: ignore[call-arg]\u001b[39;00m\n\u001b[0;32m   1021\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mKeyError\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m e:\n\u001b[0;32m   1022\u001b[0m     \u001b[38;5;66;03m# This typically happens if a component is not initialized\u001b[39;00m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\pipeline\\trainable_pipe.pyx:56\u001b[0m, in \u001b[0;36mspacy.pipeline.trainable_pipe.TrainablePipe.__call__\u001b[1;34m()\u001b[0m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\util.py:1658\u001b[0m, in \u001b[0;36mraise_error\u001b[1;34m(proc_name, proc, docs, e)\u001b[0m\n\u001b[0;32m   1657\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m \u001b[38;5;21mraise_error\u001b[39m(proc_name, proc, docs, e):\n\u001b[1;32m-> 1658\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m e\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\pipeline\\trainable_pipe.pyx:52\u001b[0m, in \u001b[0;36mspacy.pipeline.trainable_pipe.TrainablePipe.__call__\u001b[1;34m()\u001b[0m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\pipeline\\tagger.pyx:143\u001b[0m, in \u001b[0;36mspacy.pipeline.tagger.Tagger.predict\u001b[1;34m()\u001b[0m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:315\u001b[0m, in \u001b[0;36mModel.predict\u001b[1;34m(self, X)\u001b[0m\n\u001b[0;32m    312\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function with `is_train=False`, and return\u001b[39;00m\n\u001b[0;32m    313\u001b[0m \u001b[38;5;124;03monly the output, instead of the `(output, callback)` tuple.\u001b[39;00m\n\u001b[0;32m    314\u001b[0m \u001b[38;5;124;03m\"\"\"\u001b[39;00m\n\u001b[1;32m--> 315\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[38;5;28;43;01mFalse\u001b[39;49;00m\u001b[43m)\u001b[49m[\u001b[38;5;241m0\u001b[39m]\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\chain.py:55\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     54\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers:\n\u001b[1;32m---> 55\u001b[0m     Y, inc_layer_grad \u001b[38;5;241m=\u001b[39m \u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n\u001b[0;32m     56\u001b[0m     callbacks\u001b[38;5;241m.\u001b[39mappend(inc_layer_grad)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\chain.py:55\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     54\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers:\n\u001b[1;32m---> 55\u001b[0m     Y, inc_layer_grad \u001b[38;5;241m=\u001b[39m \u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n\u001b[0;32m     56\u001b[0m     callbacks\u001b[38;5;241m.\u001b[39mappend(inc_layer_grad)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\chain.py:55\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     54\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers:\n\u001b[1;32m---> 55\u001b[0m     Y, inc_layer_grad \u001b[38;5;241m=\u001b[39m \u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n\u001b[0;32m     56\u001b[0m     callbacks\u001b[38;5;241m.\u001b[39mappend(inc_layer_grad)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\concatenate.py:44\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     43\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m \u001b[38;5;21mforward\u001b[39m(model: Model[InT, OutT], X: InT, is_train: \u001b[38;5;28mbool\u001b[39m) \u001b[38;5;241m-\u001b[39m\u001b[38;5;241m>\u001b[39m Tuple[OutT, Callable]:\n\u001b[1;32m---> 44\u001b[0m     Ys, callbacks \u001b[38;5;241m=\u001b[39m \u001b[38;5;28mzip\u001b[39m(\u001b[38;5;241m*\u001b[39m[layer(X, is_train\u001b[38;5;241m=\u001b[39mis_train) \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers])\n\u001b[0;32m     45\u001b[0m     \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28misinstance\u001b[39m(Ys[\u001b[38;5;241m0\u001b[39m], \u001b[38;5;28mlist\u001b[39m):\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\concatenate.py:44\u001b[0m, in \u001b[0;36m<listcomp>\u001b[1;34m(.0)\u001b[0m\n\u001b[0;32m     43\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m \u001b[38;5;21mforward\u001b[39m(model: Model[InT, OutT], X: InT, is_train: \u001b[38;5;28mbool\u001b[39m) \u001b[38;5;241m-\u001b[39m\u001b[38;5;241m>\u001b[39m Tuple[OutT, Callable]:\n\u001b[1;32m---> 44\u001b[0m     Ys, callbacks \u001b[38;5;241m=\u001b[39m \u001b[38;5;28mzip\u001b[39m(\u001b[38;5;241m*\u001b[39m[\u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers])\n\u001b[0;32m     45\u001b[0m     \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28misinstance\u001b[39m(Ys[\u001b[38;5;241m0\u001b[39m], \u001b[38;5;28mlist\u001b[39m):\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\layers\\chain.py:55\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, X, is_train)\u001b[0m\n\u001b[0;32m     54\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m layer \u001b[38;5;129;01min\u001b[39;00m model\u001b[38;5;241m.\u001b[39mlayers:\n\u001b[1;32m---> 55\u001b[0m     Y, inc_layer_grad \u001b[38;5;241m=\u001b[39m \u001b[43mlayer\u001b[49m\u001b[43m(\u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n\u001b[0;32m     56\u001b[0m     callbacks\u001b[38;5;241m.\u001b[39mappend(inc_layer_grad)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:291\u001b[0m, in \u001b[0;36mModel.__call__\u001b[1;34m(self, X, is_train)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[38;5;124;03m\"\"\"Call the model's `forward` function, returning the output and a\u001b[39;00m\n\u001b[0;32m    290\u001b[0m \u001b[38;5;124;03mcallback to compute the gradients via backpropagation.\"\"\"\u001b[39;00m\n\u001b[1;32m--> 291\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;43mself\u001b[39;49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43m_func\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;28;43mself\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mX\u001b[49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[43mis_train\u001b[49m\u001b[38;5;241;43m=\u001b[39;49m\u001b[43mis_train\u001b[49m\u001b[43m)\u001b[49m\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\ml\\_character_embed.py:33\u001b[0m, in \u001b[0;36mforward\u001b[1;34m(model, docs, is_train)\u001b[0m\n\u001b[0;32m     32\u001b[0m output \u001b[38;5;241m=\u001b[39m []\n\u001b[1;32m---> 33\u001b[0m E \u001b[38;5;241m=\u001b[39m \u001b[43mmodel\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mget_param\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43mE\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m)\u001b[49m\n\u001b[0;32m     34\u001b[0m nC \u001b[38;5;241m=\u001b[39m model\u001b[38;5;241m.\u001b[39mget_dim(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mnC\u001b[39m\u001b[38;5;124m\"\u001b[39m)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\thinc\\model.py:216\u001b[0m, in \u001b[0;36mModel.get_param\u001b[1;34m(self, name)\u001b[0m\n\u001b[0;32m    215\u001b[0m \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;129;01mnot\u001b[39;00m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_params\u001b[38;5;241m.\u001b[39mhas_param(\u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mid, name):\n\u001b[1;32m--> 216\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m \u001b[38;5;167;01mKeyError\u001b[39;00m(\n\u001b[0;32m    217\u001b[0m         \u001b[38;5;124mf\u001b[39m\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mParameter \u001b[39m\u001b[38;5;124m'\u001b[39m\u001b[38;5;132;01m{\u001b[39;00mname\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m'\u001b[39m\u001b[38;5;124m for model \u001b[39m\u001b[38;5;124m'\u001b[39m\u001b[38;5;132;01m{\u001b[39;00m\u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mname\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m'\u001b[39m\u001b[38;5;124m has not been allocated yet.\u001b[39m\u001b[38;5;124m\"\u001b[39m\n\u001b[0;32m    218\u001b[0m     )\n\u001b[0;32m    219\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_params\u001b[38;5;241m.\u001b[39mget_param(\u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mid, name)\n",
+      "\u001b[1;31mKeyError\u001b[0m: \"Parameter 'E' for model 'charembed' has not been allocated yet.\"",
+      "\nThe above exception was the direct cause of the following exception:\n",
+      "\u001b[1;31mValueError\u001b[0m                                Traceback (most recent call last)",
+      "Input \u001b[1;32mIn [29]\u001b[0m, in \u001b[0;36m<cell line: 1>\u001b[1;34m()\u001b[0m\n\u001b[1;32m----> 1\u001b[0m doc \u001b[38;5;241m=\u001b[39m \u001b[43mnlp\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43mApple is looking at buying U.K. startup for $1 billion\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m)\u001b[49m\n\u001b[0;32m      3\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m ent \u001b[38;5;129;01min\u001b[39;00m doc\u001b[38;5;241m.\u001b[39ments:\n\u001b[0;32m      4\u001b[0m     \u001b[38;5;28mprint\u001b[39m(ent\u001b[38;5;241m.\u001b[39mtext, ent\u001b[38;5;241m.\u001b[39mstart_char, ent\u001b[38;5;241m.\u001b[39mend_char, ent\u001b[38;5;241m.\u001b[39mlabel_)\n",
+      "File \u001b[1;32m~\\Anaconda\\lib\\site-packages\\spacy\\language.py:1023\u001b[0m, in \u001b[0;36mLanguage.__call__\u001b[1;34m(self, text, disable, component_cfg)\u001b[0m\n\u001b[0;32m   1020\u001b[0m     doc \u001b[38;5;241m=\u001b[39m proc(doc, \u001b[38;5;241m*\u001b[39m\u001b[38;5;241m*\u001b[39mcomponent_cfg\u001b[38;5;241m.\u001b[39mget(name, {}))  \u001b[38;5;66;03m# type: ignore[call-arg]\u001b[39;00m\n\u001b[0;32m   1021\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mKeyError\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m e:\n\u001b[0;32m   1022\u001b[0m     \u001b[38;5;66;03m# This typically happens if a component is not initialized\u001b[39;00m\n\u001b[1;32m-> 1023\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m \u001b[38;5;167;01mValueError\u001b[39;00m(Errors\u001b[38;5;241m.\u001b[39mE109\u001b[38;5;241m.\u001b[39mformat(name\u001b[38;5;241m=\u001b[39mname)) \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;21;01me\u001b[39;00m\n\u001b[0;32m   1024\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mException\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m e:\n\u001b[0;32m   1025\u001b[0m     error_handler(name, proc, [doc], e)\n",
+      "\u001b[1;31mValueError\u001b[0m: [E109] Component 'morphologizer' could not be run. Did you forget to call `initialize()`?"
+     ]
+    }
+   ],
+   "source": [
+    "doc = nlp(\"Apple is looking at buying U.K. startup for $1 billion\")\n",
+    "\n",
+    "for ent in doc.ents:\n",
+    "    print(ent.text, ent.start_char, ent.end_char, ent.label_)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "446342c6",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "60688e92",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "<spacy.pipeline.ner.EntityRecognizer at 0x27bcabf6120>"
+      ]
+     },
+     "execution_count": 28,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "nlp.add_pipe(\"ner\", source=spacy.load(\"en_core_web_sm\"))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "acbc12c8",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
